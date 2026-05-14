@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import { LanguageProvider } from "@/contexts/LanguageContext";
-import LanguageGate from "@/components/LanguageGate";
 import TopBanner from "@/components/TopBanner";
 
 export const metadata: Metadata = {
@@ -47,7 +46,6 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-ivory text-ink antialiased overflow-x-hidden font-sans">
         <LanguageProvider>
-          <LanguageGate />
           <TopBanner />
           <SmoothScroll>{children}</SmoothScroll>
         </LanguageProvider>

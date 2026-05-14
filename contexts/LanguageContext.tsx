@@ -35,6 +35,12 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored === "fr" || stored === "en") {
       setLangState(stored);
+    } else {
+      // Auto-detect from browser — FR for any French locale, EN otherwise
+      const browser = (navigator.language || "").toLowerCase();
+      const detected: Language = browser.startsWith("fr") ? "fr" : "en";
+      setLangState(detected);
+      localStorage.setItem(STORAGE_KEY, detected);
     }
     setResolved(true);
   }, []);
