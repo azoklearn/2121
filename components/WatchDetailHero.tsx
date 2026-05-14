@@ -17,6 +17,10 @@ export default function WatchDetailHero({ watch }: Props) {
   // Gallery
   const [activeIdx, setActiveIdx] = useState(0);
 
+  // Swipe state (mobile)
+  const touchStart = useRef<{ x: number; y: number; t: number } | null>(null);
+  const didSwipe = useRef(false);
+
   // Lightbox
   const [zoomOpen, setZoomOpen] = useState(false);
 
@@ -137,8 +141,32 @@ export default function WatchDetailHero({ watch }: Props) {
             >
               {/* Main image */}
               <div
-                className="relative aspect-[3/4] overflow-hidden bg-bone cursor-zoom-in"
-                onClick={() => setZoomOpen(true)}
+                className="relative aspect-[3/4] overflow-hidden bg-bone cursor-zoom-in touch-pan-y select-none"
+                onClick={() => {
+                  if (didSwipe.current) { didSwipe.current = false; return; }
+                  setZoomOpen(true);
+                }}
+                onTouchStart={(e) => {
+                  const t = e.touches[0];
+                  touchStart.current = { x: t.clientX, y: t.clientY, t: Date.now() };
+                  didSwipe.current = false;
+                }}
+                onTouchEnd={(e) => {
+                  const start = touchStart.current;
+                  if (!start || allImages.length < 2) return;
+                  const t = e.changedTouches[0];
+                  const dx = t.clientX - start.x;
+                  const dy = t.clientY - start.y;
+                  const absX = Math.abs(dx);
+                  const absY = Math.abs(dy);
+                  // Horizontal swipe: >40px and dominantly horizontal
+                  if (absX > 40 && absX > absY * 1.3) {
+                    if (dx < 0) goTo((activeIdx + 1) % allImages.length);
+                    else goTo((activeIdx - 1 + allImages.length) % allImages.length);
+                    didSwipe.current = true;
+                  }
+                  touchStart.current = null;
+                }}
               >
                 <AnimatePresence mode="wait">
                   <motion.div
@@ -158,6 +186,14 @@ export default function WatchDetailHero({ watch }: Props) {
                 <div className="absolute bottom-4 left-4 text-[10px] tracking-widest uppercase text-ivory opacity-90 tnum">
                   2121 · Paris
                 </div>
+                {/* Mobile swipe hint + counter */}
+                {allImages.length > 1 && (
+                  <div className="md:hidden absolute bottom-4 right-4 flex items-center gap-2 text-[10px] tracking-widest uppercase text-ivory/80">
+                    <span className="opacity-70">← Swipe →</span>
+                    <span className="opacity-50">·</span>
+                    <span className="tnum">{activeIdx + 1}/{allImages.length}</span>
+                  </div>
+                )}
                 {/* Zoom hint */}
                 <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 text-[9px] tracking-widest uppercase text-ivory/60 flex items-center gap-1">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" className="w-3 h-3">
