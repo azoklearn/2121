@@ -1,17 +1,8 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
 
 export default function Manifesto() {
-  const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"],
-  });
-  const imgY = useTransform(scrollYProgress, [0, 1], [-40, 60]);
-  const imgScale = useTransform(scrollYProgress, [0, 1], [1.05, 1.15]);
-
   return (
     <section
       id="story"
@@ -33,42 +24,9 @@ export default function Manifesto() {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-12 gap-6 md:gap-12" ref={ref}>
-          {/* Image */}
-          <div className="col-span-12 md:col-span-5">
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 1.6, ease: [0.16, 1, 0.3, 1] }}
-              className="relative aspect-[3/4] overflow-hidden bg-bone"
-            >
-              <motion.div
-                style={{ y: imgY, scale: imgScale }}
-                className="absolute inset-0 bg-cover bg-center"
-              >
-                <div
-                  className="h-full w-full bg-cover bg-center"
-                  style={{
-                    backgroundImage: "url('/watches/vacheron.jpg')",
-                  }}
-                />
-              </motion.div>
-              {/* Caption overlay */}
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-[9px] tracking-widest uppercase text-ivory">
-                <span>— Plate I</span>
-                <span>Atelier · 2026</span>
-              </div>
-            </motion.div>
-
-            <div className="mt-4 flex items-center gap-3 text-[10px] tracking-widest uppercase opacity-50">
-              <span className="h-px w-6 bg-ink/40" />
-              <span>Atelier 2121, 21 Rue de la Paix</span>
-            </div>
-          </div>
-
-          {/* Text */}
-          <div className="col-span-12 md:col-span-7 md:pl-12 lg:pl-20 mt-10 md:mt-0">
+        <div className="grid grid-cols-12 gap-6 md:gap-12">
+          {/* Text — full width now that the image is gone */}
+          <div className="col-span-12">
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
