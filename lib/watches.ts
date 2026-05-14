@@ -23,7 +23,7 @@ export const watches: Watch[] = [
     reference: "Réf. 14060M — 2 lignes",
     year: "Transition era",
     condition: "Excellent",
-    price: "On Request",
+    price: "11 500 €",
     image: "/montre/rolex/1.jpg",
     images: [
       "/montre/rolex/1.jpg",
@@ -55,7 +55,7 @@ export const watches: Watch[] = [
     reference: "Réf. 56175SP · 33 mm",
     year: "Vintage",
     condition: "Excellent",
-    price: "On Request",
+    price: "22 800 €",
     image: "/montre/ap/PHOTO-2026-05-13-12-38-39%20(3).jpg",
     images: [
       "/montre/ap/PHOTO-2026-05-13-12-38-39%20(3).jpg",
@@ -85,7 +85,7 @@ export const watches: Watch[] = [
     reference: "Manufacture — Or rose",
     year: "Contemporain",
     condition: "Excellent",
-    price: "Upon Inquiry",
+    price: "19 400 €",
     image: "/montre/breguet/1.jpg",
     images: [
       "/montre/breguet/1.jpg",
@@ -117,7 +117,7 @@ export const watches: Watch[] = [
     reference: "Réf. 5196 — Or blanc",
     year: "Contemporain",
     condition: "Très bon",
-    price: "Upon Inquiry",
+    price: "26 500 €",
     image: "/montre/patek/1.jpg",
     images: [
       "/montre/patek/1.jpg",
@@ -147,7 +147,7 @@ export const watches: Watch[] = [
     reference: "Années 1970 — Or jaune",
     year: "Vintage 1970s",
     condition: "Rare Dial",
-    price: "Upon Inquiry",
+    price: "17 200 €",
     image: "/montre/vacheron/1.jpg",
     images: [
       "/montre/vacheron/1.jpg",
@@ -176,7 +176,7 @@ export const watches: Watch[] = [
     reference: "Or jaune 18k — Bracelet alligator vert",
     year: "Vintage",
     condition: "Excellent",
-    price: "Upon Inquiry",
+    price: "6 800 €",
     image: "/montre/verte/1.jpg",
     images: [
       "/montre/verte/1.jpg",
