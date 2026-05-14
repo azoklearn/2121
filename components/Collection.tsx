@@ -78,10 +78,7 @@ export default function Collection() {
                   <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/12 transition-colors duration-700" />
 
                   {/* Top stamps */}
-                  <div className="absolute top-4 left-4 right-4 flex items-center justify-between text-[10px] tracking-widest uppercase text-ivory">
-                    <span className="opacity-90">
-                      No. {String(idx + 1).padStart(2, "0")}
-                    </span>
+                  <div className="absolute top-4 left-4 right-4 flex items-center justify-end text-[10px] tracking-widest uppercase text-ivory">
                     <span className="opacity-90 hidden md:inline">
                       {watch.condition}
                     </span>
