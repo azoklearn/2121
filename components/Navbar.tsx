@@ -34,8 +34,8 @@ export default function Navbar() {
     };
   }, [menuOpen, searchOpen]);
 
-  // Force scrolled style on sub-pages (no dark hero behind navbar)
-  const useLightStyle = !isHome || scrolled;
+  // Always use light style — no dark hero behind navbar anywhere
+  const useLightStyle = true;
 
   const linkHrefs = isHome
     ? ["#collection", "#story", "#services", "#contact"]
@@ -47,7 +47,7 @@ export default function Navbar() {
         initial={{ y: -40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-        className={`fixed top-8 md:top-9 left-0 right-0 z-50 transition-all duration-700 ease-out
+        className={`fixed top-11 md:top-14 left-0 right-0 z-50 transition-all duration-700 ease-out
           ${
             useLightStyle
               ? "bg-ivory/85 backdrop-blur-md text-ink border-b hairline"

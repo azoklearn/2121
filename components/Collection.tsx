@@ -12,7 +12,7 @@ export default function Collection() {
   return (
     <section
       id="collection"
-      className="relative bg-ivory text-ink py-16 md:py-36 border-t hairline"
+      className="relative bg-ivory text-ink pt-36 md:pt-52 pb-16 md:pb-36"
     >
       <div className="mx-auto px-6 md:px-10 max-w-[1600px]">
         {/* Header */}
