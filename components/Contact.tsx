@@ -41,13 +41,10 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="grid grid-cols-12 gap-6 mb-12 md:mb-20 text-[10px] tracking-widest uppercase opacity-50"
+          className="flex items-center justify-between gap-6 mb-12 md:mb-20 text-[10px] tracking-widest uppercase opacity-50"
         >
-          <div className="col-span-2 md:col-span-1">05</div>
-          <div className="col-span-10 md:col-span-7">— Private Appointment</div>
-          <div className="hidden md:block md:col-span-4 text-right">
-            Paris · Worldwide
-          </div>
+          <div>— Private Appointment</div>
+          <div className="hidden md:block">Paris · Worldwide</div>
         </motion.div>
 
         <div className="grid grid-cols-12 gap-12 md:gap-20">
@@ -99,10 +96,7 @@ export default function Contact() {
                   className="group relative flex items-center justify-between bg-ink py-6 md:py-8 px-1 hover:px-5 transition-all duration-700 ease-out"
                 >
                   <div className="flex items-center gap-6 md:gap-10 min-w-0">
-                    <span className="text-[10px] tracking-widest uppercase opacity-50 tnum w-6 shrink-0">
-                      0{idx + 1}
-                    </span>
-                    <span className="text-[10px] tracking-widest uppercase opacity-50 hidden md:inline w-24 shrink-0">
+                    <span className="text-[10px] tracking-widest uppercase opacity-50 w-24 shrink-0">
                       — {item.label}
                     </span>
                     <span className="text-base md:text-2xl tracking-tight font-light truncate">

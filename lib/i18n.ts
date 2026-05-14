@@ -42,8 +42,10 @@ export const translations = {
       price: "Prix",
       contactLabel: "Contacter sur WhatsApp",
       discuss: "Discutons de cette pièce",
+      emailLabel: "Écrire par email",
+      emailDiscuss: "private@2121.paris",
       disclaimer:
-        "Message pré-rempli — réponse sous 24h. Discrétion garantie.",
+        "Messages pré-remplis — réponse sous 24h. Discrétion garantie.",
       photo: "Photographiée à l'atelier — 21 Rue de la Paix",
       onePiece: "une pièce",
       wordOfHouse: "Le mot de la maison",
@@ -63,6 +65,10 @@ export const translations = {
     },
     whatsapp: (brand: string, model: string, ref: string) =>
       `Bonjour 2121, je suis intéressé par la ${brand} ${model} (${ref}). Pourriez-vous me communiquer plus d'informations — disponibilité, papiers, photos additionnelles, prix ?`,
+    emailSubject: (brand: string, model: string) =>
+      `2121 — Demande d'informations · ${brand} ${model}`,
+    emailBody: (brand: string, model: string, ref: string) =>
+      `Bonjour 2121,\n\nJe me permets de vous contacter au sujet de la ${brand} ${model} (${ref}) présentée sur votre site.\n\nPourriez-vous me communiquer:\n— la disponibilité actuelle de la pièce\n— les papiers et l'historique de provenance\n— des photos additionnelles si possible\n— les modalités de paiement et de livraison\n\nDans l'attente de votre retour,\nCordialement,`,
   },
   en: {
     navbar: {
@@ -104,8 +110,10 @@ export const translations = {
       price: "Price",
       contactLabel: "Contact on WhatsApp",
       discuss: "Let's discuss this piece",
+      emailLabel: "Write by email",
+      emailDiscuss: "private@2121.paris",
       disclaimer:
-        "Pre-filled message — reply within 24h. Discretion guaranteed.",
+        "Pre-filled messages — reply within 24h. Discretion guaranteed.",
       photo: "Photographed at the workshop — 21 Rue de la Paix",
       onePiece: "one piece",
       wordOfHouse: "From the house",
@@ -125,6 +133,10 @@ export const translations = {
     },
     whatsapp: (brand: string, model: string, ref: string) =>
       `Hello 2121, I am interested in the ${brand} ${model} (${ref}). Could you share more information — availability, papers, additional photos, price?`,
+    emailSubject: (brand: string, model: string) =>
+      `2121 — Information request · ${brand} ${model}`,
+    emailBody: (brand: string, model: string, ref: string) =>
+      `Hello 2121,\n\nI am writing about the ${brand} ${model} (${ref}) featured on your site.\n\nCould you please share:\n— current availability of the piece\n— papers and provenance history\n— additional photos if possible\n— payment and shipping terms\n\nLooking forward to your reply,\nBest regards,`,
   },
 } as const;
 

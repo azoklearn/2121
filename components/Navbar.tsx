@@ -159,11 +159,8 @@ export default function Navbar() {
                   <Link
                     href={linkHrefs[i]}
                     onClick={() => setMenuOpen(false)}
-                    className="group inline-flex items-baseline gap-4 md:gap-6 hover:opacity-60 transition-opacity duration-700"
+                    className="group inline-flex items-baseline hover:opacity-60 transition-opacity duration-700"
                   >
-                    <span className="text-[10px] tracking-widest uppercase opacity-40">
-                      0{i + 1}
-                    </span>
                     <span className="font-serif text-[10vw] md:text-[8.5vw] font-light tracking-tighter group-hover:italic transition-all duration-700">
                       {label}
                     </span>

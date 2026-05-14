@@ -32,6 +32,9 @@ export default function WatchDetailHero({ watch }: Props) {
 
   const message = t.whatsapp(watch.brand, watch.model, watch.reference);
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  const emailSubject = t.emailSubject(watch.brand, watch.model);
+  const emailBody = t.emailBody(watch.brand, watch.model, watch.reference);
+  const emailUrl = `mailto:${w.emailDiscuss}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
 
   // Reset zoom when changing image
   const resetZoom = useCallback(() => {
@@ -179,11 +182,7 @@ export default function WatchDetailHero({ watch }: Props) {
                     style={{ backgroundImage: `url('${allImages[activeIdx]}')` }}
                   />
                 </AnimatePresence>
-                <div className="absolute top-4 left-4 right-4 flex items-center justify-between text-[10px] tracking-widest uppercase text-ivory">
-                  <span>— Plate I</span>
-                  <span className="hidden md:inline">{watch.reference}</span>
-                </div>
-                <div className="absolute bottom-4 left-4 text-[10px] tracking-widest uppercase text-ivory opacity-90 tnum">
+                <div className="absolute bottom-4 left-4 text-[10px] tracking-widest uppercase text-ivory/90 tnum">
                   2121 · Paris
                 </div>
                 {/* Mobile swipe hint + counter */}
@@ -220,10 +219,6 @@ export default function WatchDetailHero({ watch }: Props) {
                 </div>
               )}
 
-              <div className="mt-3 flex items-center gap-3 text-[10px] tracking-widest uppercase opacity-40">
-                <span className="h-px w-6 bg-ink/40" />
-                <span>{w.photo}</span>
-              </div>
             </motion.div>
 
             {/* ── Info (7/12) ── */}
@@ -258,24 +253,44 @@ export default function WatchDetailHero({ watch }: Props) {
                 {watch.intro}
               </p>
 
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="group relative flex items-center justify-between gap-6 bg-ink text-ivory px-6 md:px-8 py-5 md:py-7 transition-all duration-700 hover:bg-ink-soft"
-              >
-                <div className="flex items-center gap-4 md:gap-5 min-w-0">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 md:h-6 md:w-6 shrink-0" aria-hidden>
-                    <path d="M20.5 12.5a8.5 8.5 0 0 1-12.7 7.4L3 21l1.1-4.7A8.5 8.5 0 1 1 20.5 12.5Z" />
-                    <path d="M8.5 9c.3 1.4 1.4 3.4 2.8 4.6 1.3 1.3 3.3 2.5 4.7 2.7.4.1.9 0 1.2-.4l.7-.9c.2-.3.1-.7-.2-.8l-1.6-1c-.3-.2-.7-.1-.9.2l-.5.6c-1.2-.4-2.4-1.2-3.1-1.9-.7-.7-1.6-1.9-2-3.2l.6-.5c.3-.2.4-.6.2-.9l-1-1.6c-.2-.3-.6-.4-.8-.2l-.9.7c-.4.3-.5.7-.4 1.2Z" />
-                  </svg>
-                  <div className="flex flex-col">
-                    <span className="text-[10px] tracking-wider md:tracking-widest uppercase opacity-70 whitespace-nowrap">{w.contactLabel}</span>
-                    <span className="text-[15px] md:text-lg font-light tracking-tight">{w.discuss}</span>
+              <div className="space-y-3">
+                {/* WhatsApp CTA */}
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group relative flex items-center justify-between gap-6 bg-ink text-ivory px-6 md:px-8 py-5 md:py-6 transition-all duration-700 hover:bg-ink-soft"
+                >
+                  <div className="flex items-center gap-4 md:gap-5 min-w-0">
+                    <svg viewBox="0 0 24 24" fill="#25D366" className="h-5 w-5 md:h-6 md:w-6 shrink-0" aria-hidden>
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+                    </svg>
+                    <div className="flex flex-col">
+                      <span className="text-[10px] tracking-wider md:tracking-widest uppercase opacity-70 whitespace-nowrap">{w.contactLabel}</span>
+                      <span className="text-[15px] md:text-lg font-light tracking-tight">{w.discuss}</span>
+                    </div>
                   </div>
-                </div>
-                <span className="text-lg opacity-80 transition-transform duration-500 group-hover:translate-x-1">↗</span>
-              </a>
+                  <span className="text-lg opacity-80 transition-transform duration-500 group-hover:translate-x-1">↗</span>
+                </a>
+
+                {/* Email CTA */}
+                <a
+                  href={emailUrl}
+                  className="group relative flex items-center justify-between gap-6 bg-ivory text-ink border hairline px-6 md:px-8 py-5 md:py-6 transition-all duration-700 hover:bg-bone"
+                >
+                  <div className="flex items-center gap-4 md:gap-5 min-w-0">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 md:h-6 md:w-6 shrink-0" aria-hidden>
+                      <rect x="3" y="5" width="18" height="14" rx="1.5" />
+                      <path d="m3.5 6.5 8 6.5a1 1 0 0 0 1.2 0l7.8-6.5" />
+                    </svg>
+                    <div className="flex flex-col">
+                      <span className="text-[10px] tracking-wider md:tracking-widest uppercase opacity-60 whitespace-nowrap">{w.emailLabel}</span>
+                      <span className="text-[15px] md:text-lg font-light tracking-tight">{w.emailDiscuss}</span>
+                    </div>
+                  </div>
+                  <span className="text-lg opacity-60 transition-transform duration-500 group-hover:translate-x-1">↗</span>
+                </a>
+              </div>
 
               <p className="mt-5 text-[11px] tracking-wider opacity-50 text-left leading-relaxed">{w.disclaimer}</p>
             </motion.div>

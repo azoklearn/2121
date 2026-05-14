@@ -15,13 +15,10 @@ export default function Manifesto() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="grid grid-cols-12 gap-6 mb-10 md:mb-32 text-[10px] tracking-widest uppercase opacity-60"
+          className="flex items-center justify-between gap-6 mb-10 md:mb-32 text-[10px] tracking-widest uppercase opacity-60"
         >
-          <div className="col-span-2 md:col-span-1">01</div>
-          <div className="col-span-10 md:col-span-7">— A Letter from Paris</div>
-          <div className="hidden md:block md:col-span-4 text-right">
-            Maison Privée · Depuis MMXXI
-          </div>
+          <div>— A Letter from Paris</div>
+          <div className="hidden md:block">Maison Privée · Depuis MMXXI</div>
         </motion.div>
 
         <div className="grid grid-cols-12 gap-6 md:gap-12">

@@ -45,13 +45,10 @@ export default function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="grid grid-cols-12 gap-6 mb-12 md:mb-20 text-[10px] tracking-widest uppercase opacity-60"
+          className="flex items-center justify-between gap-6 mb-12 md:mb-20 text-[10px] tracking-widest uppercase opacity-60"
         >
-          <div className="col-span-2 md:col-span-1">03</div>
-          <div className="col-span-10 md:col-span-7">— Services & Expérience</div>
-          <div className="hidden md:block md:col-span-4 text-right">
-            Bespoke · Confidential
-          </div>
+          <div>— Services & Expérience</div>
+          <div className="hidden md:block">Bespoke · Confidential</div>
         </motion.div>
 
         <motion.h2

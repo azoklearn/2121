@@ -21,13 +21,10 @@ export default function Collection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="grid grid-cols-12 gap-6 mb-10 md:mb-16 text-[10px] tracking-widest uppercase opacity-60"
+          className="flex items-center justify-between gap-6 mb-10 md:mb-16 text-[10px] tracking-widest uppercase opacity-60"
         >
-          <div className="col-span-2 md:col-span-1">01</div>
-          <div className="col-span-10 md:col-span-7">— {c.badge}</div>
-          <div className="hidden md:block md:col-span-4 text-right">
-            {c.updated}
-          </div>
+          <div>— {c.badge}</div>
+          <div className="hidden md:block">{c.updated}</div>
         </motion.div>
 
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 md:mb-24">
@@ -38,8 +35,7 @@ export default function Collection() {
             transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
             className="text-[clamp(2.5rem,7vw,6.5rem)] font-light leading-[0.95] tracking-tighter text-balance"
           >
-            {c.title}{" "}
-            <span className="font-serif italic">{c.titleItalic}</span>.
+            {c.title} {c.titleItalic}
           </motion.h2>
 
           <motion.p
