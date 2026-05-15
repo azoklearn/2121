@@ -55,8 +55,33 @@ export default function Navbar() {
           }`}
       >
         <div className="px-6 md:px-10 py-5 md:py-6 grid grid-cols-3 items-center">
-          {/* Left: Search */}
+          {/* Left: Hamburger */}
           <div className="flex items-center">
+            <button
+              onClick={() => setMenuOpen(true)}
+              aria-label={t.navbar.menuLabel}
+              className="group relative flex flex-col items-start justify-center h-10 w-12 md:h-11 md:w-14 gap-[5px] transition-transform duration-500 hover:scale-[1.03]"
+            >
+              <span className="block h-px w-7 md:w-8 bg-current transition-all duration-500 group-hover:w-9 md:group-hover:w-10" />
+              <span className="block h-px w-5 md:w-6 bg-current transition-all duration-500 group-hover:w-9 md:group-hover:w-10" />
+            </button>
+          </div>
+
+          {/* Center: Logo */}
+          <div className="flex items-center justify-center">
+            <Link href="/" className="group flex items-center justify-center">
+              <img
+                src="/logo.png"
+                alt="2121"
+                className={`h-20 w-auto md:h-24 object-contain transition-all duration-700 ${
+                  useLightStyle ? "" : "invert"
+                }`}
+              />
+            </Link>
+          </div>
+
+          {/* Right: Search */}
+          <div className="flex items-center justify-end">
             <button
               onClick={() => setSearchOpen(true)}
               aria-label={t.navbar.searchLabel}
@@ -76,31 +101,6 @@ export default function Navbar() {
                 <path d="m20 20-3.6-3.6" />
               </svg>
               <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 h-px w-0 bg-current transition-all duration-700 group-hover:w-5" />
-            </button>
-          </div>
-
-          {/* Center: Logo */}
-          <div className="flex items-center justify-center">
-            <Link href="/" className="group flex items-center justify-center">
-              <img
-                src="/logo.png"
-                alt="2121"
-                className={`h-20 w-auto md:h-24 object-contain transition-all duration-700 ${
-                  useLightStyle ? "" : "invert"
-                }`}
-              />
-            </Link>
-          </div>
-
-          {/* Right: Hamburger */}
-          <div className="flex items-center justify-end">
-            <button
-              onClick={() => setMenuOpen(true)}
-              aria-label={t.navbar.menuLabel}
-              className="group relative flex flex-col items-end justify-center h-10 w-12 md:h-11 md:w-14 gap-[5px] transition-transform duration-500 hover:scale-[1.03]"
-            >
-              <span className="block h-px w-7 md:w-8 bg-current transition-all duration-500 group-hover:w-9 md:group-hover:w-10" />
-              <span className="block h-px w-5 md:w-6 bg-current transition-all duration-500 group-hover:w-9 md:group-hover:w-10" />
             </button>
           </div>
         </div>
