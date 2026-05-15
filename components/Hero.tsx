@@ -40,7 +40,7 @@ export default function Hero() {
       {/* Foreground content */}
       <motion.div
         style={{ opacity: contentOpacity, y: contentY }}
-        className="relative h-full w-full px-6 md:px-10 flex items-end pb-16 md:pb-24"
+        className="relative h-full w-full px-6 md:px-10 flex items-end pb-8 md:pb-12"
       >
         <div className="max-w-[1600px] mx-auto w-full">
           {/* Eyebrow */}
