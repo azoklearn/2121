@@ -28,8 +28,8 @@ export const translations = {
     hero: {
       eyebrow: "— Maison Privée · Paris",
       titlePre: "Achat & vente de",
-      titleItalic: "montres de luxe",
-      titlePost: "d'occasion à Paris.",
+      titleItalic: "montres de collection",
+      titlePost: "à Paris.",
       description:
         "Spécialistes en horlogerie de collection. Chaque pièce de notre collection est soigneusement sourcée auprès de collectionneurs européens, expertisée puis confiée — dans la plus grande discrétion.",
       cta: "Découvrir la collection",
@@ -270,7 +270,7 @@ export const translations = {
     hero: {
       eyebrow: "— Private Maison · Paris",
       titlePre: "Buying & selling",
-      titleItalic: "pre-owned luxury watches",
+      titleItalic: "collectible watches",
       titlePost: "in Paris.",
       description:
         "Specialists in collectible horology. Every piece in our collection is carefully sourced from European collectors, appraised and then entrusted — with the utmost discretion.",
