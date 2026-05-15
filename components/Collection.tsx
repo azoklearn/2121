@@ -92,21 +92,20 @@ export default function Collection() {
                   </div>
                 </div>
 
-                {/* Caption */}
-                <div className="flex items-baseline justify-between gap-3">
-                  <div className="min-w-0">
-                    <div className="text-[9px] md:text-[10px] tracking-widest uppercase opacity-55 mb-1">
-                      {watch.brand}
-                    </div>
-                    <h3 className="text-base md:text-lg font-light tracking-tight leading-tight">
-                      <span className="font-serif italic mr-1">—</span>
-                      {watch.model}
-                    </h3>
-                    <div className="text-[10px] md:text-[11px] opacity-55 mt-1 truncate">
-                      {watch.reference}
-                    </div>
-                  </div>
-                  <div className="text-right shrink-0 italic font-serif text-[12px] md:text-[13px] opacity-70">
+                {/* Caption — serif centered, auction-house style */}
+                <div className="text-center px-2 mt-2">
+                  {(() => {
+                    const year = watch.specs?.Année;
+                    const yearPrefix =
+                      year && /^\d{4}$/.test(year) ? `${year} ` : "";
+                    const title = `${yearPrefix}${watch.brand} ${watch.model} ${watch.reference}`;
+                    return (
+                      <h3 className="font-serif text-[12px] md:text-[14px] tracking-[0.08em] uppercase leading-[1.5] text-ink/90 text-balance">
+                        {title}
+                      </h3>
+                    );
+                  })()}
+                  <div className="font-serif text-[13px] md:text-[15px] text-ink/65 mt-2 md:mt-3 tracking-tight">
                     {watch.price}
                   </div>
                 </div>
