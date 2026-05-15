@@ -78,7 +78,7 @@ export default function Navbar() {
                 }`}
               />
               <span
-                className="font-serif italic text-[10px] md:text-[11px] tracking-[0.18em] -mt-1 md:-mt-1.5 opacity-70 select-none"
+                className="font-serif italic text-[13px] md:text-[15px] tracking-[0.2em] -mt-1 md:-mt-1.5 opacity-75 select-none"
               >
                 collection
               </span>
