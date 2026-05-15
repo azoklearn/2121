@@ -23,8 +23,8 @@ export const translations = {
     collection: {
       badge: "Nos Montres",
       updated: "Mis à jour chaque semaine",
-      title: "Nos",
-      titleItalic: "montres",
+      title: "Collection",
+      titleItalic: "",
       subtitle:
         "Une sélection silencieuse — sourcée pièce par pièce, à travers nos réseaux privés en Europe et au-delà.",
       hoverView: "— Voir la pièce",
@@ -91,8 +91,8 @@ export const translations = {
     collection: {
       badge: "Our Watches",
       updated: "Updated weekly",
-      title: "Our",
-      titleItalic: "watches",
+      title: "Collection",
+      titleItalic: "",
       subtitle:
         "A silent selection — sourced piece by piece, through our private networks across Europe and beyond.",
       hoverView: "— View the piece",
