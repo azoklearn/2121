@@ -144,7 +144,7 @@ export default function WatchDetailHero({ watch }: Props) {
             >
               {/* Main image */}
               <div
-                className="relative aspect-[3/4] overflow-hidden bg-bone cursor-zoom-in touch-pan-y select-none"
+                className="group relative aspect-[3/4] overflow-hidden bg-bone cursor-zoom-in touch-pan-y select-none"
                 onClick={() => {
                   if (didSwipe.current) { didSwipe.current = false; return; }
                   setZoomOpen(true);
@@ -193,12 +193,13 @@ export default function WatchDetailHero({ watch }: Props) {
                     <span className="tnum">{activeIdx + 1}/{allImages.length}</span>
                   </div>
                 )}
-                {/* Zoom hint */}
-                <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 text-[9px] tracking-widest uppercase text-ivory/60 flex items-center gap-1">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" className="w-3 h-3">
-                    <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M11 8v6M8 11h6"/>
-                  </svg>
-                  Zoom
+                {/* Zoom indicator — white circle with "+" */}
+                <div className="absolute top-4 right-4 pointer-events-none">
+                  <div className="flex items-center justify-center h-9 w-9 md:h-10 md:w-10 rounded-full bg-ivory/90 backdrop-blur-sm shadow-sm transition-all duration-500 group-hover:scale-110 group-hover:bg-ivory">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" strokeWidth="1.5" strokeLinecap="round" className="h-4 w-4 md:h-[18px] md:w-[18px]" aria-hidden>
+                      <path d="M12 5v14M5 12h14" />
+                    </svg>
+                  </div>
                 </div>
               </div>
 
