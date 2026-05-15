@@ -28,7 +28,7 @@ export const translations = {
     collection: {
       badge: "Collection",
       updated: "Mise à jour chaque semaine",
-      title: "Collection",
+      title: "Nos montres",
       titleItalic: "",
       subtitle:
         "Une sélection silencieuse — sourcée pièce par pièce, à travers nos réseaux privés en Europe et au-delà.",
@@ -252,7 +252,7 @@ export const translations = {
     collection: {
       badge: "Collection",
       updated: "Updated weekly",
-      title: "Collection",
+      title: "Our watches",
       titleItalic: "",
       subtitle:
         "A silent selection — sourced piece by piece, through our private networks across Europe and beyond.",
