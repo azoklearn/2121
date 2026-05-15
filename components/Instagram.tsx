@@ -41,7 +41,7 @@ export default function Instagram() {
             <span className="font-serif italic">@2121</span>collection
           </motion.h2>
           <a
-            href="https://instagram.com"
+            href="https://instagram.com/2121collection"
             target="_blank"
             rel="noreferrer"
             className="group inline-flex items-center gap-3 text-[11px] tracking-widest uppercase border-b border-ink/40 pb-2 hover:border-ink transition-colors duration-700 self-start md:self-auto"
@@ -51,11 +51,11 @@ export default function Instagram() {
           </a>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-px bg-ink/15">
-          {ig.items.map((item, idx) => (
+        <div className="grid grid-cols-3 gap-px bg-ink/15">
+          {ig.items.slice(0, 3).map((item, idx) => (
             <motion.a
               key={idx}
-              href="https://instagram.com"
+              href="https://instagram.com/2121collection"
               target="_blank"
               rel="noreferrer"
               initial={{ opacity: 0, y: 30 }}

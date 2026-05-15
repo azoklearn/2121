@@ -42,6 +42,10 @@ export const translations = {
       subtitle:
         "Une sélection silencieuse — sourcée pièce par pièce, à travers nos réseaux privés en Europe et au-delà.",
       hoverView: "— Voir la pièce",
+      ctaTitle: "Une pièce vous intéresse ?",
+      ctaSubtitle: "Discutons-en — réponse sous 24 heures, dans la plus grande discrétion.",
+      ctaButton: "Contacter sur WhatsApp",
+      ctaNote: "Message pré-rempli · Réponse < 24h",
     },
     watch: {
       back: "Retour à la collection",
@@ -143,13 +147,13 @@ export const translations = {
         {
           label: "Instagram",
           value: "@2121collection",
-          link: "https://instagram.com",
+          link: "https://instagram.com/2121collection",
           note: "Dernières arrivées",
         },
         {
           label: "Threads",
           value: "@2121collection",
-          link: "https://threads.net",
+          link: "https://threads.net/@2121collection",
           note: "Journal de l'atelier",
         },
         {
@@ -222,6 +226,11 @@ export const translations = {
       phone: "+33 (0)6 21 21 21 21",
       hours: "Paris · Réponse < 24h",
     },
+    bottomNav: {
+      collection: "Collection",
+      maison: "Maison",
+      contact: "Contact",
+    },
     loader: {
       brand: "Collection 2121",
       loading: "Chargement",
@@ -275,6 +284,10 @@ export const translations = {
       subtitle:
         "A silent selection — sourced piece by piece, through our private networks across Europe and beyond.",
       hoverView: "— View the piece",
+      ctaTitle: "A piece caught your eye?",
+      ctaSubtitle: "Let's talk — reply within 24 hours, with the utmost discretion.",
+      ctaButton: "Reach us on WhatsApp",
+      ctaNote: "Pre-filled message · Reply < 24h",
     },
     watch: {
       back: "Back to collection",
@@ -376,13 +389,13 @@ export const translations = {
         {
           label: "Instagram",
           value: "@2121collection",
-          link: "https://instagram.com",
+          link: "https://instagram.com/2121collection",
           note: "Latest pieces",
         },
         {
           label: "Threads",
           value: "@2121collection",
-          link: "https://threads.net",
+          link: "https://threads.net/@2121collection",
           note: "Atelier journal",
         },
         {
@@ -454,6 +467,11 @@ export const translations = {
       cta: "Reach us on WhatsApp",
       phone: "+33 (0)6 21 21 21 21",
       hours: "Paris · Reply < 24h",
+    },
+    bottomNav: {
+      collection: "Collection",
+      maison: "Maison",
+      contact: "Contact",
     },
     loader: {
       brand: "Collection 2121",

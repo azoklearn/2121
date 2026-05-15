@@ -48,14 +48,14 @@ export default function Services() {
                 delay: idx * 0.08,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="bg-ivory p-7 md:p-10 lg:p-12 group min-h-0 md:min-h-[420px] flex flex-col justify-between transition-colors duration-700 hover:bg-ivory-soft"
+              className="bg-ivory p-7 md:p-10 lg:p-12 min-h-0 md:min-h-[420px] flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between mb-7 md:mb-16">
                   <span className="text-[10px] tracking-widest uppercase opacity-50">
                     — {service.id}
                   </span>
-                  <span className="block w-3 h-px bg-ink/40 transition-all duration-700 group-hover:w-8" />
+                  <span className="block w-3 h-px bg-ink/40" />
                 </div>
                 <h3 className="text-2xl md:text-[28px] font-light tracking-tight leading-[1.1] mb-8">
                   {service.title}
@@ -65,12 +65,9 @@ export default function Services() {
                 </p>
               </div>
 
-              <div className="mt-7 md:mt-12 pt-5 md:pt-6 border-t hairline flex items-center justify-between text-[10px] tracking-widest uppercase">
-                <span className="opacity-60 italic font-serif text-[12px] tracking-normal">
+              <div className="mt-7 md:mt-12 pt-5 md:pt-6 border-t hairline">
+                <span className="text-[10px] tracking-widest uppercase opacity-60 italic font-serif text-[12px] tracking-normal">
                   {service.detail}
-                </span>
-                <span className="opacity-50 transition-transform duration-500 group-hover:translate-x-1">
-                  ↗
                 </span>
               </div>
             </motion.article>

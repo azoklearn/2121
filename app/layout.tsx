@@ -3,6 +3,7 @@ import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import TopBanner from "@/components/TopBanner";
+import BottomNav from "@/components/BottomNav";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://2121.paris"),
@@ -48,6 +49,7 @@ export default function RootLayout({
         <LanguageProvider>
           <TopBanner />
           <SmoothScroll>{children}</SmoothScroll>
+          <BottomNav />
         </LanguageProvider>
       </body>
     </html>

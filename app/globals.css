@@ -39,6 +39,31 @@
     color: var(--ivory);
   }
 
+  /* Mobile tap feedback — remove blue flash, add subtle press state */
+  a,
+  button,
+  [role="button"] {
+    -webkit-tap-highlight-color: transparent;
+    transition-property: transform, opacity, background-color, color, border-color;
+    transition-duration: 150ms;
+    transition-timing-function: ease-out;
+  }
+  a:active,
+  button:active,
+  [role="button"]:active {
+    transform: scale(0.98);
+    opacity: 0.85;
+  }
+
+  /* Honour reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    a:active,
+    button:active,
+    [role="button"]:active {
+      transform: none;
+    }
+  }
+
   ::-webkit-scrollbar {
     width: 0px;
     background: transparent;

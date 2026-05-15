@@ -42,8 +42,8 @@ export default function Footer() {
               {f.connect}
             </div>
             <ul className="space-y-3 text-[13px] tracking-tight">
-              <li><a href="https://instagram.com" className="hover:opacity-50 transition-opacity duration-500">Instagram ↗</a></li>
-              <li><a href="https://threads.net" className="hover:opacity-50 transition-opacity duration-500">Threads ↗</a></li>
+              <li><a href="https://instagram.com/2121collection" className="hover:opacity-50 transition-opacity duration-500">Instagram ↗</a></li>
+              <li><a href="https://threads.net/@2121collection" className="hover:opacity-50 transition-opacity duration-500">Threads ↗</a></li>
               <li><a href="https://wa.me/33621212121" className="hover:opacity-50 transition-opacity duration-500">WhatsApp ↗</a></li>
               <li><a href="mailto:private@2121.paris" className="hover:opacity-50 transition-opacity duration-500">Email ↗</a></li>
             </ul>
@@ -110,9 +110,9 @@ export default function Footer() {
         <div className="mt-10 md:mt-14 grid grid-cols-12 gap-6 text-[10px] tracking-widest uppercase opacity-60">
           <div className="col-span-6 md:col-span-3">© MMXXVI 2121</div>
           <div className="col-span-6 md:col-span-3 md:text-center">
-            <a href="#" className="hover:opacity-60">{f.legal}</a>
+            <a href="/mentions-legales" className="hover:opacity-60">{f.legal}</a>
             <span className="mx-2 opacity-40">·</span>
-            <a href="#" className="hover:opacity-60">{f.privacy}</a>
+            <a href="/privacy" className="hover:opacity-60">{f.privacy}</a>
           </div>
           <div className="hidden md:block md:col-span-3 text-center italic font-serif tracking-normal text-[12px] opacity-80">
             {f.builtIn}

@@ -47,7 +47,7 @@ export default function Navbar() {
         initial={{ y: -40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-        className={`fixed top-11 md:top-14 left-0 right-0 z-50 transition-all duration-700 ease-out
+        className={`fixed top-12 md:top-14 left-0 right-0 z-50 transition-all duration-700 ease-out
           ${
             useLightStyle
               ? "bg-ivory/85 backdrop-blur-md text-ink border-b hairline"
@@ -231,7 +231,7 @@ export default function Navbar() {
                 <div>
                   <div className="opacity-60 mb-2">{t.navbar.menuInstagram}</div>
                   <a
-                    href="https://instagram.com"
+                    href="https://instagram.com/2121collection"
                     className="font-serif italic normal-case tracking-normal text-[12px] hover:opacity-100"
                   >
                     @2121collection

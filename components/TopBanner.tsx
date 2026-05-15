@@ -14,7 +14,7 @@ export default function TopBanner() {
       className="group fixed top-0 left-0 right-0 z-[55] bg-ink text-ivory border-b hairline-light hover:bg-ink-soft transition-colors duration-500"
       aria-label={b.cta}
     >
-      <div className="px-4 md:px-10 h-11 md:h-14 flex items-center justify-center md:justify-between text-[11px] md:text-[13px] tracking-widest uppercase">
+      <div className="px-4 md:px-10 h-12 md:h-14 flex items-center justify-center md:justify-between text-[11px] md:text-[13px] tracking-widest uppercase">
         {/* Left — label (desktop only) */}
         <span className="hidden md:flex items-center gap-3 opacity-60">
           <span className="relative flex h-1.5 w-1.5">
