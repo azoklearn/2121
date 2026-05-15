@@ -242,15 +242,24 @@ export default function WatchDetailHero({ watch }: Props) {
                 <span className="font-serif italic mr-2">—</span>{watch.model}
               </h1>
 
-              {/* 1️⃣ Reference + Price */}
-              <div className="flex items-baseline justify-between gap-4 border-y hairline py-5 md:py-6 mb-8 md:mb-12">
-                <div className="min-w-0">
-                  <div className="text-[9px] md:text-[10px] tracking-widest uppercase opacity-50 mb-1.5">{w.year} · {watchYear}</div>
-                  <div className="text-[14px] md:text-base font-light tracking-tight truncate">{watchReference}</div>
+              {/* 1️⃣ Reference, then price below */}
+              <div className="border-y hairline py-5 md:py-6 mb-8 md:mb-12 space-y-5 md:space-y-6">
+                <div>
+                  <div className="text-[9px] md:text-[10px] tracking-widest uppercase opacity-50 mb-1.5">
+                    {/* Reference label */}
+                    {lang === "fr" ? "Référence" : "Reference"} · {watchYear}
+                  </div>
+                  <div className="text-[15px] md:text-lg font-light tracking-tight">
+                    {watchReference}
+                  </div>
                 </div>
-                <div className="text-right shrink-0">
-                  <div className="text-[9px] md:text-[10px] tracking-widest uppercase opacity-50 mb-1.5">{w.price}</div>
-                  <div className="font-serif italic text-[18px] md:text-2xl tracking-tight leading-none">{watch.price}</div>
+                <div>
+                  <div className="text-[9px] md:text-[10px] tracking-widest uppercase opacity-50 mb-1.5">
+                    {w.price}
+                  </div>
+                  <div className="font-serif italic text-2xl md:text-3xl tracking-tight leading-none">
+                    {watch.price}
+                  </div>
                 </div>
               </div>
 
