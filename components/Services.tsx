@@ -1,39 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-const services = [
-  {
-    id: "01",
-    title: "Sourcing Privé",
-    description:
-      "Une recherche silencieuse de pièces rares à travers nos réseaux de collectionneurs en Europe, en Asie et aux Amériques.",
-    detail: "Worldwide Network",
-  },
-  {
-    id: "02",
-    title: "Authenticité Garantie",
-    description:
-      "Chaque montre est expertisée selon les protocoles d'horlogerie les plus rigoureux avant d'entrer dans la collection.",
-    detail: "Master Watchmakers",
-  },
-  {
-    id: "03",
-    title: "Livraison Internationale",
-    description:
-      "Transport assuré, douane gérée. De Paris vers le monde, dans une discrétion absolue et une sécurité totale.",
-    detail: "Insured & Tracked",
-  },
-  {
-    id: "04",
-    title: "Conciergerie Privée",
-    description:
-      "Accompagnement sur rendez-vous : conseil, négociation, archivage. La relation, avant la transaction.",
-    detail: "By Appointment",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Services() {
+  const { t } = useLanguage();
+  const s = t.services;
+
   return (
     <section
       id="services"
@@ -47,8 +20,8 @@ export default function Services() {
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           className="flex items-center justify-between gap-6 mb-12 md:mb-20 text-[10px] tracking-widest uppercase opacity-60"
         >
-          <div>— Services & Expérience</div>
-          <div className="hidden md:block">Bespoke · Confidential</div>
+          <div>{s.badge}</div>
+          <div className="hidden md:block">{s.headerRight}</div>
         </motion.div>
 
         <motion.h2
@@ -58,14 +31,13 @@ export default function Services() {
           transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
           className="text-[clamp(2.5rem,6.4vw,6.4rem)] font-light leading-[0.98] tracking-tighter mb-12 md:mb-28 max-w-4xl text-balance"
         >
-          Une approche{" "}
-          <span className="font-serif italic">discrète</span>,
-          <br />
-          de bout en bout.
+          {s.titlePre}{" "}
+          <span className="font-serif italic">{s.titleItalic}</span>
+          {s.titlePost}
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-ink/15">
-          {services.map((service, idx) => (
+          {s.items.map((service, idx) => (
             <motion.article
               key={service.id}
               initial={{ opacity: 0, y: 40 }}

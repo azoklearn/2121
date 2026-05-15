@@ -2,12 +2,15 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const MIN_LOADER_TIME = 1350;
 const MAX_LOADER_TIME = 2400;
 
 export default function Loader() {
   const [visible, setVisible] = useState(true);
+  const { t } = useLanguage();
+  const l = t.loader;
 
   useEffect(() => {
     const startedAt = window.performance.now();
@@ -99,17 +102,17 @@ export default function Loader() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-[10px] uppercase tracking-[0.42em]"
             >
-              Collection 2121
+              {l.brand}
             </motion.div>
           </motion.div>
 
           <div className="absolute bottom-6 left-6 right-6 z-10 flex items-center justify-between text-[9px] uppercase tracking-[0.28em] text-ivory/35 md:left-10 md:right-10">
-            <span>Paris</span>
+            <span>{l.city}</span>
             <motion.span
               animate={{ opacity: [0.35, 0.9, 0.35] }}
               transition={{ duration: 1.4, repeat: Infinity, ease: "easeInOut" }}
             >
-              Loading
+              {l.loading}
             </motion.span>
           </div>
 

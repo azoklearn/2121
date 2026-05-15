@@ -48,7 +48,7 @@ export default function TopBanner() {
 
         {/* Right — Paris timestamp (desktop only) */}
         <span className="hidden md:inline opacity-50 italic font-serif normal-case tracking-normal text-[12px]">
-          Paris · Réponse &lt; 24h
+          {b.hours}
         </span>
       </div>
     </a>

@@ -188,7 +188,7 @@ export default function WatchDetailHero({ watch }: Props) {
                 {/* Mobile swipe hint + counter */}
                 {allImages.length > 1 && (
                   <div className="md:hidden absolute bottom-4 right-4 flex items-center gap-2 text-[10px] tracking-widest uppercase text-ivory/80">
-                    <span className="opacity-70">← Swipe →</span>
+                    <span className="opacity-70">{w.swipeHint}</span>
                     <span className="opacity-50">·</span>
                     <span className="tnum">{activeIdx + 1}/{allImages.length}</span>
                   </div>
@@ -350,7 +350,7 @@ export default function WatchDetailHero({ watch }: Props) {
               onClick={() => { setZoomOpen(false); resetZoom(); }}
               className="absolute top-5 right-5 z-10 text-ivory/50 hover:text-ivory transition-colors duration-300 text-[10px] tracking-widest uppercase flex items-center gap-2.5"
             >
-              Fermer
+              {w.lightboxClose}
               <span className="relative inline-block w-4 h-4">
                 <span className="absolute inset-0 flex items-center justify-center">
                   <span className="block w-4 h-px bg-current rotate-45 absolute" />
@@ -373,7 +373,7 @@ export default function WatchDetailHero({ watch }: Props) {
             {/* Hint */}
             {zoom === 1 && (
               <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-ivory/25 text-[9px] tracking-widest uppercase text-center leading-relaxed pointer-events-none">
-                Scroll ou pincer pour zoomer · Double-clic pour agrandir
+                {w.lightboxHint}
               </div>
             )}
 

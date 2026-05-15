@@ -3,8 +3,11 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function VideoSection() {
+  const { t } = useLanguage();
+  const v = t.videoSection;
   const sectionRef = useRef<HTMLElement>(null);
   const stickyRef = useRef<HTMLDivElement>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
@@ -102,12 +105,9 @@ export default function VideoSection() {
       className="relative w-full bg-ivory text-ink"
     >
       {/* Section overline (sits above the sticky frame) */}
-      <div className="absolute top-0 left-0 right-0 z-20 px-6 md:px-10 pt-10 md:pt-14 grid grid-cols-12 gap-6 text-[10px] tracking-widest uppercase opacity-60 pointer-events-none">
-        <div className="col-span-2 md:col-span-1">04</div>
-        <div className="col-span-10 md:col-span-7">— Maison in Motion</div>
-        <div className="hidden md:block md:col-span-4 text-right">
-          Paris · Cinematic
-        </div>
+      <div className="absolute top-0 left-0 right-0 z-20 px-6 md:px-10 pt-10 md:pt-14 flex items-center justify-between text-[10px] tracking-widest uppercase opacity-60 pointer-events-none">
+        <div>{v.badge}</div>
+        <div className="hidden md:block">{v.headerRight}</div>
       </div>
 
       <div
@@ -121,11 +121,11 @@ export default function VideoSection() {
         >
           <div className="text-[10px] tracking-widest uppercase opacity-50 mb-3 flex items-center gap-3">
             <span className="h-px w-6 bg-ink/40" />
-            Scroll to enter
+            {v.scrollHint}
             <span className="h-px w-6 bg-ink/40" />
           </div>
           <p className="font-serif italic text-lg md:text-xl opacity-70">
-            Press play on the maison.
+            {v.pressPlay}
           </p>
         </div>
 
@@ -161,28 +161,26 @@ export default function VideoSection() {
           >
             <div className="text-[10px] tracking-widest uppercase opacity-70 mb-6 md:mb-10 flex items-center gap-3">
               <span className="h-px w-8 bg-ivory/60" />
-              An Interlude
+              {v.interlude}
               <span className="h-px w-8 bg-ivory/60" />
             </div>
             <h2 className="font-serif font-light leading-[0.92] tracking-tight text-[clamp(3rem,11vw,11rem)]">
-              Time, <span className="italic">in motion</span>.
+              {v.h2Pre} <span className="italic">{v.h2Italic}</span>{v.h2End}
             </h2>
-            <p className="mt-8 md:mt-12 max-w-md text-[14px] md:text-[15px] leading-[1.75] opacity-80">
-              Behind every piece, an atelier that never stops.
-              <br />
-              Behind every transaction, a story still being written.
+            <p className="mt-8 md:mt-12 max-w-md text-[14px] md:text-[15px] leading-[1.75] opacity-80 whitespace-pre-line">
+              {v.tagline}
             </p>
           </div>
 
           {/* Corner credits inside the frame */}
           <div className="absolute top-4 md:top-6 left-4 md:left-6 right-4 md:right-6 z-10 flex items-center justify-between text-[9px] md:text-[10px] tracking-widest uppercase text-ivory/70 pointer-events-none">
-            <span>— Maison 2121</span>
-            <span>Plate V · Pexels</span>
+            <span>{v.signature}</span>
+            <span>Plate V</span>
           </div>
           <div className="absolute bottom-4 md:bottom-6 left-4 md:left-6 right-4 md:right-6 z-10 flex items-center justify-between text-[9px] md:text-[10px] tracking-widest uppercase text-ivory/70 pointer-events-none">
             <span className="tnum">48.8566° N · 2.3522° E</span>
             <span className="hidden md:inline font-serif italic tracking-normal text-[12px]">
-              en mouvement
+              {v.cornerCaption}
             </span>
             <span>MMXXVI</span>
           </div>

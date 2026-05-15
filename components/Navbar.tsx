@@ -128,7 +128,7 @@ export default function Navbar() {
                   className="h-10 w-10 md:h-11 md:w-11 object-contain invert"
                 />
                 <span className="hidden md:inline text-[10px] tracking-widest uppercase opacity-50 leading-none">
-                  · Maison Privée
+                  {t.navbar.menuMaison}
                 </span>
               </Link>
               <button
@@ -179,7 +179,7 @@ export default function Navbar() {
               {/* Language switcher */}
               <div className="flex items-center gap-5 px-6 md:px-10 pt-5 pb-4">
                 <span className="text-[10px] tracking-widest uppercase opacity-40">
-                  — Langue
+                  {t.navbar.menuLanguage}
                 </span>
                 <div className="flex items-center gap-0">
                   <button
@@ -209,13 +209,13 @@ export default function Navbar() {
               {/* Contacts strip */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 px-6 md:px-10 py-5 md:py-7 text-[10px] tracking-widest uppercase opacity-60">
                 <div>
-                  <div className="opacity-60 mb-2">— Paris</div>
+                  <div className="opacity-60 mb-2">{t.navbar.menuParis}</div>
                   <div className="font-serif italic normal-case tracking-normal text-[12px]">
                     21, Rue de la Paix
                   </div>
                 </div>
                 <div>
-                  <div className="opacity-60 mb-2">— WhatsApp</div>
+                  <div className="opacity-60 mb-2">{t.navbar.menuWhatsApp}</div>
                   <a
                     href="https://wa.me/33621212121"
                     className="font-serif italic normal-case tracking-normal text-[12px] hover:opacity-100"
@@ -224,7 +224,7 @@ export default function Navbar() {
                   </a>
                 </div>
                 <div>
-                  <div className="opacity-60 mb-2">— Instagram</div>
+                  <div className="opacity-60 mb-2">{t.navbar.menuInstagram}</div>
                   <a
                     href="https://instagram.com"
                     className="font-serif italic normal-case tracking-normal text-[12px] hover:opacity-100"
@@ -233,7 +233,7 @@ export default function Navbar() {
                   </a>
                 </div>
                 <div className="md:text-right">
-                  <div className="opacity-60 mb-2">— Coordonnées</div>
+                  <div className="opacity-60 mb-2">{t.navbar.menuCoords}</div>
                   <div className="tnum normal-case tracking-normal text-[11px]">
                     48.85° N · 2.35° E
                   </div>

@@ -1,35 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-const channels = [
-  {
-    label: "WhatsApp",
-    value: "+33 (0)6 21 21 21 21",
-    link: "https://wa.me/33621212121",
-    note: "Réponse < 24h",
-  },
-  {
-    label: "Instagram",
-    value: "@2121collection",
-    link: "https://instagram.com",
-    note: "Latest pieces",
-  },
-  {
-    label: "Threads",
-    value: "@2121collection",
-    link: "https://threads.net",
-    note: "Atelier journal",
-  },
-  {
-    label: "Email",
-    value: "private@2121.paris",
-    link: "mailto:private@2121.paris",
-    note: "Discreet inquiry",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Contact() {
+  const { t } = useLanguage();
+  const c = t.contact;
+
   return (
     <section
       id="contact"
@@ -43,8 +20,8 @@ export default function Contact() {
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           className="flex items-center justify-between gap-6 mb-12 md:mb-20 text-[10px] tracking-widest uppercase opacity-50"
         >
-          <div>— Private Appointment</div>
-          <div className="hidden md:block">Paris · Worldwide</div>
+          <div>{c.badge}</div>
+          <div className="hidden md:block">{c.headerRight}</div>
         </motion.div>
 
         <div className="grid grid-cols-12 gap-12 md:gap-20">
@@ -57,29 +34,23 @@ export default function Contact() {
               transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
               className="text-[clamp(2.5rem,7.4vw,7.6rem)] font-light leading-[0.95] tracking-tighter mb-12 text-balance"
             >
-              For a <span className="font-serif italic">private</span>
-              <br />
-              consultation.
+              {c.h2Pre}{" "}
+              <span className="font-serif italic">{c.h2Italic}</span>
+              {c.h2Post}
             </motion.h2>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{
-                duration: 1.2,
-                delay: 0.2,
-                ease: [0.16, 1, 0.3, 1],
-              }}
+              transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="text-[15px] md:text-base leading-[1.75] text-ivory/70 max-w-md mb-8 md:mb-24"
             >
-              Our maison is open by appointment only. Reach us through the
-              discreet channel of your choice — we respond within twenty-four
-              hours.
+              {c.description}
             </motion.p>
 
             <div className="space-y-px bg-ivory/15">
-              {channels.map((item, idx) => (
+              {c.channels.map((item, idx) => (
                 <motion.a
                   key={item.label}
                   href={item.link}
@@ -88,11 +59,7 @@ export default function Contact() {
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
-                  transition={{
-                    duration: 1,
-                    delay: idx * 0.08,
-                    ease: [0.16, 1, 0.3, 1],
-                  }}
+                  transition={{ duration: 1, delay: idx * 0.08, ease: [0.16, 1, 0.3, 1] }}
                   className="group relative flex items-center justify-between bg-ink py-6 md:py-8 px-1 hover:px-5 transition-all duration-700 ease-out"
                 >
                   <div className="flex items-center gap-6 md:gap-10 min-w-0">
@@ -127,14 +94,15 @@ export default function Contact() {
               >
                 <div className="text-[10px] tracking-widest uppercase opacity-50 mb-4 flex items-center gap-3">
                   <span className="h-px w-6 bg-ivory/40" />
-                  Address
+                  {c.addressLabel}
                 </div>
                 <p className="text-base md:text-lg font-light leading-[1.55]">
-                  21, Rue de la Paix
-                  <br />
-                  75002 Paris
-                  <br />
-                  <span className="opacity-60">France</span>
+                  {c.addressLines.map((l, i) => (
+                    <span key={i} className={i === c.addressLines.length - 1 ? "opacity-60" : ""}>
+                      {l}
+                      {i < c.addressLines.length - 1 && <br />}
+                    </span>
+                  ))}
                 </p>
               </motion.div>
 
@@ -142,24 +110,19 @@ export default function Contact() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
-                transition={{
-                  duration: 1.2,
-                  delay: 0.15,
-                  ease: [0.16, 1, 0.3, 1],
-                }}
+                transition={{ duration: 1.2, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
               >
                 <div className="text-[10px] tracking-widest uppercase opacity-50 mb-4 flex items-center gap-3">
                   <span className="h-px w-6 bg-ivory/40" />
-                  Hours
+                  {c.hoursLabel}
                 </div>
                 <p className="text-base md:text-lg font-light leading-[1.55]">
-                  Tuesday — Saturday
-                  <br />
-                  11h00 — 19h00
-                  <br />
-                  <span className="opacity-60 italic font-serif">
-                    By appointment only
-                  </span>
+                  {c.hoursLines.map((l, i) => (
+                    <span key={i} className={i === c.hoursLines.length - 1 ? "opacity-60 italic font-serif" : ""}>
+                      {l}
+                      {i < c.hoursLines.length - 1 && <br />}
+                    </span>
+                  ))}
                 </p>
               </motion.div>
 
@@ -167,22 +130,16 @@ export default function Contact() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
-                transition={{
-                  duration: 1.2,
-                  delay: 0.3,
-                  ease: [0.16, 1, 0.3, 1],
-                }}
+                transition={{ duration: 1.2, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
               >
                 <div className="text-[10px] tracking-widest uppercase opacity-50 mb-4 flex items-center gap-3">
                   <span className="h-px w-6 bg-ivory/40" />
-                  Coordinates
+                  {c.coordsLabel}
                 </div>
                 <p className="text-base md:text-lg font-light leading-[1.55] tnum">
-                  48.8693° N
+                  {c.coordsValue}
                   <br />
-                  2.3318° E
-                  <br />
-                  <span className="opacity-60 text-sm">— Place Vendôme Quarter</span>
+                  <span className="opacity-60 text-sm">{c.coordsExtra}</span>
                 </p>
               </motion.div>
             </div>
