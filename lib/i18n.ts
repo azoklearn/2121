@@ -25,6 +25,15 @@ export const translations = {
       footer: "↵ Sélectionner — esc Fermer",
       inventory: "Inventaire confidentiel — mis à jour chaque semaine",
     },
+    hero: {
+      eyebrow: "— Maison Privée · Paris",
+      titlePre: "Achat & vente de",
+      titleItalic: "montres de luxe",
+      titlePost: "d'occasion à Paris.",
+      description:
+        "Spécialistes en horlogerie de collection. Chaque pièce de notre collection est soigneusement sourcée auprès de collectionneurs européens, expertisée puis confiée — dans la plus grande discrétion.",
+      cta: "Découvrir la collection",
+    },
     collection: {
       badge: "Collection",
       updated: "Mise à jour chaque semaine",
@@ -248,6 +257,15 @@ export const translations = {
       empty: "No watch found — try another brand, model or reference.",
       footer: "↵ Select — esc Close",
       inventory: "Confidential inventory — updated weekly",
+    },
+    hero: {
+      eyebrow: "— Private Maison · Paris",
+      titlePre: "Buying & selling",
+      titleItalic: "pre-owned luxury watches",
+      titlePost: "in Paris.",
+      description:
+        "Specialists in collectible horology. Every piece in our collection is carefully sourced from European collectors, appraised and then entrusted — with the utmost discretion.",
+      cta: "Discover the collection",
     },
     collection: {
       badge: "Collection",

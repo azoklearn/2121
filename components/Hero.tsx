@@ -2,9 +2,14 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Hero() {
   const ref = useRef<HTMLElement>(null);
+  const { t } = useLanguage();
+  const h = t.hero;
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
@@ -21,34 +26,73 @@ export default function Hero() {
       id="top"
       className="relative h-[100svh] min-h-[640px] w-full overflow-hidden bg-ink text-ivory"
     >
-      {/* Background image */}
+      {/* Background image with parallax */}
       <motion.div style={{ scale, y }} className="absolute inset-0 will-change-transform">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: "url('/hero.png')",
-          }}
+          style={{ backgroundImage: "url('/hero.jpeg')" }}
         />
-        <div className="absolute inset-0 bg-ink/40" />
-        <div className="absolute inset-0 bg-gradient-to-b from-ink/55 via-transparent to-ink/75" />
+        {/* Legibility overlays */}
+        <div className="absolute inset-0 bg-ink/35" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ink/40 via-ink/15 to-ink/85" />
       </motion.div>
 
+      {/* Foreground content */}
       <motion.div
         style={{ opacity: contentOpacity, y: contentY }}
-        className="relative h-full w-full px-6 md:px-10"
+        className="relative h-full w-full px-6 md:px-10 flex items-end pb-16 md:pb-24"
       >
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.35, delay: 0.55, ease: [0.16, 1, 0.3, 1] }}
-          className="absolute bottom-6 left-6 md:bottom-10 md:left-10"
-        >
-          <img
-            src="/logo.png"
-            alt="2121"
-            className="invert opacity-90 w-[clamp(11rem,38vw,46rem)]"
-          />
-        </motion.div>
+        <div className="max-w-[1600px] mx-auto w-full">
+          {/* Eyebrow */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+            className="text-[10px] md:text-[11px] tracking-widest uppercase opacity-75 mb-5 md:mb-7 flex items-center gap-3"
+          >
+            <span className="h-px w-6 md:w-8 bg-ivory/60" />
+            {h.eyebrow}
+          </motion.div>
+
+          {/* Title */}
+          <motion.h1
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.4, delay: 0.55, ease: [0.16, 1, 0.3, 1] }}
+            className="font-light leading-[1.05] tracking-tighter text-balance max-w-5xl text-[clamp(2.2rem,5.4vw,5.8rem)]"
+          >
+            {h.titlePre}{" "}
+            <span className="font-serif italic">{h.titleItalic}</span>{" "}
+            {h.titlePost}
+          </motion.h1>
+
+          {/* Description + CTA row */}
+          <div className="mt-8 md:mt-12 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 items-end">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.2, delay: 0.85, ease: [0.16, 1, 0.3, 1] }}
+              className="md:col-span-7 text-[14px] md:text-[15px] leading-[1.75] text-ivory/80 max-w-xl"
+            >
+              {h.description}
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.2, delay: 1.05, ease: [0.16, 1, 0.3, 1] }}
+              className="md:col-span-5 md:flex md:justify-end"
+            >
+              <Link
+                href="#collection"
+                className="group inline-flex items-center gap-3 text-[11px] tracking-widest uppercase border-b border-ivory/40 pb-2 hover:border-ivory transition-colors duration-700"
+              >
+                {h.cta}
+                <span className="transition-transform duration-500 group-hover:translate-y-0.5">↓</span>
+              </Link>
+            </motion.div>
+          </div>
+        </div>
       </motion.div>
     </section>
   );

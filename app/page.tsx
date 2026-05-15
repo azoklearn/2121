@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Loader from "@/components/Loader";
+import Hero from "@/components/Hero";
 import Manifesto from "@/components/Manifesto";
 import Marquee from "@/components/Marquee";
 import Collection from "@/components/Collection";
@@ -14,6 +15,7 @@ export default function Home() {
     <main className="relative bg-ivory text-ink">
       <Loader />
       <Navbar />
+      <Hero />
       <Collection />
       <Manifesto />
       <Marquee />
