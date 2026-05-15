@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { watches } from "@/lib/watches";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { loc } from "@/lib/i18n";
 
 type Props = {
   open: boolean;
@@ -14,7 +15,7 @@ type Props = {
 export default function SearchOverlay({ open, onClose }: Props) {
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   // Auto-focus input when opening
   useEffect(() => {
@@ -52,12 +53,12 @@ export default function SearchOverlay({ open, onClose }: Props) {
     const q = query.trim().toLowerCase();
     if (!q) return watches;
     return watches.filter((w) =>
-      [w.brand, w.model, w.reference, w.year, w.condition]
+      [w.brand, w.model, loc(w.reference, lang), loc(w.year, lang), loc(w.condition, lang)]
         .join(" ")
         .toLowerCase()
         .includes(q)
     );
-  }, [query]);
+  }, [query, lang]);
 
   return (
     <AnimatePresence>
@@ -177,7 +178,7 @@ export default function SearchOverlay({ open, onClose }: Props) {
                             {watch.model}
                           </div>
                           <div className="text-[11px] opacity-60 mt-1.5 truncate">
-                            {watch.reference}
+                            {loc(watch.reference, lang)}
                           </div>
                         </div>
                         <span className="text-[14px] opacity-50 group-hover:translate-x-1 transition-transform duration-500 shrink-0">

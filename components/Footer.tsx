@@ -102,7 +102,7 @@ export default function Footer() {
         >
           <span className="inline-block">2</span>
           <span className="inline-block">1</span>
-          <span className="inline-block font-serif italic px-1">2</span>
+          <span className="inline-block">2</span>
           <span className="inline-block">1</span>
         </motion.div>
 

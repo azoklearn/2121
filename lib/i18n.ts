@@ -45,7 +45,7 @@ export const translations = {
       ctaTitle: "Une pièce vous intéresse ?",
       ctaSubtitle: "Discutons-en — réponse sous 24 heures, dans la plus grande discrétion.",
       ctaButton: "Contacter sur WhatsApp",
-      ctaNote: "Message pré-rempli · Réponse < 24h",
+      ctaNote: "Réponse < 24 HR",
     },
     watch: {
       back: "Retour à la collection",
@@ -81,9 +81,9 @@ export const translations = {
       h2Italic2: "histoires",
       h2End: "au poignet.",
       para1:
-        "Fondée à Paris, 2121 est une maison confidentielle dédiée au collectionneur discret. Chaque pièce traverse nos mains comme un paragraphe traverse celles d'un éditeur — lentement, avec attention, jusqu'à ce qu'il ne reste que l'essentiel.",
+        "Fondée à Paris, 2121 est une maison confidentielle dédiée au collectionneur discret. Chaque pièce traverse nos mains comme un paragraphe passe sous la plume d'un éditeur : lentement, avec attention, jusqu'à ce qu'il ne reste que l'essentiel.",
       para2:
-        "Nous sourçons des références rares auprès d'archives privées en Europe, au Japon et aux Amériques. L'authenticité n'est pas une promesse — c'est le fondement de chaque relation que nous construisons, une montre à la fois.",
+        "Nous sourçons des références rares auprès d'archives privées en Europe, au Japon et aux Amériques. L'authenticité n'est pas une promesse. C'est le fondement de chaque relation que nous construisons, une montre à la fois.",
       statFounded: "— Fondée",
       statFoundedValue: "MMXXI",
       statSourced: "— Pièces sourcées",
@@ -192,7 +192,7 @@ export const translations = {
     instagram: {
       header: "Depuis l'Atelier",
       badge: "— Instants & Journal",
-      follow: "Suivre notre journal",
+      follow: "Suivre notre page",
       items: [
         { caption: "Submariner / Transition", place: "Paris" },
         { caption: "Daytona / Sourced", place: "Paris" },
@@ -238,6 +238,8 @@ export const translations = {
     },
     whatsapp: (brand: string, model: string, ref: string) =>
       `Bonjour 2121, je suis intéressé par la ${brand} ${model} (${ref}). Pourriez-vous me communiquer plus d'informations — disponibilité, papiers, photos additionnelles, prix ?`,
+    whatsappGeneric:
+      "Bonjour 2121, je suis intéressé(e) par une pièce de votre collection. Pourriez-vous me communiquer plus d'informations ?",
     emailSubject: (brand: string, model: string) =>
       `2121 — Demande d'informations · ${brand} ${model}`,
     emailBody: (brand: string, model: string, ref: string) =>
@@ -285,9 +287,9 @@ export const translations = {
         "A silent selection — sourced piece by piece, through our private networks across Europe and beyond.",
       hoverView: "— View the piece",
       ctaTitle: "A piece caught your eye?",
-      ctaSubtitle: "Let's talk — reply within 24 hours, with the utmost discretion.",
+      ctaSubtitle: "Let's talk — expect a reply within 24 hours, with the utmost discretion.",
       ctaButton: "Reach us on WhatsApp",
-      ctaNote: "Pre-filled message · Reply < 24h",
+      ctaNote: "Reply < 24 HR",
     },
     watch: {
       back: "Back to collection",
@@ -323,9 +325,9 @@ export const translations = {
       h2Italic2: "stories",
       h2End: "on the wrist.",
       para1:
-        "Founded in Paris, 2121 is a confidential maison dedicated to the discreet collector. Each piece passes through our hands the way a paragraph passes through an editor's — slowly, carefully, until only what matters remains.",
+        "Founded in Paris, 2121 is a confidential maison dedicated to the discreet collector. Each piece passes through our hands the way a paragraph passes beneath an editor's pen: slowly, carefully, until only what matters remains.",
       para2:
-        "We source rare references from private archives across Europe, Japan and the Americas. Authenticity is not a promise — it is the foundation of every relationship we build, one timepiece at a time.",
+        "We source rare references from private archives across Europe, Japan, and the Americas. Authenticity is not a promise. It is the foundation of every relationship we build, one timepiece at a time.",
       statFounded: "— Founded",
       statFoundedValue: "MMXXI",
       statSourced: "— Pieces Sourced",
@@ -434,7 +436,7 @@ export const translations = {
     instagram: {
       header: "From the Atelier",
       badge: "— Moments & Journal",
-      follow: "Follow our journal",
+      follow: "Follow our page",
       items: [
         { caption: "Submariner / Transition", place: "Paris" },
         { caption: "Daytona / Sourced", place: "Paris" },
@@ -480,6 +482,8 @@ export const translations = {
     },
     whatsapp: (brand: string, model: string, ref: string) =>
       `Hello 2121, I am interested in the ${brand} ${model} (${ref}). Could you share more information — availability, papers, additional photos, price?`,
+    whatsappGeneric:
+      "Hello 2121, I am interested in a piece from your collection. Could you share more information?",
     emailSubject: (brand: string, model: string) =>
       `2121 — Information request · ${brand} ${model}`,
     emailBody: (brand: string, model: string, ref: string) =>
@@ -488,3 +492,16 @@ export const translations = {
 } as const;
 
 export type T = (typeof translations)["fr"];
+
+/**
+ * Localized string — either a plain string (same in both languages) or
+ * an object with explicit fr/en values.
+ */
+export type L = string | { fr: string; en: string };
+
+/** Resolve a localized value to the active language, with fr fallback. */
+export function loc(value: L | undefined, lang: Language): string {
+  if (value == null) return "";
+  if (typeof value === "string") return value;
+  return value[lang] ?? value.fr ?? "";
+}

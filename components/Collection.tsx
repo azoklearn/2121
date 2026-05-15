@@ -5,11 +5,12 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { watches, WHATSAPP_NUMBER } from "@/lib/watches";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { loc } from "@/lib/i18n";
 
 const SCROLL_KEY = "2121-collection-scroll";
 
 export default function Collection() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const c = t.collection;
 
   // Restore scroll position when returning from a watch detail page
@@ -27,9 +28,7 @@ export default function Collection() {
     sessionStorage.setItem(SCROLL_KEY, String(window.scrollY));
   };
 
-  const whatsappCtaUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-    "Bonjour 2121, je suis intéressé(e) par une pièce de votre collection. Pourriez-vous me communiquer plus d'informations ?"
-  )}`;
+  const whatsappCtaUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t.whatsappGeneric)}`;
 
   return (
     <section
@@ -98,7 +97,7 @@ export default function Collection() {
                   {/* Top stamps */}
                   <div className="absolute top-4 left-4 right-4 flex items-center justify-end text-[10px] tracking-widest uppercase text-ivory">
                     <span className="opacity-90 hidden md:inline">
-                      {watch.condition}
+                      {loc(watch.condition, lang)}
                     </span>
                   </div>
 
@@ -117,10 +116,20 @@ export default function Collection() {
                 {/* Caption — serif centered, auction-house style */}
                 <div className="text-center px-2 mt-2">
                   {(() => {
-                    const year = watch.specs?.Année;
+                    // Find the "Année / Year" spec value if it's a 4-digit year
+                    const yearSpec = watch.specs.find((s) => {
+                      const k = typeof s.key === "string" ? s.key : s.key.fr;
+                      return k === "Année";
+                    });
+                    const yearVal = yearSpec
+                      ? typeof yearSpec.value === "string"
+                        ? yearSpec.value
+                        : yearSpec.value.fr
+                      : "";
                     const yearPrefix =
-                      year && /^\d{4}$/.test(year) ? `${year} ` : "";
-                    const title = `${yearPrefix}${watch.brand} ${watch.model} ${watch.reference}`;
+                      yearVal && /^\d{4}$/.test(yearVal) ? `${yearVal} ` : "";
+                    const refText = loc(watch.reference, lang);
+                    const title = `${yearPrefix}${watch.brand} ${watch.model} ${refText}`;
                     return (
                       <h3 className="font-serif text-[12px] md:text-[14px] tracking-[0.08em] uppercase leading-[1.5] text-ink/90 text-balance">
                         {title}

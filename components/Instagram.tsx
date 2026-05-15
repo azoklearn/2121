@@ -31,15 +31,18 @@ export default function Instagram() {
         </motion.div>
 
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16 md:mb-24">
-          <motion.h2
+          <motion.a
+            href="https://instagram.com/2121collection"
+            target="_blank"
+            rel="noreferrer"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
-            className="text-[clamp(2rem,5.6vw,5.6rem)] font-light leading-[1] tracking-tighter"
+            className="font-serif italic text-[clamp(2rem,5.6vw,5.6rem)] font-light leading-[1] tracking-tight hover:opacity-70 transition-opacity duration-500"
           >
-            <span className="font-serif italic">@2121</span>collection
-          </motion.h2>
+            @2121collection
+          </motion.a>
           <a
             href="https://instagram.com/2121collection"
             target="_blank"

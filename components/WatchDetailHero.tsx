@@ -6,13 +6,20 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import type { Watch } from "@/lib/watches";
 import { WHATSAPP_NUMBER } from "@/lib/watches";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { loc } from "@/lib/i18n";
 
 type Props = { watch: Watch };
 
 export default function WatchDetailHero({ watch }: Props) {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const w = t.watch;
   const allImages = watch.images?.length ? watch.images : [watch.image];
+
+  // Localized fields
+  const watchReference = loc(watch.reference, lang);
+  const watchYear = loc(watch.year, lang);
+  const watchIntro = loc(watch.intro, lang);
+  const watchDescription = loc(watch.description, lang);
 
   // Gallery
   const [activeIdx, setActiveIdx] = useState(0);
@@ -30,10 +37,10 @@ export default function WatchDetailHero({ watch }: Props) {
   const [dragging, setDragging] = useState(false);
   const dragOrigin = useRef({ x: 0, y: 0, px: 0, py: 0 });
 
-  const message = t.whatsapp(watch.brand, watch.model, watch.reference);
+  const message = t.whatsapp(watch.brand, watch.model, watchReference);
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
   const emailSubject = t.emailSubject(watch.brand, watch.model);
-  const emailBody = t.emailBody(watch.brand, watch.model, watch.reference);
+  const emailBody = t.emailBody(watch.brand, watch.model, watchReference);
   const emailUrl = `mailto:${w.emailDiscuss}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
 
   // Reset zoom when changing image
@@ -238,8 +245,8 @@ export default function WatchDetailHero({ watch }: Props) {
               {/* 1️⃣ Reference + Price */}
               <div className="flex items-baseline justify-between gap-4 border-y hairline py-5 md:py-6 mb-8 md:mb-12">
                 <div className="min-w-0">
-                  <div className="text-[9px] md:text-[10px] tracking-widest uppercase opacity-50 mb-1.5">{w.year} · {watch.year}</div>
-                  <div className="text-[14px] md:text-base font-light tracking-tight truncate">{watch.reference}</div>
+                  <div className="text-[9px] md:text-[10px] tracking-widest uppercase opacity-50 mb-1.5">{w.year} · {watchYear}</div>
+                  <div className="text-[14px] md:text-base font-light tracking-tight truncate">{watchReference}</div>
                 </div>
                 <div className="text-right shrink-0">
                   <div className="text-[9px] md:text-[10px] tracking-widest uppercase opacity-50 mb-1.5">{w.price}</div>
@@ -249,10 +256,10 @@ export default function WatchDetailHero({ watch }: Props) {
 
               {/* 2️⃣ Texte explicatif */}
               <p className="font-serif italic text-xl md:text-2xl leading-[1.4] text-ink/85 mb-6 md:mb-8">
-                {watch.intro}
+                {watchIntro}
               </p>
               <p className="text-[15px] md:text-base leading-[1.8] text-ink/75 mb-10 md:mb-12">
-                {watch.description}
+                {watchDescription}
               </p>
 
               {/* 3️⃣ Specs */}
@@ -262,12 +269,12 @@ export default function WatchDetailHero({ watch }: Props) {
                   {w.specs}
                 </div>
                 <ul className="space-y-2 md:space-y-2.5">
-                  {Object.entries(watch.specs).map(([key, value]) => (
-                    <li key={key} className="flex items-baseline gap-3 text-[14px] md:text-[15px] font-light tracking-tight leading-relaxed">
+                  {watch.specs.map((spec, i) => (
+                    <li key={i} className="flex items-baseline gap-3 text-[14px] md:text-[15px] font-light tracking-tight leading-relaxed">
                       <span aria-hidden className="text-ink/45 select-none mt-1 leading-none">•</span>
                       <span>
-                        <span className="font-normal">{key}:</span>{" "}
-                        <span className="text-ink/75">{value}</span>
+                        <span className="font-normal">{loc(spec.key, lang)}:</span>{" "}
+                        <span className="text-ink/75">{loc(spec.value, lang)}</span>
                       </span>
                     </li>
                   ))}

@@ -17,9 +17,10 @@ export function generateMetadata({
 }): Metadata {
   const watch = getWatch(params.slug);
   if (!watch) return { title: "2121 — Pièce introuvable" };
+  const intro = typeof watch.intro === "string" ? watch.intro : watch.intro.fr;
   return {
     title: `${watch.brand} ${watch.model} — 2121 Maison Privée`,
-    description: watch.intro,
+    description: intro,
   };
 }
 
