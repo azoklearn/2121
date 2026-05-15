@@ -67,16 +67,21 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Center: Logo */}
+          {/* Center: Logo + tagline */}
           <div className="flex items-center justify-center">
-            <Link href="/" className="group flex items-center justify-center">
+            <Link href="/" className="group flex flex-col items-center justify-center leading-none">
               <img
                 src="/logo.png"
                 alt="2121"
-                className={`h-20 w-auto md:h-24 object-contain transition-all duration-700 ${
+                className={`h-24 w-auto md:h-28 object-contain transition-all duration-700 ${
                   useLightStyle ? "" : "invert"
                 }`}
               />
+              <span
+                className="font-serif italic text-[10px] md:text-[11px] tracking-[0.18em] -mt-1 md:-mt-1.5 opacity-70 select-none"
+              >
+                collection
+              </span>
             </Link>
           </div>
 
