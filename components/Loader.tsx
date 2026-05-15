@@ -75,14 +75,21 @@ export default function Loader() {
             transition={{ duration: 0.95, ease: [0.16, 1, 0.3, 1] }}
             className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-7"
           >
-            <motion.img
-              src="/logo.png"
-              alt=""
-              initial={{ scale: 0.92 }}
-              animate={{ scale: 1 }}
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-              className="h-24 w-24 object-contain invert md:h-28 md:w-28"
-            />
+              className="flex flex-col items-center leading-none"
+            >
+              <img
+                src="/logo.png"
+                alt=""
+                className="h-32 w-auto md:h-40 object-contain invert"
+              />
+              <span className="font-serif italic text-[14px] md:text-[16px] tracking-[0.22em] -mt-1 md:-mt-1.5 opacity-75">
+                collection
+              </span>
+            </motion.div>
             <div className="h-px w-28 overflow-hidden bg-ivory/15">
               <motion.div
                 initial={{ x: "-100%" }}
@@ -96,14 +103,6 @@ export default function Loader() {
                 className="h-full w-full bg-ivory"
               />
             </div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.55 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-[10px] uppercase tracking-[0.42em]"
-            >
-              {l.brand}
-            </motion.div>
           </motion.div>
 
           <div className="absolute bottom-6 left-6 right-6 z-10 flex items-center justify-between text-[9px] uppercase tracking-[0.28em] text-ivory/35 md:left-10 md:right-10">
