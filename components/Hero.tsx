@@ -43,17 +43,6 @@ export default function Hero() {
         className="relative h-full w-full px-6 md:px-10 flex items-end pb-8 md:pb-12"
       >
         <div className="max-w-[1600px] mx-auto w-full">
-          {/* Eyebrow */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="text-[10px] md:text-[11px] tracking-widest uppercase opacity-75 mb-5 md:mb-7 flex items-center gap-3"
-          >
-            <span className="h-px w-6 md:w-8 bg-ivory/60" />
-            {h.eyebrow}
-          </motion.div>
-
           {/* Title */}
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
