@@ -129,7 +129,8 @@ export default function Collection() {
                     const yearPrefix =
                       yearVal && /^\d{4}$/.test(yearVal) ? `${yearVal} ` : "";
                     const refText = loc(watch.reference, lang);
-                    const title = `${yearPrefix}${watch.brand} ${watch.model} ${refText}`;
+                    // Model is already part of the reference now, so don't duplicate it
+                    const title = `${yearPrefix}${watch.brand} ${refText}`;
                     return (
                       <h3 className="font-serif text-[12px] md:text-[14px] tracking-[0.08em] uppercase leading-[1.5] text-ink/90 text-balance">
                         {title}
