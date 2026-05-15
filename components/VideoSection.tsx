@@ -119,14 +119,11 @@ export default function VideoSection() {
           ref={captionRef}
           className="absolute top-24 md:top-32 left-0 right-0 z-20 flex flex-col items-center text-center px-6 pointer-events-none"
         >
-          <div className="text-[10px] tracking-widest uppercase opacity-50 mb-3 flex items-center gap-3">
+          <div className="text-[10px] tracking-widest uppercase opacity-50 flex items-center gap-3">
             <span className="h-px w-6 bg-ink/40" />
             {v.scrollHint}
             <span className="h-px w-6 bg-ink/40" />
           </div>
-          <p className="font-serif italic text-lg md:text-xl opacity-70">
-            {v.pressPlay}
-          </p>
         </div>
 
         {/* Video frame — grows to fullscreen */}
