@@ -236,10 +236,9 @@ export default function WatchDetailHero({ watch }: Props) {
               transition={{ duration: 1.4, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
               className="md:col-span-7"
             >
-              {/* Brand + Model */}
-              <div className="text-[10px] tracking-widest uppercase opacity-55 mb-4">{watch.brand}</div>
+              {/* Brand as main heading (model now lives in the reference line) */}
               <h1 className="text-[clamp(2.2rem,3.6vw,3.6rem)] font-light leading-[1.05] tracking-tight mb-6 md:mb-8">
-                <span className="font-serif italic mr-2">—</span>{watch.model}
+                <span className="font-serif italic mr-2">—</span>{watch.brand}
               </h1>
 
               {/* 1️⃣ Reference, then price below */}
