@@ -229,31 +229,52 @@ export default function WatchDetailHero({ watch }: Props) {
               transition={{ duration: 1.4, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
               className="md:col-span-7"
             >
+              {/* Brand + Model */}
               <div className="text-[10px] tracking-widest uppercase opacity-55 mb-4">{watch.brand}</div>
-              <h1 className="text-[clamp(2.2rem,3.6vw,3.6rem)] font-light leading-[1.05] tracking-tight mb-4">
+              <h1 className="text-[clamp(2.2rem,3.6vw,3.6rem)] font-light leading-[1.05] tracking-tight mb-6 md:mb-8">
                 <span className="font-serif italic mr-2">—</span>{watch.model}
               </h1>
-              <div className="text-[13px] opacity-60 mb-10 md:mb-14">{watch.reference}</div>
 
-              <div className="grid grid-cols-3 gap-2 md:gap-4 mb-10 md:mb-14 border-y hairline py-5 md:py-7">
-                <div>
-                  <div className="text-[9px] md:text-[10px] tracking-widest uppercase opacity-50 mb-1.5 md:mb-2">{w.year}</div>
-                  <div className="text-[13px] md:text-lg font-light tracking-tight leading-snug">{watch.year}</div>
+              {/* 1️⃣ Reference + Price */}
+              <div className="flex items-baseline justify-between gap-4 border-y hairline py-5 md:py-6 mb-8 md:mb-12">
+                <div className="min-w-0">
+                  <div className="text-[9px] md:text-[10px] tracking-widest uppercase opacity-50 mb-1.5">{w.year} · {watch.year}</div>
+                  <div className="text-[14px] md:text-base font-light tracking-tight truncate">{watch.reference}</div>
                 </div>
-                <div>
-                  <div className="text-[9px] md:text-[10px] tracking-widest uppercase opacity-50 mb-1.5 md:mb-2">{w.condition}</div>
-                  <div className="text-[13px] md:text-lg font-light tracking-tight leading-snug">{watch.condition}</div>
-                </div>
-                <div>
-                  <div className="text-[9px] md:text-[10px] tracking-widest uppercase opacity-50 mb-1.5 md:mb-2">{w.price}</div>
-                  <div className="text-[13px] md:text-lg font-light tracking-tight font-serif italic leading-snug">{watch.price}</div>
+                <div className="text-right shrink-0">
+                  <div className="text-[9px] md:text-[10px] tracking-widest uppercase opacity-50 mb-1.5">{w.price}</div>
+                  <div className="font-serif italic text-[18px] md:text-2xl tracking-tight leading-none">{watch.price}</div>
                 </div>
               </div>
 
-              <p className="font-serif italic text-xl md:text-2xl leading-[1.4] text-ink/85 mb-10 md:mb-12">
+              {/* 2️⃣ Texte explicatif */}
+              <p className="font-serif italic text-xl md:text-2xl leading-[1.4] text-ink/85 mb-6 md:mb-8">
                 {watch.intro}
               </p>
+              <p className="text-[15px] md:text-base leading-[1.8] text-ink/75 mb-10 md:mb-12">
+                {watch.description}
+              </p>
 
+              {/* 3️⃣ Specs */}
+              <div className="mb-10 md:mb-12">
+                <div className="text-[10px] tracking-widest uppercase opacity-55 mb-5 flex items-center gap-3">
+                  <span className="h-px w-6 bg-ink/40" />
+                  {w.specs}
+                </div>
+                <ul className="space-y-2 md:space-y-2.5">
+                  {Object.entries(watch.specs).map(([key, value]) => (
+                    <li key={key} className="flex items-baseline gap-3 text-[14px] md:text-[15px] font-light tracking-tight leading-relaxed">
+                      <span aria-hidden className="text-ink/45 select-none mt-1 leading-none">•</span>
+                      <span>
+                        <span className="font-normal">{key}:</span>{" "}
+                        <span className="text-ink/75">{value}</span>
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* 4️⃣ CTAs */}
               <div className="space-y-3">
                 {/* WhatsApp CTA */}
                 <a

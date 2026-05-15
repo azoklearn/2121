@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WatchDetailHero from "@/components/WatchDetailHero";
-import WatchSpecs from "@/components/WatchSpecs";
 import WatchOthers from "@/components/WatchOthers";
 import { watches, getWatch } from "@/lib/watches";
 
@@ -37,8 +36,6 @@ export default function WatchPage({
       <Navbar />
 
       <WatchDetailHero watch={watch} />
-
-      <WatchSpecs specs={watch.specs} description={watch.description} />
 
       <WatchOthers currentSlug={watch.slug} />
 
