@@ -66,32 +66,21 @@ export default function Hero() {
             {h.titlePost}
           </motion.h1>
 
-          {/* Description + CTA row */}
-          <div className="mt-8 md:mt-12 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 items-end">
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, delay: 0.85, ease: [0.16, 1, 0.3, 1] }}
-              className="md:col-span-7 text-[14px] md:text-[15px] leading-[1.75] text-ivory/80 max-w-xl"
+          {/* CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, delay: 0.95, ease: [0.16, 1, 0.3, 1] }}
+            className="mt-8 md:mt-12"
+          >
+            <Link
+              href="#collection"
+              className="group inline-flex items-center gap-3 text-[11px] tracking-widest uppercase border-b border-ivory/40 pb-2 hover:border-ivory transition-colors duration-700"
             >
-              {h.description}
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, delay: 1.05, ease: [0.16, 1, 0.3, 1] }}
-              className="md:col-span-5 md:flex md:justify-end"
-            >
-              <Link
-                href="#collection"
-                className="group inline-flex items-center gap-3 text-[11px] tracking-widest uppercase border-b border-ivory/40 pb-2 hover:border-ivory transition-colors duration-700"
-              >
-                {h.cta}
-                <span className="transition-transform duration-500 group-hover:translate-y-0.5">↓</span>
-              </Link>
-            </motion.div>
-          </div>
+              {h.cta}
+              <span className="transition-transform duration-500 group-hover:translate-y-0.5">↓</span>
+            </Link>
+          </motion.div>
         </div>
       </motion.div>
     </section>
