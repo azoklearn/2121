@@ -23,7 +23,7 @@ type Ctx = {
 const LanguageContext = createContext<Ctx>({
   lang: "en",
   setLang: () => {},
-  t: translations.en,
+  t: translations.en as unknown as T,
   resolved: false,
 });
 
