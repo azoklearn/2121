@@ -21,14 +21,14 @@ type Ctx = {
 };
 
 const LanguageContext = createContext<Ctx>({
-  lang: "fr",
+  lang: "en",
   setLang: () => {},
-  t: translations.fr,
+  t: translations.en,
   resolved: false,
 });
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Language>("fr");
+  const [lang, setLangState] = useState<Language>("en");
   const [resolved, setResolved] = useState(false);
 
   useEffect(() => {

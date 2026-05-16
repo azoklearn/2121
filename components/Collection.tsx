@@ -92,24 +92,12 @@ export default function Collection() {
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
                     style={{ backgroundImage: `url('${watch.image}')` }}
                   />
-                  <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/12 transition-colors duration-700" />
 
                   {/* Top stamps */}
                   <div className="absolute top-4 left-4 right-4 flex items-center justify-end text-[10px] tracking-widest uppercase text-ivory">
                     <span className="opacity-90 hidden md:inline">
                       {loc(watch.condition, lang)}
                     </span>
-                  </div>
-
-                  {/* Hover overlay — price + view hint */}
-                  <div className="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-                    <div className="text-ivory font-serif italic text-lg md:text-xl leading-none mb-2 tracking-tight">
-                      {watch.price}
-                    </div>
-                    <div className="flex items-center justify-between text-[10px] tracking-widest uppercase text-ivory">
-                      <span>{c.hoverView}</span>
-                      <span>↗</span>
-                    </div>
                   </div>
                 </div>
 

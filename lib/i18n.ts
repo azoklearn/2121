@@ -145,18 +145,6 @@ export const translations = {
           note: "Réponse < 24h",
         },
         {
-          label: "Instagram",
-          value: "@2121collection",
-          link: "https://instagram.com/2121collection",
-          note: "Dernières arrivées",
-        },
-        {
-          label: "Threads",
-          value: "@2121collection",
-          link: "https://threads.net/@2121collection",
-          note: "Journal de l'atelier",
-        },
-        {
           label: "Email",
           value: "private@2121.paris",
           link: "mailto:private@2121.paris",
@@ -387,18 +375,6 @@ export const translations = {
           value: "+33 (0)6 21 21 21 21",
           link: "https://wa.me/33621212121",
           note: "Reply < 24h",
-        },
-        {
-          label: "Instagram",
-          value: "@2121collection",
-          link: "https://instagram.com/2121collection",
-          note: "Latest pieces",
-        },
-        {
-          label: "Threads",
-          value: "@2121collection",
-          link: "https://threads.net/@2121collection",
-          note: "Atelier journal",
         },
         {
           label: "Email",
