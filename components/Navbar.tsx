@@ -73,12 +73,12 @@ export default function Navbar() {
               <img
                 src="/logo.png"
                 alt="2121"
-                className={`h-24 w-auto md:h-20 object-contain transition-all duration-700 ${
+                className={`h-16 w-auto md:h-14 object-contain transition-all duration-700 ${
                   useLightStyle ? "" : "invert"
                 }`}
               />
               <span
-                className="font-serif italic text-[12px] md:text-[14px] tracking-[0.2em] -mt-3 md:-mt-4 opacity-75 select-none whitespace-nowrap"
+                className="font-serif italic text-[11px] md:text-[12px] tracking-[0.2em] -mt-1 md:-mt-1.5 opacity-75 select-none whitespace-nowrap"
               >
                 modern &amp; vintage watches
               </span>
