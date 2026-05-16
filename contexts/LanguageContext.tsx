@@ -28,6 +28,7 @@ const LanguageContext = createContext<Ctx>({
 });
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
+  // Default to English everywhere — only French browsers get French (set in effect)
   const [lang, setLangState] = useState<Language>("en");
   const [resolved, setResolved] = useState(false);
 
