@@ -68,7 +68,7 @@ export const translations = {
       visitItalic: "visite",
       allPieces: "Toutes les pièces",
       lightboxClose: "Fermer",
-      lightboxHint: "Scroll ou pincer pour zoomer · Double-clic pour agrandir",
+      lightboxHint: "Scroll ou pincer pour zoomer · Cliquer pour fermer",
       swipeHint: "← Glisser →",
     },
     manifesto: {
@@ -300,7 +300,7 @@ export const translations = {
       visitItalic: "visit",
       allPieces: "All pieces",
       lightboxClose: "Close",
-      lightboxHint: "Scroll or pinch to zoom · Double-click to enlarge",
+      lightboxHint: "Scroll or pinch to zoom · Click to close",
       swipeHint: "← Swipe →",
     },
     manifesto: {

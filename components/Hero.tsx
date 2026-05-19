@@ -51,7 +51,7 @@ export default function Hero() {
             className="font-light leading-[1.05] tracking-tighter text-balance max-w-5xl text-[clamp(2.2rem,5.4vw,5.8rem)]"
           >
             {h.titlePre}{" "}
-            <span className="font-serif italic">{h.titleItalic}</span>{" "}
+            <span className="font-serif italic text-[1.18em]">{h.titleItalic}</span>{" "}
             {h.titlePost}
           </motion.h1>
 

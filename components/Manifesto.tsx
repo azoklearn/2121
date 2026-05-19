@@ -35,10 +35,10 @@ export default function Manifesto() {
               className="text-[clamp(2rem,4.6vw,4.8rem)] font-light leading-[1.05] tracking-tighter mb-8 md:mb-16 text-balance"
             >
               {m.h2Pre}{" "}
-              <span className="font-serif italic">{m.h2Italic1}</span> {m.h2Mid}
+              <span className="font-serif italic text-[1.18em]">{m.h2Italic1}</span> {m.h2Mid}
               <br />
               {m.h2Post}{" "}
-              <span className="font-serif italic">{m.h2Italic2}</span>{" "}
+              <span className="font-serif italic text-[1.18em]">{m.h2Italic2}</span>{" "}
               {m.h2End}
             </motion.h2>
 

@@ -32,7 +32,7 @@ export default function Services() {
           className="text-[clamp(2.5rem,6.4vw,6.4rem)] font-light leading-[0.98] tracking-tighter mb-12 md:mb-28 max-w-4xl text-balance"
         >
           {s.titlePre}{" "}
-          <span className="font-serif italic">{s.titleItalic}</span>
+          <span className="font-serif italic text-[1.18em]">{s.titleItalic}</span>
           {s.titlePost}
         </motion.h2>
 

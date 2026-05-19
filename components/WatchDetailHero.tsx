@@ -36,6 +36,7 @@ export default function WatchDetailHero({ watch }: Props) {
   const [pan, setPan] = useState({ x: 0, y: 0 });
   const [dragging, setDragging] = useState(false);
   const dragOrigin = useRef({ x: 0, y: 0, px: 0, py: 0 });
+  const hasDragged = useRef(false);
 
   const message = t.whatsapp(watch.brand, watch.model, watchReference);
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
@@ -84,26 +85,25 @@ export default function WatchDetailHero({ watch }: Props) {
 
   // Drag to pan
   const onMouseDown = useCallback((e: React.MouseEvent) => {
-    e.preventDefault();
     setDragging(true);
+    hasDragged.current = false;
     dragOrigin.current = { x: e.clientX, y: e.clientY, px: pan.x, py: pan.y };
   }, [pan]);
 
   const onMouseMove = useCallback((e: React.MouseEvent) => {
     if (!dragging) return;
+    e.preventDefault(); // prevent text selection while panning
+    const dx = e.clientX - dragOrigin.current.x;
+    const dy = e.clientY - dragOrigin.current.y;
+    if (Math.abs(dx) > 4 || Math.abs(dy) > 4) hasDragged.current = true;
     setPan({
-      x: dragOrigin.current.px + e.clientX - dragOrigin.current.x,
-      y: dragOrigin.current.py + e.clientY - dragOrigin.current.y,
+      x: dragOrigin.current.px + dx,
+      y: dragOrigin.current.py + dy,
     });
   }, [dragging]);
 
   const onMouseUp = useCallback(() => setDragging(false), []);
 
-  // Double-click to toggle zoom
-  const onDblClick = useCallback((e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (zoom > 1) { resetZoom(); } else { setZoom(2.5); setPan({ x: 0, y: 0 }); }
-  }, [zoom, resetZoom]);
 
   // Touch pinch zoom
   const lastDist = useRef<number | null>(null);
@@ -345,7 +345,7 @@ export default function WatchDetailHero({ watch }: Props) {
             transition={{ duration: 0.35 }}
             className="fixed inset-0 z-[300] flex items-center justify-center overflow-hidden"
             style={{ backgroundColor: "rgba(26,26,26,0.97)" }}
-            onClick={() => { if (zoom <= 1) { setZoomOpen(false); resetZoom(); } else resetZoom(); }}
+            onClick={() => { setZoomOpen(false); resetZoom(); }}
           >
             {/* Zoom container */}
             <div
@@ -357,9 +357,12 @@ export default function WatchDetailHero({ watch }: Props) {
               onMouseLeave={onMouseUp}
               onTouchMove={onTouchMove}
               onTouchEnd={onTouchEnd}
-              onClick={(e) => e.stopPropagation()}
-              onDoubleClick={onDblClick}
-              style={{ cursor: zoom > 1 ? (dragging ? "grabbing" : "grab") : "zoom-in" }}
+              onClick={() => {
+                if (hasDragged.current) { hasDragged.current = false; return; }
+                setZoomOpen(false);
+                resetZoom();
+              }}
+              style={{ cursor: zoom > 1 ? (dragging ? "grabbing" : "grab") : "pointer" }}
             >
               <AnimatePresence mode="wait">
                 <motion.img
