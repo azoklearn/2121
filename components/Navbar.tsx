@@ -78,7 +78,7 @@ export default function Navbar() {
                 }`}
               />
               <span
-                className="font-serif italic text-[11px] md:text-[12px] tracking-[0.2em] -mt-1 md:-mt-1.5 opacity-75 select-none whitespace-nowrap"
+                className="font-serif italic font-semibold text-[11px] md:text-[12px] tracking-[0.2em] -mt-3 md:-mt-4 opacity-90 select-none whitespace-nowrap"
               >
                 modern &amp; vintage watches
               </span>

@@ -63,28 +63,6 @@ export default function Manifesto() {
               </motion.p>
             </div>
 
-            {/* Stats */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 1.2, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
-              className="mt-10 md:mt-24 grid grid-cols-3 gap-4 md:gap-10 max-w-2xl border-t hairline pt-8 md:pt-10"
-            >
-              <div>
-                <div className="text-[10px] tracking-widest uppercase opacity-50 mb-3">{m.statFounded}</div>
-                <div className="text-2xl md:text-3xl font-light tracking-tight tnum">{m.statFoundedValue}</div>
-              </div>
-              <div>
-                <div className="text-[10px] tracking-widest uppercase opacity-50 mb-3">{m.statSourced}</div>
-                <div className="text-2xl md:text-3xl font-light tracking-tight tnum">{m.statSourcedValue}</div>
-              </div>
-              <div>
-                <div className="text-[10px] tracking-widest uppercase opacity-50 mb-3">{m.statCollectors}</div>
-                <div className="text-2xl md:text-3xl font-light tracking-tight tnum">{m.statCollectorsValue}</div>
-              </div>
-            </motion.div>
-
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}

@@ -64,7 +64,7 @@ export default function Hero() {
           >
             <Link
               href="#collection"
-              className="group inline-flex items-center gap-3 text-[11px] tracking-widest uppercase border-b border-ivory/40 pb-2 hover:border-ivory transition-colors duration-700"
+              className="group inline-flex items-center gap-4 bg-ivory text-ink px-7 py-4 text-[11px] tracking-widest uppercase transition-all duration-500 hover:bg-ink hover:text-ivory hover:px-9"
             >
               {h.cta}
               <span className="transition-transform duration-500 group-hover:translate-y-0.5">↓</span>

@@ -70,77 +70,113 @@ export default function Collection() {
           </motion.p>
         </div>
 
-        {/* Grid — 3 per row, same size */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
-          {watches.map((watch, idx) => (
-            <motion.article
-              key={watch.slug}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{
-                duration: 1.3,
-                delay: (idx % 3) * 0.08,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              className="group"
-            >
-              <Link href={`/watches/${watch.slug}`} onClick={saveScroll} className="block">
-                {/* Image — same aspect for all */}
-                <div className="relative aspect-[4/5] overflow-hidden bg-bone mb-3 md:mb-4">
-                  <div
-                    className="absolute inset-0 bg-cover bg-center transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
-                    style={{ backgroundImage: `url('${watch.image}')` }}
-                  />
+        {/* Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 lg:gap-8">
+          {watches.map((watch, idx) => {
+            // Extract data from specs for the card description
+            const getSpec = (frKey: string) => {
+              const s = watch.specs.find((sp) => {
+                const k = typeof sp.key === "string" ? sp.key : sp.key.fr;
+                return k === frKey;
+              });
+              if (!s) return "";
+              return typeof s.value === "string" ? s.value : s.value[lang] ?? s.value.fr;
+            };
+            const yearVal = getSpec("Année");
+            const material = getSpec("Matière");
+            const dimensions = getSpec("Dimensions");
+            const summaryParts = [material, dimensions].filter(Boolean);
+            const summary = summaryParts.join(" · ");
+            const hasPapers = watch.papers !== false;
+            const papersLabel = lang === "fr"
+              ? (hasPapers ? "Box & papiers" : "Sans papiers")
+              : (hasPapers ? "Box & papers" : "No papers");
+            const availableLabel = lang === "fr" ? "Disponible" : "Available";
+            const viewLabel = lang === "fr" ? "Voir" : "View";
 
-                  {/* Subtle dark overlay on hover */}
-                  <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/25 transition-colors duration-700" />
+            return (
+              <motion.article
+                key={watch.slug}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{
+                  duration: 1.3,
+                  delay: (idx % 3) * 0.08,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
+                className="group h-full"
+              >
+                <Link href={`/watches/${watch.slug}`} onClick={saveScroll} className="block h-full">
+                  {/* ─── Mobile layout (1 bloc = 1 montre) ─── */}
+                  <div className="md:hidden h-full flex flex-col bg-ivory-soft border hairline transition-shadow duration-500 group-hover:shadow-[0_4px_20px_-8px_rgba(26,26,26,0.18)]">
+                    <div className="relative aspect-[5/4] overflow-hidden bg-bone shrink-0">
+                      <div
+                        className="absolute inset-0 bg-cover bg-center transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
+                        style={{ backgroundImage: `url('${watch.image}')` }}
+                      />
+                    </div>
 
-                  {/* Top stamps */}
-                  <div className="absolute top-4 left-4 right-4 flex items-center justify-end text-[10px] tracking-widest uppercase text-ivory">
-                    <span className="opacity-90 hidden md:inline">
-                      {loc(watch.condition, lang)}
-                    </span>
-                  </div>
+                    {/* Info block */}
+                    <div className="p-3 pb-3.5 flex-1 flex flex-col">
+                      {/* Brand */}
+                      <div className="text-[9px] tracking-widest uppercase opacity-70 leading-tight mb-2">
+                        {watch.brand}
+                      </div>
 
-                  {/* Hover hint — view the piece */}
-                  <div className="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-between text-[10px] tracking-widest uppercase text-ivory">
-                    <span>{c.hoverView}</span>
-                    <span>↗</span>
-                  </div>
-                </div>
-
-                {/* Caption — serif centered, auction-house style */}
-                <div className="text-center px-2 mt-2">
-                  {(() => {
-                    // Find the "Année / Year" spec value if it's a 4-digit year
-                    const yearSpec = watch.specs.find((s) => {
-                      const k = typeof s.key === "string" ? s.key : s.key.fr;
-                      return k === "Année";
-                    });
-                    const yearVal = yearSpec
-                      ? typeof yearSpec.value === "string"
-                        ? yearSpec.value
-                        : yearSpec.value.fr
-                      : "";
-                    const yearPrefix =
-                      yearVal && /^\d{4}$/.test(yearVal) ? `${yearVal} ` : "";
-                    const refText = loc(watch.reference, lang);
-                    // Model is already part of the reference now, so don't duplicate it
-                    const title = `${yearPrefix}${watch.brand} ${refText}`;
-                    return (
-                      <h3 className="font-serif text-[12px] md:text-[14px] tracking-[0.08em] uppercase leading-[1.5] text-ink/90 text-balance">
-                        {title}
+                      {/* Model in large italic serif */}
+                      <h3 className="font-serif italic text-[22px] leading-[1.1] tracking-tight mb-2 text-ink">
+                        {watch.model}
                       </h3>
-                    );
-                  })()}
-                  <div className="font-serif text-[13px] md:text-[15px] text-ink/65 mt-2 md:mt-3 tracking-tight">
-                    {watch.price}
+
+                      {/* Short summary */}
+                      {summary && (
+                        <p className="text-[11px] leading-[1.5] opacity-60 mb-3 text-balance">
+                          {summary}
+                        </p>
+                      )}
+
+                      {/* Price + VIEW — pushed to bottom for equal-height cards */}
+                      <div className="mt-auto flex items-end justify-between pt-1">
+                        <div className="font-serif italic text-[18px] leading-none tracking-tight">
+                          {watch.price}
+                        </div>
+                        <span className="text-[10px] tracking-widest uppercase opacity-70 flex items-center gap-1">
+                          {viewLabel} <span className="transition-transform duration-500 group-hover:translate-x-0.5">→</span>
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </Link>
-            </motion.article>
-          ))}
+
+                  {/* ─── Desktop layout (auction-house caption) ─── */}
+                  <div className="hidden md:block">
+                    <div className="relative aspect-[4/5] overflow-hidden bg-bone mb-3 md:mb-4">
+                      <div
+                        className="absolute inset-0 bg-cover bg-center transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
+                        style={{ backgroundImage: `url('${watch.image}')` }}
+                      />
+                      <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/25 transition-colors duration-700" />
+                      <div className="absolute top-4 left-4 right-4 flex items-center justify-end text-[10px] tracking-widest uppercase text-ivory">
+                        <span className="opacity-90">{loc(watch.condition, lang)}</span>
+                      </div>
+                      <div className="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-between text-[10px] tracking-widest uppercase text-ivory">
+                        <span>{c.hoverView}</span>
+                        <span>↗</span>
+                      </div>
+                    </div>
+                    <div className="text-center px-2 mt-2">
+                      <h3 className="font-serif text-[14px] tracking-[0.08em] uppercase leading-[1.5] text-ink/90 text-balance">
+                        {yearVal && /^\d{4}$/.test(yearVal) ? `${yearVal} ` : ""}{watch.brand} {loc(watch.reference, lang)}
+                      </h3>
+                      <div className="font-serif text-[15px] text-ink/65 mt-3 tracking-tight">
+                        {watch.price}
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </motion.article>
+            );
+          })}
         </div>
 
         {/* CTA WhatsApp — point d'intention maximale après la grille */}

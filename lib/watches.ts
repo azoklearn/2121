@@ -16,6 +16,7 @@ export type Watch = {
   intro: L;
   description: L;
   specs: Spec[];
+  papers?: boolean; // box & papers indicator (default true)
 };
 
 export const WHATSAPP_NUMBER = "33621212121";
