@@ -124,8 +124,8 @@ export default function Collection() {
                         {watch.brand}
                       </div>
 
-                      {/* Model in large italic serif */}
-                      <h3 className="font-serif italic text-[22px] leading-[1.1] tracking-tight mb-2 text-ink">
+                      {/* Model in large italic serif — negative margin compensates italic left-side bearing */}
+                      <h3 className="font-serif italic text-[22px] leading-[1.1] tracking-tight mb-2 text-ink -ml-[2px]">
                         {watch.model}
                       </h3>
 
