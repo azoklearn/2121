@@ -149,10 +149,11 @@ export default function WatchDetailHero({ watch }: Props) {
               transition={{ duration: 1.4, delay: 0.05, ease: [0.16, 1, 0.3, 1] }}
               className="md:col-span-5"
             >
-              {/* Main image */}
+              {/* Main image / video */}
               <div
-                className="group relative aspect-[3/4] overflow-hidden bg-bone cursor-zoom-in touch-pan-y select-none"
+                className={`group relative aspect-[3/4] overflow-hidden bg-bone touch-pan-y select-none ${watch.video && activeIdx === allImages.length ? "cursor-default" : "cursor-zoom-in"}`}
                 onClick={() => {
+                  if (watch.video && activeIdx === allImages.length) return;
                   if (didSwipe.current) { didSwipe.current = false; return; }
                   setZoomOpen(true);
                 }}
@@ -171,13 +172,25 @@ export default function WatchDetailHero({ watch }: Props) {
                   const absY = Math.abs(dy);
                   // Horizontal swipe: >40px and dominantly horizontal
                   if (absX > 40 && absX > absY * 1.3) {
-                    if (dx < 0) goTo((activeIdx + 1) % allImages.length);
-                    else goTo((activeIdx - 1 + allImages.length) % allImages.length);
+                    const total = allImages.length + (watch.video ? 1 : 0);
+                    if (dx < 0) goTo((activeIdx + 1) % total);
+                    else goTo((activeIdx - 1 + total) % total);
                     didSwipe.current = true;
                   }
                   touchStart.current = null;
                 }}
               >
+                {/* Video slide */}
+                {watch.video && activeIdx === allImages.length ? (
+                  <video
+                    src={watch.video}
+                    className="absolute inset-0 w-full h-full object-cover"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  />
+                ) : (
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={activeIdx}
@@ -189,29 +202,33 @@ export default function WatchDetailHero({ watch }: Props) {
                     style={{ backgroundImage: `url('${allImages[activeIdx]}')` }}
                   />
                 </AnimatePresence>
-                <div className="absolute bottom-4 left-4 text-[10px] tracking-widest uppercase text-ivory/90 tnum">
-                  2121 · Paris
-                </div>
-                {/* Mobile swipe hint + counter */}
-                {allImages.length > 1 && (
-                  <div className="md:hidden absolute bottom-4 right-4 flex items-center gap-2 text-[10px] tracking-widest uppercase text-ivory/80">
-                    <span className="opacity-70">{w.swipeHint}</span>
-                    <span className="opacity-50">·</span>
-                    <span className="tnum">{activeIdx + 1}/{allImages.length}</span>
-                  </div>
                 )}
-                {/* Zoom indicator — white circle with "+" */}
-                <div className="absolute top-4 right-4 pointer-events-none">
-                  <div className="flex items-center justify-center h-9 w-9 md:h-10 md:w-10 rounded-full bg-ivory/90 backdrop-blur-sm shadow-sm transition-all duration-500 group-hover:scale-110 group-hover:bg-ivory">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" strokeWidth="1.5" strokeLinecap="round" className="h-4 w-4 md:h-[18px] md:w-[18px]" aria-hidden>
-                      <path d="M12 5v14M5 12h14" />
-                    </svg>
-                  </div>
-                </div>
+                {/* 2121 stamp + swipe hint — hidden on video slide */}
+                {!(watch.video && activeIdx === allImages.length) && (
+                  <>
+                    <div className="absolute bottom-4 left-4 text-[10px] tracking-widest uppercase text-ivory/90 tnum">
+                      2121 · Paris
+                    </div>
+                    {allImages.length > 1 && (
+                      <div className="md:hidden absolute bottom-4 right-4 flex items-center gap-2 text-[10px] tracking-widest uppercase text-ivory/80">
+                        <span className="opacity-70">{w.swipeHint}</span>
+                        <span className="opacity-50">·</span>
+                        <span className="tnum">{activeIdx + 1}/{allImages.length}</span>
+                      </div>
+                    )}
+                    <div className="absolute top-4 right-4 pointer-events-none">
+                      <div className="flex items-center justify-center h-9 w-9 md:h-10 md:w-10 rounded-full bg-ivory/90 backdrop-blur-sm shadow-sm transition-all duration-500 group-hover:scale-110 group-hover:bg-ivory">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" strokeWidth="1.5" strokeLinecap="round" className="h-4 w-4 md:h-[18px] md:w-[18px]" aria-hidden>
+                          <path d="M12 5v14M5 12h14" />
+                        </svg>
+                      </div>
+                    </div>
+                  </>
+                )}
               </div>
 
-              {/* Thumbnails */}
-              {allImages.length > 1 && (
+              {/* Thumbnails + video thumbnail */}
+              {(allImages.length > 1 || watch.video) && (
                 <div className="mt-2.5 flex gap-1.5 overflow-x-auto pb-1">
                   {allImages.map((img, i) => (
                     <button
@@ -224,6 +241,16 @@ export default function WatchDetailHero({ watch }: Props) {
                       <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${img}')` }} />
                     </button>
                   ))}
+                  {watch.video && (
+                    <button
+                      onClick={() => goTo(allImages.length)}
+                      className={`relative aspect-square w-12 md:w-14 shrink-0 overflow-hidden bg-bone transition-all duration-300 flex items-center justify-center ${
+                        activeIdx === allImages.length ? "ring-1 ring-ink opacity-100" : "opacity-35 hover:opacity-65"
+                      }`}
+                    >
+                      <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 text-ink/70"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                  )}
                 </div>
               )}
 
@@ -256,9 +283,17 @@ export default function WatchDetailHero({ watch }: Props) {
                   <div className="text-[9px] md:text-[10px] tracking-widest uppercase opacity-50 mb-1.5">
                     {w.price}
                   </div>
-                  <div className="font-serif italic text-2xl md:text-3xl tracking-tight leading-none">
-                    {watch.price}
-                  </div>
+                  {watch.contactOnly ? (
+                    <div className="text-[14px] md:text-[15px] font-light tracking-tight text-ink/70 leading-snug">
+                      {lang === "fr"
+                        ? "Plus d'informations disponibles sur demande — contactez-nous par message."
+                        : "More information available on request — contact us by message."}
+                    </div>
+                  ) : (
+                    <div className="font-serif italic text-2xl md:text-3xl tracking-tight leading-none">
+                      {watch.price}
+                    </div>
+                  )}
                 </div>
               </div>
 

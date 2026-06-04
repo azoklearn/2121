@@ -113,8 +113,16 @@ export default function Collection() {
                     <div className="relative aspect-[5/4] overflow-hidden bg-bone shrink-0">
                       <div
                         className="absolute inset-0 bg-cover bg-center transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
-                        style={{ backgroundImage: `url('${watch.image}')` }}
+                        style={{ backgroundImage: `url('${watch.image}')`, filter: watch.sold ? "grayscale(0.4)" : "none" }}
                       />
+                      {watch.sold && (
+                        <div className="absolute inset-0 bg-ivory/30" />
+                      )}
+                      {watch.sold && (
+                        <div className="absolute top-2.5 left-2.5 bg-ink text-ivory px-2 py-1 text-[9px] tracking-widest uppercase">
+                          {lang === "fr" ? "Vendue" : "Sold"}
+                        </div>
+                      )}
                     </div>
 
                     {/* Info block */}
@@ -138,12 +146,14 @@ export default function Collection() {
 
                       {/* Price + VIEW — pushed to bottom for equal-height cards */}
                       <div className="mt-auto flex items-end justify-between pt-1">
-                        <div className="font-serif italic text-[18px] leading-none tracking-tight">
-                          {watch.price}
+                        <div className={`font-serif italic text-[18px] leading-none tracking-tight ${watch.sold ? "opacity-50" : ""}`}>
+                          {watch.sold ? (lang === "fr" ? "Vendue" : "Sold") : watch.price}
                         </div>
-                        <span className="text-[10px] tracking-widest uppercase opacity-70 flex items-center gap-1">
-                          {viewLabel} <span className="transition-transform duration-500 group-hover:translate-x-0.5">→</span>
-                        </span>
+                        {!watch.sold && (
+                          <span className="text-[10px] tracking-widest uppercase opacity-70 flex items-center gap-1">
+                            {viewLabel} <span className="transition-transform duration-500 group-hover:translate-x-0.5">→</span>
+                          </span>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -153,12 +163,15 @@ export default function Collection() {
                     <div className="relative aspect-[4/5] overflow-hidden bg-bone mb-3 md:mb-4">
                       <div
                         className="absolute inset-0 bg-cover bg-center transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
-                        style={{ backgroundImage: `url('${watch.image}')` }}
+                        style={{ backgroundImage: `url('${watch.image}')`, filter: watch.sold ? "grayscale(0.4)" : "none" }}
                       />
+                      {watch.sold && <div className="absolute inset-0 bg-ivory/30" />}
+                      {watch.sold && (
+                        <div className="absolute top-3 left-3 bg-ink text-ivory px-2 py-1 text-[10px] tracking-widest uppercase">
+                          {lang === "fr" ? "Vendue" : "Sold"}
+                        </div>
+                      )}
                       <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/25 transition-colors duration-700" />
-                      <div className="absolute top-4 left-4 right-4 flex items-center justify-end text-[10px] tracking-widest uppercase text-ivory">
-                        <span className="opacity-90">{loc(watch.condition, lang)}</span>
-                      </div>
                       <div className="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-between text-[10px] tracking-widest uppercase text-ivory">
                         <span>{c.hoverView}</span>
                         <span>↗</span>
@@ -168,8 +181,8 @@ export default function Collection() {
                       <h3 className="font-serif text-[14px] tracking-[0.08em] uppercase leading-[1.5] text-ink/90 text-balance">
                         {yearVal && /^\d{4}$/.test(yearVal) ? `${yearVal} ` : ""}{watch.brand} {loc(watch.reference, lang)}
                       </h3>
-                      <div className="font-serif text-[15px] text-ink/65 mt-3 tracking-tight">
-                        {watch.price}
+                      <div className={`font-serif text-[15px] mt-3 tracking-tight ${watch.sold ? "text-ink/40" : "text-ink/65"}`}>
+                        {watch.sold ? (lang === "fr" ? "Vendue" : "Sold") : watch.price}
                       </div>
                     </div>
                   </div>

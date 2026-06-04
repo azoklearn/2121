@@ -101,31 +101,38 @@ export const translations = {
       items: [
         {
           id: "01",
-          title: "Sourcing Privé",
+          title: "Sourcing & Recherche Privée",
           description:
-            "Une recherche silencieuse de pièces rares à travers nos réseaux de collectionneurs en Europe, en Asie et aux Amériques.",
+            "Confiez-nous votre recherche. Nous localisons la pièce que vous cherchez au sein de réseaux privés de collectionneurs.",
           detail: "Réseau Mondial",
         },
         {
           id: "02",
           title: "Authenticité Garantie",
           description:
-            "Chaque montre est expertisée selon les protocoles d'horlogerie les plus rigoureux avant d'entrer dans la collection.",
+            "Chaque montre passe par une expertise horlogère approfondie avant d'intégrer la collection. Toutes nos pièces bénéficient d'une garantie 2121 de trois mois à un an selon la référence.",
           detail: "Maîtres Horlogers",
         },
         {
           id: "03",
           title: "Livraison Internationale",
           description:
-            "Transport assuré, douane gérée. De Paris vers le monde, dans une discrétion absolue et une sécurité totale.",
-          detail: "Assurée & Suivie",
+            "Les pièces sont expédiées via DHL Express ou FedEx Express, soigneusement emballées et intégralement assurées.\n\nÀ réception, merci d'ouvrir le colis en présence du livreur et de signaler immédiatement tout dommage apparent. Sans ce constat, aucune réclamation liée au transport ne pourra être prise en charge.\n\nPour toute expédition hors Union Européenne, la valeur réelle de la pièce est déclarée en douane. Les frais d'importation et taxes locales éventuels restent à la charge du destinataire.",
+          detail: "DHL · FedEx Express",
         },
         {
           id: "04",
-          title: "Conciergerie Privée",
+          title: "Paiement",
           description:
-            "Accompagnement sur rendez-vous : conseil, négociation, archivage. La relation, avant la transaction.",
-          detail: "Sur Rendez-vous",
+            "Pour votre confort, nous proposons le virement bancaire et le paiement par lien sécurisé. Tout règlement s'effectue en euros.",
+          detail: "Virement · Lien sécurisé",
+        },
+        {
+          id: "05",
+          title: "Mentions Légales",
+          description:
+            "2121Collection est édité par 2121 SAS, dont le siège social est situé au 3 avenue de Bouvines, 75100 Paris. SIRET : 942 304 403 00010.\n\nLe directeur de la publication est Monsieur Yann Brosolo.\n\nPour nous contacter : yb@2121collection.com\n\nLe site est hébergé par Vercel.",
+          detail: "2121 SAS · Paris",
         },
       ],
     },
@@ -333,31 +340,38 @@ export const translations = {
       items: [
         {
           id: "01",
-          title: "Private Sourcing",
+          title: "Private Sourcing & Search",
           description:
-            "A silent search for rare pieces through our networks of collectors across Europe, Asia and the Americas.",
+            "Entrust us with your search. We locate the piece you are looking for within private collector networks.",
           detail: "Worldwide Network",
         },
         {
           id: "02",
           title: "Guaranteed Authenticity",
           description:
-            "Every watch is appraised under the most rigorous horological protocols before joining the collection.",
+            "Every watch undergoes thorough horological appraisal before joining the collection. All our pieces come with a 2121 warranty of three months to one year depending on the reference.",
           detail: "Master Watchmakers",
         },
         {
           id: "03",
           title: "International Delivery",
           description:
-            "Insured transport, customs handled. From Paris to the world, with absolute discretion and total security.",
-          detail: "Insured & Tracked",
+            "Pieces are shipped via DHL Express or FedEx Express, carefully packaged and fully insured.\n\nUpon receipt, please open the parcel in the presence of the courier and immediately report any visible damage. Without such a record, no transport-related claim can be accepted.\n\nFor any shipment outside the European Union, the actual value of the piece is declared at customs. Any import duties and local taxes remain the responsibility of the recipient.",
+          detail: "DHL · FedEx Express",
         },
         {
           id: "04",
-          title: "Private Concierge",
+          title: "Payment",
           description:
-            "By-appointment guidance: advice, negotiation, archiving. The relationship, before the transaction.",
-          detail: "By Appointment",
+            "For your convenience, we offer bank transfer and payment via secure link. All settlements are made in euros.",
+          detail: "Transfer · Secure link",
+        },
+        {
+          id: "05",
+          title: "Legal Notice",
+          description:
+            "2121Collection is published by 2121 SAS, with registered office at 3 avenue de Bouvines, 75100 Paris. SIRET: 942 304 403 00010.\n\nThe publication director is Mr Yann Brosolo.\n\nTo contact us: yb@2121collection.com\n\nThe site is hosted by Vercel.",
+          detail: "2121 SAS · Paris",
         },
       ],
     },

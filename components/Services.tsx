@@ -60,7 +60,7 @@ export default function Services() {
                 <h3 className="text-2xl md:text-[28px] font-light tracking-tight leading-[1.1] mb-8">
                   {service.title}
                 </h3>
-                <p className="text-[14px] md:text-[15px] leading-[1.75] text-ink/70 max-w-xs">
+                <p className="text-[14px] md:text-[15px] leading-[1.75] text-ink/70 max-w-xs whitespace-pre-line">
                   {service.description}
                 </p>
               </div>
