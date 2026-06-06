@@ -6,13 +6,26 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const MIN_LOADER_TIME = 1350;
 const MAX_LOADER_TIME = 2400;
+const LOADER_SHOWN_KEY = "2121-loader-shown";
 
 export default function Loader() {
+  // Only show loader on the very first visit of this browser session.
   const [visible, setVisible] = useState(true);
   const { t } = useLanguage();
   const l = t.loader;
 
   useEffect(() => {
+    let alreadyShown = false;
+    try {
+      alreadyShown = !!window.sessionStorage.getItem(LOADER_SHOWN_KEY);
+    } catch {}
+    if (alreadyShown) {
+      setVisible(false);
+      return;
+    }
+    try {
+      window.sessionStorage.setItem(LOADER_SHOWN_KEY, "1");
+    } catch {}
     const startedAt = window.performance.now();
     const previousOverflow = document.body.style.overflow;
 
