@@ -64,7 +64,7 @@ export const watches: Watch[] = [
       { key: { fr: "Accessoires", en: "Accessories" }, value: { fr: "Full set", en: "Full set" } },
       { key: { fr: "Révision", en: "Service" }, value: { fr: "Rolex Service Center — 2021", en: "Rolex Service Center — 2021" } },
       { key: { fr: "État", en: "Condition" }, value: { fr: "Excellent, proche du neuf", en: "Excellent, near mint" } },
-      { key: { fr: "Garantie", en: "Warranty" }, value: { fr: "1 an — maison 2121", en: "1 year — 2121 maison" } },
+      { key: { fr: "Garantie", en: "Warranty" }, value: { fr: "1 an · maison 2121", en: "1 year · 2121 maison" } },
     ],
   },
   {
@@ -107,7 +107,7 @@ export const watches: Watch[] = [
       { key: { fr: "Étanchéité", en: "Water resistance" }, value: "50 m" },
       { key: { fr: "Accessoires", en: "Accessories" }, value: { fr: "Extrait d'archives AP + boîtier de voyage AP", en: "AP archive extract + AP travel case" } },
       { key: { fr: "État", en: "Condition" }, value: { fr: "Excellent état", en: "Excellent condition" } },
-      { key: { fr: "Garantie", en: "Warranty" }, value: { fr: "1 an — maison 2121", en: "1 year — 2121 maison" } },
+      { key: { fr: "Garantie", en: "Warranty" }, value: { fr: "1 an · maison 2121", en: "1 year · 2121 maison" } },
     ],
   },
   {
@@ -149,7 +149,7 @@ export const watches: Watch[] = [
       { key: { fr: "Boucle", en: "Clasp" }, value: { fr: "Déployante Breguet en or jaune", en: "Breguet yellow gold deployant" } },
       { key: { fr: "Accessoires", en: "Accessories" }, value: { fr: "Aucun", en: "None" } },
       { key: { fr: "État", en: "Condition" }, value: { fr: "Excellent", en: "Excellent" } },
-      { key: { fr: "Garantie", en: "Warranty" }, value: { fr: "6 mois — maison 2121", en: "6 months — 2121 maison" } },
+      { key: { fr: "Garantie", en: "Warranty" }, value: { fr: "6 mois · maison 2121", en: "6 months · 2121 maison" } },
     ],
   },
   {
@@ -221,7 +221,7 @@ export const watches: Watch[] = [
       { key: { fr: "Dimensions", en: "Dimensions" }, value: "37,2 mm / 20 mm" },
       { key: { fr: "Étanchéité", en: "Water resistance" }, value: "30 m" },
       { key: { fr: "Accessoires", en: "Accessories" }, value: { fr: "Boîte remontoir Patek Philippe", en: "Patek Philippe winding box" } },
-      { key: { fr: "Garantie", en: "Warranty" }, value: { fr: "6 mois — maison 2121", en: "6 months — 2121 maison" } },
+      { key: { fr: "Garantie", en: "Warranty" }, value: { fr: "6 mois · maison 2121", en: "6 months · 2121 maison" } },
     ],
   },
   {
@@ -255,7 +255,7 @@ export const watches: Watch[] = [
       { key: { fr: "Bracelet", en: "Bracelet" }, value: { fr: "Tissé milanais or jaune 18k", en: "18k yellow gold Milanese mesh" } },
       { key: { fr: "Dimensions", en: "Dimensions" }, value: { fr: "22 mm / intégré", en: "22 mm / integrated" } },
       { key: { fr: "Accessoires", en: "Accessories" }, value: { fr: "Aucun — pièce unique disponible", en: "None — one piece available" } },
-      { key: { fr: "Garantie", en: "Warranty" }, value: { fr: "1 an — maison 2121", en: "1 year — 2121 maison" } },
+      { key: { fr: "Garantie", en: "Warranty" }, value: { fr: "1 an · maison 2121", en: "1 year · 2121 maison" } },
     ],
   },
   {
@@ -286,7 +286,7 @@ export const watches: Watch[] = [
       { key: { fr: "Mouvement", en: "Movement" }, value: { fr: "Quartz", en: "Quartz" } },
       { key: { fr: "Bracelet", en: "Bracelet" }, value: { fr: "Cuir", en: "Leather" } },
       { key: { fr: "Boucle", en: "Buckle" }, value: { fr: "Boucle ardillon Cartier or jaune 18 carats", en: "Cartier 18-carat yellow gold pin buckle" } },
-      { key: { fr: "Garantie", en: "Warranty" }, value: { fr: "6 mois — maison 2121", en: "6 months — 2121 maison" } },
+      { key: { fr: "Garantie", en: "Warranty" }, value: { fr: "6 mois · maison 2121", en: "6 months · 2121 maison" } },
     ],
   },
   {
@@ -328,7 +328,7 @@ export const watches: Watch[] = [
       { key: { fr: "Boucle", en: "Buckle" }, value: { fr: "Ardillon Rolex en acier", en: "Rolex steel pin buckle" } },
       { key: { fr: "Accessoires", en: "Accessories" }, value: { fr: "Aucun", en: "None" } },
       { key: { fr: "État", en: "Condition" }, value: { fr: "Excellent", en: "Excellent" } },
-      { key: { fr: "Garantie", en: "Warranty" }, value: { fr: "6 mois — maison 2121", en: "6 months — 2121 maison" } },
+      { key: { fr: "Garantie", en: "Warranty" }, value: { fr: "6 mois · maison 2121", en: "6 months · 2121 maison" } },
     ],
   },
   {
