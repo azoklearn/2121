@@ -22,7 +22,7 @@ export type Watch = {
   contactOnly?: boolean; // hides price, shows "more info on request"
 };
 
-export const WHATSAPP_NUMBER = "33621212121";
+export const WHATSAPP_NUMBER = "33638768692";
 
 export const watches: Watch[] = [
   {

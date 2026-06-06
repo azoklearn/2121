@@ -222,10 +222,10 @@ export default function Navbar() {
                 <div>
                   <div className="opacity-60 mb-2">{t.navbar.menuWhatsApp}</div>
                   <a
-                    href="https://wa.me/33621212121"
+                    href="https://wa.me/33638768692"
                     className="font-serif italic normal-case tracking-normal text-[12px] hover:opacity-100"
                   >
-                    +33 (0)6 21 21 21 21
+                    +33 (0)6 38 76 86 92
                   </a>
                 </div>
                 <div>

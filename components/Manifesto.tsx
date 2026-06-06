@@ -10,7 +10,7 @@ export default function Manifesto() {
   return (
     <section
       id="story"
-      className="relative bg-ivory text-ink py-20 md:py-48 overflow-hidden"
+      className="relative bg-ivory text-ink py-20 md:py-48 overflow-hidden scroll-mt-32 md:scroll-mt-36"
     >
       <div className="mx-auto px-6 md:px-10 max-w-[1600px]">
         {/* Section header */}
@@ -42,7 +42,7 @@ export default function Manifesto() {
               {m.h2End}
             </motion.h2>
 
-            <div className="grid md:grid-cols-2 gap-10 md:gap-14 max-w-3xl">
+            <div className="max-w-2xl">
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -52,15 +52,17 @@ export default function Manifesto() {
               >
                 {m.para1}
               </motion.p>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 1.2, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                className="text-[15px] md:text-base leading-[1.75] text-ink/75"
-              >
-                {m.para2}
-              </motion.p>
+              {m.para2 && (
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ duration: 1.2, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                  className="text-[15px] md:text-base leading-[1.75] text-ink/75 mt-6"
+                >
+                  {m.para2}
+                </motion.p>
+              )}
             </div>
 
             <motion.div

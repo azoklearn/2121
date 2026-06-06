@@ -10,7 +10,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="relative bg-ivory text-ink py-20 md:py-48 border-t hairline"
+      className="relative bg-ivory text-ink py-20 md:py-48 border-t hairline scroll-mt-32 md:scroll-mt-36"
     >
       <div className="mx-auto px-6 md:px-10 max-w-[1600px]">
         <motion.div

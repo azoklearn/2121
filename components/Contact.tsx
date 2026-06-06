@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative bg-ink text-ivory py-20 md:py-48 overflow-x-hidden"
+      className="relative bg-ink text-ivory py-20 md:py-48 overflow-x-hidden scroll-mt-32 md:scroll-mt-36"
     >
       <div className="mx-auto px-6 md:px-10 max-w-[1600px]">
         <motion.div

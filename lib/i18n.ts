@@ -40,7 +40,7 @@ export const translations = {
       title: "Nos montres",
       titleItalic: "",
       subtitle:
-        "Une sélection silencieuse — sourcée pièce par pièce, à travers nos réseaux privés en Europe et au-delà.",
+        "Chaque pièce est sourcée avec soin à travers notre réseau. Nous apportons une attention particulière aux demandes de nos clients pour leur délivrer la pièce qui leur correspond.",
       hoverView: "— Voir la pièce",
       ctaTitle: "Une pièce vous intéresse ?",
       ctaSubtitle: "Discutons-en — réponse sous 24 heures, dans la plus grande discrétion.",
@@ -82,8 +82,7 @@ export const translations = {
       h2End: ", depuis Paris.",
       para1:
         "Fondée à Paris, 2121Collection est une maison spécialisée en haute horlogerie moderne et néo-vintage. Chaque pièce est choisie avec soin pour sa référence, son authenticité et sa condition. Nous accompagnons nos clients dans l'acquisition de montres rares et d'exception, avec la précision et l'engagement que ces pièces exigent.",
-      para2:
-        "Chaque pièce est sourcée avec soin à travers notre réseau. Nous apportons une attention particulière aux demandes de nos clients pour leur délivrer la pièce qui leur correspond.",
+      para2: "",
       statFounded: "— Fondée",
       statFoundedValue: "MMXXI",
       statSourced: "— Pièces sourcées",
@@ -143,12 +142,12 @@ export const translations = {
       h2Italic: "privée",
       h2Post: ".",
       description:
-        "Notre maison est ouverte uniquement sur rendez-vous. Joignez-nous via le canal discret de votre choix — nous répondons sous vingt-quatre heures.",
+        "Nous sommes disponibles sur rendez-vous ou par contact direct. Joignez-nous via le canal de votre choix. Nous répondons sous vingt-quatre heures.",
       channels: [
         {
           label: "WhatsApp",
-          value: "+33 (0)6 21 21 21 21",
-          link: "https://wa.me/33621212121",
+          value: "+33 (0)6 38 76 86 92",
+          link: "https://wa.me/33638768692",
           note: "Réponse < 24h",
         },
         {
@@ -218,7 +217,7 @@ export const translations = {
     banner: {
       label: "La maison est disponible",
       cta: "Contacter sur WhatsApp",
-      phone: "+33 (0)6 21 21 21 21",
+      phone: "+33 (0)6 38 76 86 92",
       hours: "Paris · Réponse < 24h",
     },
     bottomNav: {
@@ -279,7 +278,7 @@ export const translations = {
       title: "Our watches",
       titleItalic: "",
       subtitle:
-        "A silent selection — sourced piece by piece, through our private networks across Europe and beyond.",
+        "Every piece is sourced with care through our network. We pay particular attention to our clients' requests in order to find the piece that truly corresponds to them.",
       hoverView: "— View the piece",
       ctaTitle: "A piece caught your eye?",
       ctaSubtitle: "Let's talk — expect a reply within 24 hours, with the utmost discretion.",
@@ -321,8 +320,7 @@ export const translations = {
       h2End: ", from Paris.",
       para1:
         "Founded in Paris, 2121Collection is a maison specialising in modern and neo-vintage fine watchmaking. Each piece is carefully selected for its reference, authenticity and condition. We guide our clients in acquiring rare and exceptional timepieces, with the precision and commitment these pieces demand.",
-      para2:
-        "Every piece is sourced with care through our network. We pay particular attention to our clients' requests in order to find the piece that truly corresponds to them.",
+      para2: "",
       statFounded: "— Founded",
       statFoundedValue: "MMXXI",
       statSourced: "— Pieces Sourced",
@@ -382,12 +380,12 @@ export const translations = {
       h2Italic: "private",
       h2Post: " consultation.",
       description:
-        "Our maison is open by appointment only. Reach us through the discreet channel of your choice — we respond within twenty-four hours.",
+        "We are available by appointment or direct contact. Reach us through the channel of your choice. We respond within twenty-four hours.",
       channels: [
         {
           label: "WhatsApp",
-          value: "+33 (0)6 21 21 21 21",
-          link: "https://wa.me/33621212121",
+          value: "+33 (0)6 38 76 86 92",
+          link: "https://wa.me/33638768692",
           note: "Reply < 24h",
         },
         {
@@ -457,7 +455,7 @@ export const translations = {
     banner: {
       label: "The maison is available",
       cta: "Reach us on WhatsApp",
-      phone: "+33 (0)6 21 21 21 21",
+      phone: "+33 (0)6 38 76 86 92",
       hours: "Paris · Reply < 24h",
     },
     bottomNav: {

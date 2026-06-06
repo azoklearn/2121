@@ -44,7 +44,7 @@ export default function Footer() {
             <ul className="space-y-3 text-[13px] tracking-tight">
               <li><a href="https://instagram.com/2121collection" className="hover:opacity-50 transition-opacity duration-500">Instagram ↗</a></li>
               <li><a href="https://threads.net/@2121collection" className="hover:opacity-50 transition-opacity duration-500">Threads ↗</a></li>
-              <li><a href="https://wa.me/33621212121" className="hover:opacity-50 transition-opacity duration-500">WhatsApp ↗</a></li>
+              <li><a href="https://wa.me/33638768692" className="hover:opacity-50 transition-opacity duration-500">WhatsApp ↗</a></li>
               <li><a href="mailto:yb@2121collection.com" className="hover:opacity-50 transition-opacity duration-500">Email ↗</a></li>
             </ul>
           </motion.div>

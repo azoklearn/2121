@@ -8,7 +8,7 @@ export default function TopBanner() {
 
   return (
     <a
-      href="https://wa.me/33621212121"
+      href="https://wa.me/33638768692"
       target="_blank"
       rel="noreferrer"
       className="group fixed top-0 left-0 right-0 z-[55] bg-ink text-ivory border-b hairline-light hover:bg-ink-soft transition-colors duration-500"
