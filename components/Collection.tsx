@@ -137,10 +137,18 @@ export default function Collection() {
                         {watch.model}
                       </h3>
 
-                      {/* Reference */}
-                      <div className="text-[10px] tracking-wide opacity-55 mb-2 leading-tight">
-                        {loc(watch.reference, lang)}
-                      </div>
+                      {/* Reference — strip model prefix to avoid duplication */}
+                      {(() => {
+                        const refFull = loc(watch.reference, lang);
+                        const refShort = refFull.startsWith(watch.model)
+                          ? refFull.slice(watch.model.length).replace(/^[\s·—]+/, '')
+                          : refFull;
+                        return refShort ? (
+                          <div className="text-[10px] tracking-wide opacity-55 mb-2 leading-tight">
+                            {refShort}
+                          </div>
+                        ) : null;
+                      })()}
 
                       {/* Short summary */}
                       {summary && (
