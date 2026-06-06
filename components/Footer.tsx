@@ -68,28 +68,6 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 1.2, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
-            className="col-span-12 md:col-span-12 lg:col-span-3 lg:text-right"
-          >
-            <div className="text-[10px] tracking-widest uppercase opacity-50 mb-6 lg:justify-end flex items-center gap-3">
-              <span className="h-px w-6 bg-ivory/40 lg:order-2" />
-              <span className="lg:order-1">{f.newsletter}</span>
-            </div>
-            <p className="text-[14px] leading-[1.7] opacity-80 mb-6 max-w-xs lg:ml-auto">
-              {f.newsletterText}
-            </p>
-            <a
-              href="#contact"
-              className="group inline-flex items-center gap-3 text-[11px] tracking-widest uppercase border-b border-ivory/40 pb-2 hover:border-ivory transition-colors duration-700"
-            >
-              {f.subscribe}
-              <span className="transition-transform duration-500 group-hover:translate-x-1">↗</span>
-            </a>
-          </motion.div>
         </div>
 
         {/* Massive wordmark */}

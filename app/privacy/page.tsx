@@ -46,7 +46,7 @@ export default function Privacy() {
                 Conformément au Règlement Général sur la Protection des Données, vous
                 disposez d'un droit d'accès, de rectification et de suppression de vos
                 données. Pour exercer ces droits, contactez-nous à{" "}
-                <a href="mailto:private@2121.paris" className="underline underline-offset-2 hover:opacity-70">private@2121.paris</a>.
+                <a href="mailto:yb@2121collection.com" className="underline underline-offset-2 hover:opacity-70">yb@2121collection.com</a>.
               </p>
             </section>
 

@@ -28,7 +28,7 @@ export const watches: Watch[] = [
   {
     slug: "rolex-submariner-14060m",
     brand: "Rolex",
-    model: "Submariner No Date",
+    model: "Submariner",
     reference: { fr: "Submariner 14060M — Two Lines", en: "Submariner 14060M — Two Lines" },
     year: "2001",
     condition: { fr: "Excellent", en: "Excellent" },

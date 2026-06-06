@@ -27,7 +27,7 @@ export default function MentionsLegales() {
               <p>
                 2121 Maison Privée<br />
                 21, Rue de la Paix · 75002 Paris · France<br />
-                Email : <a href="mailto:private@2121.paris" className="underline underline-offset-2 hover:opacity-70">private@2121.paris</a><br />
+                Email : <a href="mailto:yb@2121collection.com" className="underline underline-offset-2 hover:opacity-70">yb@2121collection.com</a><br />
                 WhatsApp : +33 (0)6 21 21 21 21
               </p>
             </section>
@@ -59,7 +59,7 @@ export default function MentionsLegales() {
               <h2 className="text-[10px] tracking-widest uppercase opacity-55 mb-3">Contact</h2>
               <p>
                 Pour toute demande relative aux présentes mentions légales, merci de nous
-                contacter par email à <a href="mailto:private@2121.paris" className="underline underline-offset-2 hover:opacity-70">private@2121.paris</a>.
+                contacter par email à <a href="mailto:yb@2121collection.com" className="underline underline-offset-2 hover:opacity-70">yb@2121collection.com</a>.
               </p>
             </section>
           </div>

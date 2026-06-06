@@ -21,9 +21,9 @@ export const translations = {
       placeholder: "Rolex, Daytona, 14060M, Vacheron…",
       pieces: "pièces",
       piece: "pièce",
-      empty: "Aucune pièce ne correspond — réessayez avec une autre référence.",
+      empty: "Aucune pièce ne correspond. Réessayez avec une autre référence.",
       footer: "↵ Sélectionner — esc Fermer",
-      inventory: "Inventaire confidentiel — mis à jour chaque semaine",
+      inventory: "Inventaire confidentiel, mis à jour chaque semaine",
     },
     hero: {
       eyebrow: "— Maison Privée · Paris",
@@ -31,7 +31,7 @@ export const translations = {
       titleItalic: "montres de collection",
       titlePost: "à Paris.",
       description:
-        "Spécialistes en horlogerie de collection. Chaque pièce de notre collection est soigneusement sourcée auprès de collectionneurs européens, expertisée puis confiée — dans la plus grande discrétion.",
+        "Spécialistes en horlogerie de collection. Chaque pièce de notre collection est soigneusement sourcée auprès de collectionneurs européens, expertisée puis confiée, dans la plus grande discrétion.",
       cta: "Découvrir la collection",
     },
     collection: {
@@ -43,7 +43,7 @@ export const translations = {
         "Chaque pièce est sourcée avec soin à travers notre réseau. Nous apportons une attention particulière aux demandes de nos clients pour leur délivrer la pièce qui leur correspond.",
       hoverView: "— Voir la pièce",
       ctaTitle: "Une pièce vous intéresse ?",
-      ctaSubtitle: "Discutons-en — réponse sous 24 heures, dans la plus grande discrétion.",
+      ctaSubtitle: "Discutons-en. Réponse sous 24 heures.",
       ctaButton: "Contacter sur WhatsApp",
       ctaNote: "Réponse < 24 HR",
     },
@@ -58,8 +58,8 @@ export const translations = {
       emailLabel: "Écrire par email",
       emailDiscuss: "yb@2121collection.com",
       disclaimer:
-        "Messages pré-remplis — réponse sous 24h. Discrétion garantie.",
-      photo: "Photographiée à l'atelier — 21 Rue de la Paix",
+        "Messages pré-remplis. Réponse sous 24h.",
+      photo: "Photographiée à l'atelier · 21 Rue de la Paix",
       onePiece: "une pièce",
       wordOfHouse: "Le mot de la maison",
       specs: "Spécifications",
@@ -109,7 +109,7 @@ export const translations = {
           id: "02",
           title: "Authenticité Garantie",
           description:
-            "Chaque montre passe par une expertise horlogère approfondie avant d'intégrer la collection. Toutes nos pièces bénéficient d'une garantie 2121 de trois mois à un an selon la référence.",
+            "Toutes nos pièces sont inspectées par notre horloger et couvertes par une garantie de 90 jours. Les montres révisées bénéficient d'une garantie mécanique d'un an.\n\nLes interventions sont effectuées exclusivement avec des composants d'origine. La garantie ne couvre pas les dommages liés à l'usage. Pour les pièces vintage, étanchéité et précision de marche sont garanties uniquement sur les montres ayant fait l'objet d'un service complet.",
           detail: "Maîtres Horlogers",
         },
         {
@@ -201,7 +201,7 @@ export const translations = {
       maisonText: {
         pre: "Une maison parisienne",
         italic: "indépendante",
-        post: " pour le collectionneur discret — bâtie en silence, depuis MMXXI.",
+        post: " pour le collectionneur discret, bâtie en silence, depuis MMXXI.",
       },
       connect: "— Réseaux",
       maison: "— Maison",
@@ -231,13 +231,13 @@ export const translations = {
       city: "Paris",
     },
     whatsapp: (brand: string, model: string, ref: string) =>
-      `Bonjour 2121, je suis intéressé par la ${brand} ${model} (${ref}). Pourriez-vous me communiquer plus d'informations — disponibilité, papiers, photos additionnelles, prix ?`,
+      `Bonjour 2121, je suis intéressé par la ${brand} ${model} (${ref}). Pourriez-vous me communiquer plus d'informations sur la disponibilité, les papiers et le prix ?`,
     whatsappGeneric:
       "Bonjour 2121, je suis intéressé(e) par une pièce de votre collection. Pourriez-vous me communiquer plus d'informations ?",
     emailSubject: (brand: string, model: string) =>
-      `2121 — Demande d'informations · ${brand} ${model}`,
+      `2121 · Demande d'informations · ${brand} ${model}`,
     emailBody: (brand: string, model: string, ref: string) =>
-      `Bonjour 2121,\n\nJe me permets de vous contacter au sujet de la ${brand} ${model} (${ref}) présentée sur votre site.\n\nPourriez-vous me communiquer:\n— la disponibilité actuelle de la pièce\n— les papiers et l'historique de provenance\n— des photos additionnelles si possible\n— les modalités de paiement et de livraison\n\nDans l'attente de votre retour,\nCordialement,`,
+      `Bonjour 2121,\n\nJe vous contacte au sujet de la ${brand} ${model} (${ref}) présentée sur votre site.\n\nPourriez-vous me communiquer la disponibilité actuelle, les papiers et l'historique de provenance, des photos additionnelles si possible, ainsi que les modalités de paiement et de livraison ?\n\nCordialement,`,
   },
   en: {
     navbar: {
@@ -259,9 +259,9 @@ export const translations = {
       placeholder: "Rolex, Daytona, 14060M, Vacheron…",
       pieces: "pieces",
       piece: "piece",
-      empty: "No watch found — try another brand, model or reference.",
+      empty: "No watch found. Try another brand, model or reference.",
       footer: "↵ Select — esc Close",
-      inventory: "Confidential inventory — updated weekly",
+      inventory: "Confidential inventory, updated weekly",
     },
     hero: {
       eyebrow: "— Private Maison · Paris",
@@ -281,7 +281,7 @@ export const translations = {
         "Every piece is sourced with care through our network. We pay particular attention to our clients' requests in order to find the piece that truly corresponds to them.",
       hoverView: "— View the piece",
       ctaTitle: "A piece caught your eye?",
-      ctaSubtitle: "Let's talk — expect a reply within 24 hours, with the utmost discretion.",
+      ctaSubtitle: "Let's talk. We reply within 24 hours.",
       ctaButton: "Reach us on WhatsApp",
       ctaNote: "Reply < 24 HR",
     },
@@ -297,7 +297,7 @@ export const translations = {
       emailDiscuss: "yb@2121collection.com",
       disclaimer:
         "Pre-filled messages — reply within 24h. Discretion guaranteed.",
-      photo: "Photographed at the workshop — 21 Rue de la Paix",
+      photo: "Photographed at the workshop · 21 Rue de la Paix",
       onePiece: "one piece",
       wordOfHouse: "From the house",
       specs: "Specifications",
@@ -347,7 +347,7 @@ export const translations = {
           id: "02",
           title: "Guaranteed Authenticity",
           description:
-            "Every watch undergoes thorough horological appraisal before joining the collection. All our pieces come with a 2121 warranty of three months to one year depending on the reference.",
+            "All our pieces are inspected by our watchmaker and covered by a 90-day warranty. Serviced watches benefit from a one-year mechanical warranty.\n\nAll work is carried out exclusively using original components. The warranty does not cover damage resulting from use. For vintage pieces, water resistance and timekeeping accuracy are only guaranteed on watches that have undergone a complete service.",
           detail: "Master Watchmakers",
         },
         {
@@ -439,7 +439,7 @@ export const translations = {
       maisonText: {
         pre: "An",
         italic: "independent",
-        post: " Parisian maison for the discreet collector — built quietly, since MMXXI.",
+        post: " Parisian maison for the discreet collector, built quietly, since MMXXI.",
       },
       connect: "— Connect",
       maison: "— Maison",
@@ -469,13 +469,13 @@ export const translations = {
       city: "Paris",
     },
     whatsapp: (brand: string, model: string, ref: string) =>
-      `Hello 2121, I am interested in the ${brand} ${model} (${ref}). Could you share more information — availability, papers, additional photos, price?`,
+      `Hello 2121, I am interested in the ${brand} ${model} (${ref}). Could you share more information on availability, papers and price?`,
     whatsappGeneric:
       "Hello 2121, I am interested in a piece from your collection. Could you share more information?",
     emailSubject: (brand: string, model: string) =>
-      `2121 — Information request · ${brand} ${model}`,
+      `2121 · Information request · ${brand} ${model}`,
     emailBody: (brand: string, model: string, ref: string) =>
-      `Hello 2121,\n\nI am writing about the ${brand} ${model} (${ref}) featured on your site.\n\nCould you please share:\n— current availability of the piece\n— papers and provenance history\n— additional photos if possible\n— payment and shipping terms\n\nLooking forward to your reply,\nBest regards,`,
+      `Hello 2121,\n\nI am writing about the ${brand} ${model} (${ref}) featured on your site.\n\nCould you share the current availability, papers and provenance history, additional photos if possible, as well as payment and shipping terms?\n\nBest regards,`,
   },
 } as const;
 

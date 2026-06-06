@@ -133,9 +133,14 @@ export default function Collection() {
                       </div>
 
                       {/* Model in large italic serif — negative margin compensates italic left-side bearing */}
-                      <h3 className="font-serif italic text-[22px] leading-[1.1] tracking-tight mb-2 text-ink -ml-[2px]">
+                      <h3 className="font-serif italic text-[22px] leading-[1.1] tracking-tight mb-1 text-ink -ml-[2px]">
                         {watch.model}
                       </h3>
+
+                      {/* Reference */}
+                      <div className="text-[10px] tracking-wide opacity-55 mb-2 leading-tight">
+                        {loc(watch.reference, lang)}
+                      </div>
 
                       {/* Short summary */}
                       {summary && (
