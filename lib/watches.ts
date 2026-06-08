@@ -29,7 +29,7 @@ export const watches: Watch[] = [
     slug: "rolex-submariner-14060m",
     brand: "Rolex",
     model: "Submariner",
-    reference: { fr: "Submariner 14060M — Two Lines", en: "Submariner 14060M — Two Lines" },
+    reference: { fr: "Submariner 14060M", en: "Submariner 14060M" },
     year: "2001",
     condition: { fr: "Excellent", en: "Excellent" },
     price: "9 680 €",

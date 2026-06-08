@@ -128,7 +128,7 @@ export default function Collection() {
                     {/* Info block */}
                     <div className="p-3 pb-3.5 flex-1 flex flex-col">
                       {/* Brand */}
-                      <div className="text-[9px] tracking-widest uppercase opacity-70 leading-tight mb-2">
+                      <div className="text-[12px] font-medium tracking-[0.18em] uppercase opacity-90 leading-tight mb-2">
                         {watch.brand}
                       </div>
 
@@ -159,7 +159,7 @@ export default function Collection() {
 
                       {/* Price + VIEW — pushed to bottom for equal-height cards */}
                       <div className="mt-auto flex items-end justify-between pt-1">
-                        <div className={`font-serif italic text-[18px] leading-none tracking-tight ${watch.sold ? "opacity-50" : ""}`}>
+                        <div className={`font-serif text-[18px] leading-none tracking-tight ${watch.sold ? "opacity-50" : ""}`}>
                           {watch.sold ? (lang === "fr" ? "Vendue" : "Sold") : watch.price}
                         </div>
                         {!watch.sold && (

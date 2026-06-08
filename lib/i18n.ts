@@ -27,9 +27,9 @@ export const translations = {
     },
     hero: {
       eyebrow: "— Maison Privée · Paris",
-      titlePre: "Achat & vente de",
+      titlePre: "Maison parisienne spécialisée dans les",
       titleItalic: "montres de collection",
-      titlePost: "à Paris.",
+      titlePost: ".",
       description:
         "Spécialistes en horlogerie de collection. Chaque pièce de notre collection est soigneusement sourcée auprès de collectionneurs européens, expertisée puis confiée, dans la plus grande discrétion.",
       cta: "Découvrir la collection",
@@ -110,7 +110,7 @@ export const translations = {
           title: "Authenticité Garantie",
           description:
             "Toutes nos pièces sont inspectées par notre horloger et couvertes par une garantie de 90 jours. Les montres révisées bénéficient d'une garantie mécanique d'un an.\n\nLes interventions sont effectuées exclusivement avec des composants d'origine. La garantie ne couvre pas les dommages liés à l'usage. Pour les pièces vintage, étanchéité et précision de marche sont garanties uniquement sur les montres ayant fait l'objet d'un service complet.",
-          detail: "Maîtres Horlogers",
+          detail: "",
         },
         {
           id: "03",
@@ -265,9 +265,9 @@ export const translations = {
     },
     hero: {
       eyebrow: "— Private Maison · Paris",
-      titlePre: "Buying & selling",
+      titlePre: "Parisian maison specialising in",
       titleItalic: "collectible watches",
-      titlePost: "in Paris.",
+      titlePost: ".",
       description:
         "Specialists in collectible horology. Every piece in our collection is carefully sourced from European collectors, appraised and then entrusted — with the utmost discretion.",
       cta: "Discover the collection",
@@ -348,7 +348,7 @@ export const translations = {
           title: "Guaranteed Authenticity",
           description:
             "All our pieces are inspected by our watchmaker and covered by a 90-day warranty. Serviced watches benefit from a one-year mechanical warranty.\n\nAll work is carried out exclusively using original components. The warranty does not cover damage resulting from use. For vintage pieces, water resistance and timekeeping accuracy are only guaranteed on watches that have undergone a complete service.",
-          detail: "Master Watchmakers",
+          detail: "",
         },
         {
           id: "03",

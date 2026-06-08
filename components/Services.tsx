@@ -65,11 +65,13 @@ export default function Services() {
                 </p>
               </div>
 
-              <div className="mt-7 md:mt-12 pt-5 md:pt-6 border-t hairline">
-                <span className="text-[10px] tracking-widest uppercase opacity-60 italic font-serif text-[12px] tracking-normal">
-                  {service.detail}
-                </span>
-              </div>
+              {service.detail && (
+                <div className="mt-7 md:mt-12 pt-5 md:pt-6 border-t hairline">
+                  <span className="text-[10px] tracking-widest uppercase opacity-60 italic font-serif text-[12px] tracking-normal">
+                    {service.detail}
+                  </span>
+                </div>
+              )}
             </motion.article>
           ))}
         </div>
