@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Mentions Légales — 2121 Maison Privée",
+  title: "Mentions Légales — 2121collection",
 };
 
 export default function MentionsLegales() {
@@ -25,7 +25,7 @@ export default function MentionsLegales() {
             <section>
               <h2 className="text-[10px] tracking-widest uppercase opacity-55 mb-3">Éditeur</h2>
               <p>
-                2121 Maison Privée<br />
+                2121collection<br />
                 21, Rue de la Paix · 75002 Paris · France<br />
                 Email : <a href="mailto:yb@2121collection.com" className="underline underline-offset-2 hover:opacity-70">yb@2121collection.com</a><br />
                 WhatsApp : +33 (0)6 21 21 21 21
@@ -34,7 +34,7 @@ export default function MentionsLegales() {
 
             <section>
               <h2 className="text-[10px] tracking-widest uppercase opacity-55 mb-3">Directeur de la publication</h2>
-              <p>2121 Maison Privée</p>
+              <p>2121collection</p>
             </section>
 
             <section>
@@ -50,7 +50,7 @@ export default function MentionsLegales() {
               <h2 className="text-[10px] tracking-widest uppercase opacity-55 mb-3">Propriété intellectuelle</h2>
               <p>
                 L'ensemble des contenus présents sur le site (textes, images, vidéos, logos)
-                est la propriété exclusive de 2121 Maison Privée. Toute reproduction, même
+                est la propriété exclusive de 2121collection. Toute reproduction, même
                 partielle, est interdite sans autorisation écrite préalable.
               </p>
             </section>

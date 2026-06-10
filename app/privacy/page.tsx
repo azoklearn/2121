@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Politique de confidentialité — 2121 Maison Privée",
+  title: "Politique de confidentialité — 2121collection",
 };
 
 export default function Privacy() {
@@ -25,7 +25,7 @@ export default function Privacy() {
             <section>
               <h2 className="text-[10px] tracking-widest uppercase opacity-55 mb-3">Données collectées</h2>
               <p>
-                2121 Maison Privée ne collecte aucune donnée personnelle automatiquement
+                2121collection ne collecte aucune donnée personnelle automatiquement
                 sur ce site. Aucun cookie de tracking, aucun service d'analyse tiers.
               </p>
             </section>
