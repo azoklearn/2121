@@ -133,7 +133,7 @@ export default function Collection() {
                       </div>
 
                       {/* Model in large italic serif — negative margin compensates italic left-side bearing */}
-                      <h3 className="font-serif italic text-[22px] leading-[1.1] tracking-tight mb-1 text-ink -ml-[2px]">
+                      <h3 className="font-serif italic text-[18px] leading-[1.1] tracking-tight mb-1 text-ink -ml-[2px] whitespace-nowrap overflow-hidden text-ellipsis">
                         {watch.model}
                       </h3>
 
