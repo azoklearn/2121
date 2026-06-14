@@ -159,7 +159,8 @@ export const watches: Watch[] = [
     reference: "5140R-011",
     year: "2017",
     condition: { fr: "Excellent", en: "Excellent" },
-    price: "52 000 €",
+    price: "Vendue",
+    sold: true,
     image: "/montre/patek/1.jpg",
     images: [
       "/montre/patek/1.jpg",
@@ -232,7 +233,8 @@ export const watches: Watch[] = [
     reference: { fr: "Mini Tortue", en: "Mini Tortue" },
     year: { fr: "Vintage", en: "Vintage" },
     condition: { fr: "Très bon", en: "Very good" },
-    price: "4 800 €",
+    price: "Vendue",
+    sold: true,
     image: "/montre/verte/1.jpg",
     images: [
       "/montre/verte/1.jpg",
@@ -572,8 +574,8 @@ export const watches: Watch[] = [
   {
     slug: "audemars-piguet-quantieme-perpetuel-25657or",
     brand: "Audemars Piguet",
-    model: "Quantième Perpétuel",
-    reference: "Quantième Perpétuel 25657OR",
+    model: "Perpétuel 25657OR",
+    reference: "Perpétuel 25657OR",
     year: { fr: "Circa 1990", en: "Circa 1990" },
     condition: { fr: "Excellent", en: "Excellent" },
     price: "Vendue",
