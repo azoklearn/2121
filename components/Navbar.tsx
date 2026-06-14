@@ -71,17 +71,12 @@ export default function Navbar() {
           <div className="flex items-center justify-center">
             <Link href="/" className="group flex flex-col items-center justify-center leading-none">
               <img
-                src="/logo.png"
-                alt="2121"
-                className={`h-16 w-auto md:h-14 object-contain transition-all duration-700 ${
+                src="/navbar.png"
+                alt="2121 — modern & vintage watches"
+                className={`h-16 w-auto md:h-14 object-contain scale-[2.4] origin-center transition-all duration-700 ${
                   useLightStyle ? "" : "invert"
                 }`}
               />
-              <span
-                className="font-serif font-semibold text-[11px] md:text-[12px] tracking-[0.2em] -mt-3 md:mt-0 opacity-90 select-none whitespace-nowrap"
-              >
-                modern &amp; vintage watches
-              </span>
             </Link>
           </div>
 
