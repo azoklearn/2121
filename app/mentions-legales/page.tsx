@@ -26,7 +26,7 @@ export default function MentionsLegales() {
               <h2 className="text-[10px] tracking-widest uppercase opacity-55 mb-3">Éditeur</h2>
               <p>
                 2121collection<br />
-                21, Rue de la Paix · 75002 Paris · France<br />
+                3 avenue de Bouvines · 75011 Paris · France<br />
                 Email : <a href="mailto:yb@2121collection.com" className="underline underline-offset-2 hover:opacity-70">yb@2121collection.com</a><br />
                 WhatsApp : +33 (0)6 21 21 21 21
               </p>

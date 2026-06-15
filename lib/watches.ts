@@ -179,7 +179,7 @@ export const watches: Watch[] = [
       { key: { fr: "Marque", en: "Brand" }, value: "Patek Philippe" },
       { key: { fr: "Année", en: "Year" }, value: "2017" },
       { key: { fr: "Référence", en: "Reference" }, value: "5140R-001" },
-      { key: { fr: "Matière", en: "Material" }, value: { fr: "Or rose 18k", en: "18k rose gold" } },
+      { key: { fr: "Boîtier", en: "Case" }, value: { fr: "Or rose 18k", en: "18k rose gold" } },
       { key: { fr: "Mouvement", en: "Movement" }, value: { fr: "Automatique manufacture — Calibre 240 Q", en: "In-house automatic — Calibre 240 Q" } },
       { key: { fr: "Bracelet", en: "Bracelet" }, value: { fr: "Crocodile brun Patek Philippe, boucle déployante or rose", en: "Brown Patek Philippe crocodile, rose gold deployant clasp" } },
       { key: { fr: "Dimensions boîtier", en: "Case dimensions" }, value: "37,2 mm / 20 mm" },
