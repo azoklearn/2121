@@ -25,16 +25,17 @@ export default function MentionsLegales() {
             <section>
               <h2 className="text-[10px] tracking-widest uppercase opacity-55 mb-3">Éditeur</h2>
               <p>
-                2121collection<br />
+                2121 SAS<br />
                 3 avenue de Bouvines · 75011 Paris · France<br />
+                SIRET : 942 304 403 00010<br />
                 Email : <a href="mailto:yb@2121collection.com" className="underline underline-offset-2 hover:opacity-70">yb@2121collection.com</a><br />
-                WhatsApp : +33 (0)6 21 21 21 21
+                WhatsApp : +33 (0)6 38 76 86 92
               </p>
             </section>
 
             <section>
               <h2 className="text-[10px] tracking-widest uppercase opacity-55 mb-3">Directeur de la publication</h2>
-              <p>2121collection</p>
+              <p>Monsieur Yann Brosolo</p>
             </section>
 
             <section>

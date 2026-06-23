@@ -211,7 +211,7 @@ export default function Navbar() {
                 <div>
                   <div className="opacity-60 mb-2">{t.navbar.menuParis}</div>
                   <div className="font-serif italic normal-case tracking-normal text-[12px]">
-                    21, Rue de la Paix
+                    3 avenue de Bouvines
                   </div>
                 </div>
                 <div>
