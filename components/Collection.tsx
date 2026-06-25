@@ -35,7 +35,7 @@ export default function Collection() {
       id="collection"
       className="relative bg-ivory text-ink py-16 md:py-36 border-t hairline scroll-mt-32 md:scroll-mt-36"
     >
-      <div className="mx-auto px-6 md:px-10 max-w-[1600px]">
+      <div className="mx-auto px-3 md:px-10 max-w-[1600px]">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -71,7 +71,7 @@ export default function Collection() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 lg:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-6 lg:gap-8">
           {[...watches].sort((a, b) => Number(!!a.sold) - Number(!!b.sold)).map((watch, idx) => {
             // Extract data from specs for the card description
             const getSpec = (frKey: string) => {

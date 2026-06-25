@@ -201,7 +201,7 @@ export const translations = {
       maisonText: {
         pre: "Une maison parisienne",
         italic: "indépendante",
-        post: " pour le collectionneur discret, bâtie en silence, depuis MMXXI.",
+        post: " dédiée aux montres de collection, choisies avec exigence.",
       },
       connect: "— Réseaux",
       maison: "— Maison",
@@ -439,7 +439,7 @@ export const translations = {
       maisonText: {
         pre: "An",
         italic: "independent",
-        post: " Parisian maison for the discreet collector, built quietly, since MMXXI.",
+        post: " Parisian maison dedicated to collectible watches, chosen with discernment.",
       },
       connect: "— Connect",
       maison: "— Maison",
