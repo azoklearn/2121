@@ -778,8 +778,7 @@ export const watches: Watch[] = [
     reference: "Royal Oak « Owl » 25594BA",
     year: { fr: "Circa 1985", en: "Circa 1985" },
     condition: { fr: "Bon", en: "Good" },
-    price: "Nous consulter",
-    contactOnly: true,
+    price: "37 900 €",
     image: "/montre/firstofthemonth/WhatsApp%20Image%202026-07-01%20at%2014.24.22.jpeg",
     images: [
       "/montre/firstofthemonth/WhatsApp%20Image%202026-07-01%20at%2014.24.22.jpeg",
