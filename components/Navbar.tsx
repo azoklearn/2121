@@ -73,7 +73,7 @@ export default function Navbar() {
               <img
                 src="/logo.png"
                 alt="2121"
-                className={`h-12 w-auto md:h-11 object-contain transition-all duration-700 ${
+                className={`h-20 w-auto md:h-16 object-contain transition-all duration-700 ${
                   useLightStyle ? "" : "invert"
                 }`}
               />
