@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-ink text-ivory border-t hairline-light overflow-hidden">
-      <div className="px-6 md:px-10 pt-20 md:pt-28 pb-10 md:pb-14">
+      <div className="px-6 md:px-10 pt-20 md:pt-28 pb-28 md:pb-14">
         {/* Top row */}
         <div className="grid grid-cols-12 gap-6 md:gap-10 mb-16 md:mb-24">
           <motion.div
@@ -98,6 +98,19 @@ export default function Footer() {
           <div className="col-span-12 md:col-span-3 text-right tnum">
             48.8566° N · 2.3522° E
           </div>
+        </div>
+
+        {/* Credit */}
+        <div className="mt-6 md:mt-8 pt-4 border-t hairline-light text-[10px] tracking-widest uppercase opacity-40 text-center">
+          Site créé par Noan Web ·{" "}
+          <a
+            href="https://noanweb.com"
+            target="_blank"
+            rel="noreferrer"
+            className="underline underline-offset-2 opacity-100 hover:opacity-70 transition-opacity"
+          >
+            noanweb.com
+          </a>
         </div>
       </div>
     </footer>
