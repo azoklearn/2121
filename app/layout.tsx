@@ -7,7 +7,7 @@ import BottomNav from "@/components/BottomNav";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://2121.paris"),
-  title: "2121 — Modern & Vintage Watches | Maison Privée Paris",
+  title: "2121 Modern & Vintage Watches | Maison Privée Paris",
   description:
     "Maison parisienne privée dédiée à l'achat, la vente et le sourcing de montres de collection. Une approche silencieuse du luxe horloger, entre tradition et modernité.",
   keywords: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   authors: [{ name: "2121 Maison" }],
   creator: "2121",
   openGraph: {
-    title: "2121 — Modern & Vintage Watches",
+    title: "2121 Modern & Vintage Watches",
     description: "A private Parisian maison for the discreet watch collector.",
     type: "website",
     locale: "en_US",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "2121 — Modern & Vintage Watches",
+    title: "2121 Modern & Vintage Watches",
     description: "A private Parisian maison for the discreet watch collector.",
   },
 };
