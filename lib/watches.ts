@@ -32,7 +32,7 @@ export const watches: Watch[] = [
     reference: "Santos-Dumont Ultra-Plate 1576",
     year: { fr: "Circa milieu des années 1980", en: "Circa mid-1980s" },
     condition: { fr: "Très bon", en: "Very good" },
-    price: "13 900 €",
+    price: "13 600 €",
     image: "/montre/striper/1.jpeg",
     images: [
       "/montre/striper/1.jpeg",
