@@ -856,6 +856,42 @@ export const watches: Watch[] = [
       { key: { fr: "Accessoires", en: "Accessories" }, value: { fr: "Full set", en: "Full set" } },
     ],
   },
+  {
+    slug: "rolex-oyster-army-3139",
+    brand: "Rolex",
+    model: "Oyster Army 3139",
+    reference: "Oyster Army 3139",
+    year: "1942",
+    condition: { fr: "Très bon", en: "Very good" },
+    price: "4 150 €",
+    image: "/montre/whop/1.jpeg",
+    images: [
+      "/montre/whop/1.jpeg",
+    ],
+    video: "/montre/whop/2.mp4",
+    intro: {
+      fr: "Datée de 1942, cette Rolex Oyster référence 3139 est surnommée « Oyster Army », en raison de son dessin fonctionnel et de la grande lisibilité de son cadran. Elle se présente dans un très bel état de conservation, avec son boîtier Oyster en acier de 30 mm, son cadran argenté patiné et ses aiguilles en acier bleui.",
+      en: "Dated 1942, this Rolex Oyster reference 3139 is nicknamed \"Oyster Army\" for its functional design and highly legible dial. It is presented in very good condition, with its 30 mm steel Oyster case, patinated silvered dial and blued steel hands.",
+    },
+    description: {
+      fr: "La montre est animée par un mouvement mécanique à remontage manuel et accompagnée de sa boucle Rolex d'origine.",
+      en: "The watch is driven by a manual-winding mechanical movement and comes with its original Rolex buckle.",
+    },
+    specs: [
+      { key: { fr: "Marque", en: "Brand" }, value: "Rolex" },
+      { key: { fr: "Modèle", en: "Model" }, value: { fr: "Oyster Chronometer « Army »", en: "Oyster Chronometer \"Army\"" } },
+      { key: { fr: "Référence", en: "Reference" }, value: "3139" },
+      { key: { fr: "Année", en: "Year" }, value: "1942" },
+      { key: { fr: "Boîtier", en: "Case" }, value: { fr: "Acier", en: "Steel" } },
+      { key: { fr: "Diamètre", en: "Diameter" }, value: "30 mm" },
+      { key: { fr: "Cadran", en: "Dial" }, value: { fr: "Argenté patiné", en: "Patinated silvered" } },
+      { key: { fr: "Mouvement", en: "Movement" }, value: { fr: "Mécanique à remontage manuel", en: "Manual-winding mechanical" } },
+      { key: { fr: "Fonctions", en: "Functions" }, value: { fr: "Heures, minutes, seconde centrale", en: "Hours, minutes, central seconds" } },
+      { key: { fr: "Verre", en: "Crystal" }, value: { fr: "Plexiglas", en: "Plexiglass" } },
+      { key: { fr: "Boucle", en: "Buckle" }, value: { fr: "Rolex d'origine", en: "Original Rolex" } },
+      { key: { fr: "État", en: "Condition" }, value: { fr: "Très bon état", en: "Very good condition" } },
+    ],
+  },
 ];
 
 export function getWatch(slug: string): Watch | undefined {
