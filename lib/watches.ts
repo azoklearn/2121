@@ -117,7 +117,8 @@ export const watches: Watch[] = [
     reference: { fr: "Submariner 14060M", en: "Submariner 14060M" },
     year: "2001",
     condition: { fr: "Excellent", en: "Excellent" },
-    price: "9 680 €",
+    price: "Vendue",
+    sold: true,
     image: "/montre/rolex/WhatsApp%20Image%202026-06-02%20at%2009.39.11.jpeg",
     images: [
       "/montre/rolex/WhatsApp%20Image%202026-06-02%20at%2009.39.11.jpeg",
@@ -863,7 +864,8 @@ export const watches: Watch[] = [
     reference: "Oyster Army 3139",
     year: "1942",
     condition: { fr: "Très bon", en: "Very good" },
-    price: "4 150 €",
+    price: "Vendue",
+    sold: true,
     image: "/montre/whop/1.jpeg",
     images: [
       "/montre/whop/1.jpeg",
