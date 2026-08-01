@@ -214,9 +214,10 @@ export const watches: Watch[] = [
     images: [
       "/montre/ap/WhatsApp%20Image%202026-06-02%20at%2010.08.57.jpeg",
       "/montre/ap/WhatsApp%20Image%202026-06-02%20at%2010.05.25.jpeg",
-      "/montre/ap/WhatsApp%20Image%202026-06-02%20at%2010.05.37.jpeg",
+      "/montre/ap/WhatsApp%20Image%202026-06-02%20at%2010.05.37.jpeg..jpeg",
       "/montre/ap/WhatsApp%20Image%202026-06-02%20at%2010.10.42.jpeg",
     ],
+    video: "/montre/ap/video.mp4",
     intro: {
       fr: "Avec ses proportions équilibrées, son profil ultra-plat et son association d'acier et de platine, la référence 56175SP occupe une place à part dans la collection Royal Oak. Son cadran noir à chiffres romains apporte une touche d'élégance au dessin de Gérald Genta, tandis que son format de 33 mm lui confère une présence discrète au poignet.",
       en: "With its balanced proportions, ultra-flat profile and combination of steel and platinum, the 56175SP holds a special place in the Royal Oak collection. Its black dial with Roman numerals adds elegance to Gérald Genta's design, while its 33 mm format lends a discreet presence on the wrist.",
@@ -330,7 +331,8 @@ export const watches: Watch[] = [
     reference: { fr: "Malachite", en: "Malachite" },
     year: { fr: "Circa 1970", en: "Circa 1970" },
     condition: { fr: "Bon état", en: "Good condition" },
-    price: "4 750 €",
+    price: "Vendue",
+    sold: true,
     image: "/montre/vacheronmalachite/first.jpeg",
     images: [
       "/montre/vacheronmalachite/first.jpeg",
