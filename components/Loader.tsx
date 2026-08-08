@@ -99,7 +99,7 @@ export default function Loader() {
                 alt=""
                 className="h-32 w-auto md:h-40 object-contain invert"
               />
-              <span className="font-serif italic text-[14px] md:text-[16px] tracking-[0.22em] -mt-1 md:-mt-1.5 opacity-75">
+              <span className="font-serif italic text-[14px] md:text-[16px] tracking-[0.22em] mt-3 md:mt-4 opacity-75">
                 collection
               </span>
             </motion.div>

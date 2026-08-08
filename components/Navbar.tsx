@@ -72,8 +72,8 @@ export default function Navbar() {
             <Link href="/" className="group flex flex-col items-center justify-center leading-none">
               <img
                 src="/logo.png"
-                alt="2121"
-                className={`h-20 w-auto md:h-16 object-contain transition-all duration-700 ${
+                alt="2121 — modern &amp; vintage watches"
+                className={`h-14 w-auto md:h-12 object-contain transition-all duration-700 ${
                   useLightStyle ? "" : "invert"
                 }`}
               />
@@ -125,7 +125,7 @@ export default function Navbar() {
                 <img
                   src="/logo.png"
                   alt="2121"
-                  className="h-10 w-10 md:h-11 md:w-11 object-contain invert"
+                  className="h-9 w-auto md:h-10 object-contain invert"
                 />
                 <span className="hidden md:inline text-[10px] tracking-widest uppercase opacity-50 leading-none">
                   {t.navbar.menuMaison}

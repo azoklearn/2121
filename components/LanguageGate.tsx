@@ -44,7 +44,7 @@ export default function LanguageGate() {
               src="/logo.png"
               alt="2121"
               width={108}
-              height={44}
+              height={57}
               className="invert opacity-90"
               priority
             />

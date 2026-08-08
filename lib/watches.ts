@@ -18,6 +18,7 @@ export type Watch = {
   specs: Spec[];
   papers?: boolean; // box & papers indicator (default true)
   sold?: boolean;   // marks piece as sold (shown with badge, still visible)
+  reserved?: boolean; // marks piece as reserved (badge shown, price still visible)
   video?: string;   // optional video URL for the detail page gallery
   contactOnly?: boolean; // hides price, shows "more info on request"
 };
@@ -210,6 +211,7 @@ export const watches: Watch[] = [
     year: "1998",
     condition: { fr: "Excellent", en: "Excellent" },
     price: "17 800 €",
+    reserved: true,
     image: "/montre/ap/WhatsApp%20Image%202026-06-02%20at%2010.08.57.jpeg",
     images: [
       "/montre/ap/WhatsApp%20Image%202026-06-02%20at%2010.08.57.jpeg",

@@ -118,9 +118,13 @@ export default function Collection() {
                       {watch.sold && (
                         <div className="absolute inset-0 bg-ivory/30" />
                       )}
-                      {watch.sold && (
+                      {watch.sold ? (
                         <div className="absolute top-2.5 left-2.5 bg-ink text-ivory px-2 py-1 text-[9px] tracking-widest uppercase">
                           {lang === "fr" ? "Vendue" : "Sold"}
+                        </div>
+                      ) : watch.reserved && (
+                        <div className="absolute top-2.5 left-2.5 bg-ivory text-ink border hairline px-2 py-1 text-[9px] tracking-widest uppercase">
+                          {lang === "fr" ? "Réservée" : "Reserved"}
                         </div>
                       )}
                     </div>
@@ -179,9 +183,13 @@ export default function Collection() {
                         style={{ backgroundImage: `url('${watch.image}')`, filter: watch.sold ? "grayscale(0.4)" : "none" }}
                       />
                       {watch.sold && <div className="absolute inset-0 bg-ivory/30" />}
-                      {watch.sold && (
+                      {watch.sold ? (
                         <div className="absolute top-3 left-3 bg-ink text-ivory px-2 py-1 text-[10px] tracking-widest uppercase">
                           {lang === "fr" ? "Vendue" : "Sold"}
+                        </div>
+                      ) : watch.reserved && (
+                        <div className="absolute top-3 left-3 bg-ivory text-ink border hairline px-2 py-1 text-[10px] tracking-widest uppercase">
+                          {lang === "fr" ? "Réservée" : "Reserved"}
                         </div>
                       )}
                       <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/25 transition-colors duration-700" />

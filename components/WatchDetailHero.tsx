@@ -290,8 +290,15 @@ export default function WatchDetailHero({ watch }: Props) {
                         : "More information available on request — contact us by message."}
                     </div>
                   ) : (
-                    <div className="font-serif italic text-2xl md:text-3xl tracking-tight leading-none">
-                      {watch.price}
+                    <div className="flex items-center gap-3">
+                      <span className="font-serif italic text-2xl md:text-3xl tracking-tight leading-none">
+                        {watch.price}
+                      </span>
+                      {watch.reserved && !watch.sold && (
+                        <span className="border hairline px-2 py-1 text-[9px] md:text-[10px] tracking-widest uppercase">
+                          {lang === "fr" ? "Réservée" : "Reserved"}
+                        </span>
+                      )}
                     </div>
                   )}
                 </div>
