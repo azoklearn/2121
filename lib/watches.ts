@@ -947,6 +947,48 @@ export const watches: Watch[] = [
       { key: { fr: "État", en: "Condition" }, value: { fr: "Très bon état", en: "Very good condition" } },
     ],
   },
+  {
+    slug: "vacheron-constantin-patrimony-4100u-001g",
+    brand: "Vacheron Constantin",
+    model: "Patrimony 4100U/001G",
+    reference: "Patrimony 4100U/001G",
+    year: { fr: "Contemporain", en: "Contemporary" },
+    condition: { fr: "Seconde main", en: "Pre-owned" },
+    price: "16 500 €",
+    image: "/montre/campanil/1.jpeg",
+    images: [
+      "/montre/campanil/1.jpeg",
+      "/montre/campanil/2.jpeg",
+      "/montre/campanil/3.jpeg",
+    ],
+    intro: {
+      fr: "La collection Patrimony incarne l'une des expressions les plus pures du classicisme selon Vacheron Constantin. Son esthétique puise dans les créations particulièrement épurées réalisées par la manufacture au cours des années 1950 : boîtiers fins, cadrans ouverts et proportions parfaitement maîtrisées. Cette référence 4100U/001G-B181 en reprend les codes dans un boîtier de 36 mm en or blanc 18 carats. Son cadran opalin argenté est ponctué de fins index appliqués, d'une seconde centrale et d'un guichet de date placé à 6 heures.",
+      en: "The Patrimony collection embodies one of the purest expressions of classicism according to Vacheron Constantin. Its aesthetic draws on the particularly pared-back creations made by the manufacture during the 1950s: slim cases, open dials and perfectly mastered proportions. This 4100U/001G-B181 reference takes up those codes in a 36 mm 18-carat white gold case. Its opaline silvered dial is punctuated by fine applied indexes, central seconds and a date window at 6 o'clock.",
+    },
+    description: {
+      fr: "À l'intérieur prend place le calibre manufacture 2450 Q6, un mouvement automatique développé et réalisé par Vacheron Constantin. Visible à travers le fond saphir, il bénéficie des finitions traditionnelles de la Maison et porte le prestigieux Poinçon de Genève. Cet exemplaire est proposé full set, accompagné de sa boîte et de ses papiers d'origine.",
+      en: "Inside sits the in-house calibre 2450 Q6, an automatic movement developed and made by Vacheron Constantin. Visible through the sapphire caseback, it carries the Maison's traditional finishing and bears the prestigious Hallmark of Geneva. This example is offered full set, with its original box and papers.",
+    },
+    specs: [
+      { key: { fr: "Maison", en: "Maison" }, value: "Vacheron Constantin" },
+      { key: { fr: "Collection", en: "Collection" }, value: "Patrimony" },
+      { key: { fr: "Référence", en: "Reference" }, value: "4100U/001G-B181" },
+      { key: { fr: "Boîtier", en: "Case" }, value: { fr: "Or blanc 18 carats", en: "18-carat white gold" } },
+      { key: { fr: "Diamètre", en: "Diameter" }, value: "36 mm" },
+      { key: { fr: "Épaisseur", en: "Thickness" }, value: "8,1 mm" },
+      { key: { fr: "Cadran", en: "Dial" }, value: { fr: "Opalin argenté", en: "Opaline silvered" } },
+      { key: { fr: "Verre", en: "Crystal" }, value: { fr: "Saphir", en: "Sapphire" } },
+      { key: { fr: "Fond", en: "Caseback" }, value: { fr: "Saphir transparent", en: "Transparent sapphire" } },
+      { key: { fr: "Mouvement", en: "Movement" }, value: { fr: "Calibre Vacheron Constantin 2450 Q6", en: "Vacheron Constantin calibre 2450 Q6" } },
+      { key: { fr: "Remontage", en: "Winding" }, value: { fr: "Automatique", en: "Automatic" } },
+      { key: { fr: "Fonctions", en: "Functions" }, value: { fr: "Heures, minutes, seconde centrale, date", en: "Hours, minutes, central seconds, date" } },
+      { key: { fr: "Fréquence", en: "Frequency" }, value: { fr: "28 800 alt/h", en: "28,800 vph" } },
+      { key: { fr: "Réserve de marche", en: "Power reserve" }, value: { fr: "Environ 40 heures", en: "Approximately 40 hours" } },
+      { key: { fr: "Certification", en: "Certification" }, value: { fr: "Poinçon de Genève", en: "Hallmark of Geneva" } },
+      { key: { fr: "Étanchéité", en: "Water resistance" }, value: "30 m" },
+      { key: { fr: "Set", en: "Set" }, value: { fr: "Full set, boîte et papiers d'origine", en: "Full set, original box and papers" } },
+    ],
+  },
 ];
 
 export function getWatch(slug: string): Watch | undefined {
