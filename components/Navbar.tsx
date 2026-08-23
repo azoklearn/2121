@@ -54,7 +54,7 @@ export default function Navbar() {
               : "bg-transparent text-ivory"
           }`}
       >
-        <div className="px-6 md:px-10 py-5 md:py-6 grid grid-cols-3 items-center">
+        <div className="px-6 md:px-10 py-5 md:py-6 grid grid-cols-[1fr_auto_1fr] items-center">
           {/* Left: Hamburger */}
           <div className="flex items-center">
             <button
@@ -73,7 +73,7 @@ export default function Navbar() {
               <img
                 src="/logo.png"
                 alt="2121 — modern &amp; vintage watches"
-                className={`h-14 w-auto md:h-12 object-contain transition-all duration-700 ${
+                className={`h-20 w-auto md:h-16 shrink-0 object-contain transition-all duration-700 ${
                   useLightStyle ? "" : "invert"
                 }`}
               />
