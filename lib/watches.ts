@@ -33,7 +33,7 @@ export const watches: Watch[] = [
     reference: "Patrimony 4100U/000R-B180",
     year: { fr: "Juin 2024", en: "June 2024" },
     condition: { fr: "Seconde main", en: "Pre-owned" },
-    price: "18 900 €",
+    price: "18 000 €",
     image: "/montre/27jui/1.jpeg",
     images: [
       "/montre/27jui/1.jpeg",
@@ -954,7 +954,7 @@ export const watches: Watch[] = [
     reference: "Patrimony 4100U/001G",
     year: { fr: "Contemporain", en: "Contemporary" },
     condition: { fr: "Seconde main", en: "Pre-owned" },
-    price: "16 500 €",
+    price: "15 550 €",
     image: "/montre/campanil/1.jpeg",
     images: [
       "/montre/campanil/1.jpeg",
