@@ -990,6 +990,48 @@ export const watches: Watch[] = [
       { key: { fr: "Set", en: "Set" }, value: { fr: "Full set, boîte et papiers d'origine", en: "Full set, original box and papers" } },
     ],
   },
+  {
+    slug: "vacheron-constantin-patrimony-31039",
+    brand: "Vacheron Constantin",
+    model: "Patrimony 31039",
+    reference: "Patrimony 31039",
+    year: { fr: "Circa années 1990", en: "Circa 1990s" },
+    condition: { fr: "", en: "" },
+    price: "5 200 €",
+    image: "/montre/11sept/1.jpeg",
+    images: [
+      "/montre/11sept/1.jpeg",
+      "/montre/11sept/2.jpeg",
+    ],
+    video: "/montre/11sept/3.mp4",
+    intro: {
+      fr: "Une Vacheron Constantin ultra-plate des années 1990, dans ce que la Maison faisait de plus juste en matière de montre habillée. Le boîtier en or jaune 18k mesure 32 mm et conserve une présence très élégante au poignet grâce à ses proportions fines. Le cadran reste volontairement sobre, sans effet inutile.",
+      en: "An ultra-thin Vacheron Constantin from the 1990s, showing the Maison at its most precise in dress watchmaking. The 32 mm 18k yellow gold case keeps a very elegant presence on the wrist thanks to its slim proportions. The dial is deliberately sober, free of any needless effect.",
+    },
+    description: {
+      fr: "La montre est animée par le calibre 1132 à remontage manuel, un mouvement extra-plat parfaitement cohérent avec l'esprit de cette référence. Une pièce discrète, pensée pour les amateurs de Vacheron Constantin qui recherchent avant tout les proportions, la finesse et la qualité d'exécution.",
+      en: "The watch is driven by the manual-winding calibre 1132, an extra-thin movement perfectly in keeping with the spirit of this reference. A discreet piece, made for Vacheron Constantin enthusiasts who value proportions, slimness and quality of execution above all.",
+    },
+    specs: [
+      { key: { fr: "Marque", en: "Brand" }, value: "Vacheron Constantin" },
+      { key: { fr: "Modèle", en: "Model" }, value: "Patrimony" },
+      { key: { fr: "Référence", en: "Reference" }, value: "31039" },
+      { key: { fr: "Circa", en: "Circa" }, value: { fr: "Années 1990", en: "1990s" } },
+      { key: { fr: "Boîtier", en: "Case" }, value: { fr: "Or jaune 18 carats", en: "18-carat yellow gold" } },
+      { key: { fr: "Diamètre", en: "Diameter" }, value: "32 mm" },
+      { key: { fr: "Épaisseur", en: "Thickness" }, value: { fr: "Env. 5 mm", en: "Approx. 5 mm" } },
+      { key: { fr: "Mouvement", en: "Movement" }, value: { fr: "Remontage manuel", en: "Manual winding" } },
+      { key: { fr: "Calibre", en: "Calibre" }, value: "1132" },
+      { key: { fr: "Cadran", en: "Dial" }, value: { fr: "Argenté, index appliqués", en: "Silvered, applied indexes" } },
+      { key: { fr: "Fonctions", en: "Functions" }, value: { fr: "Heures, minutes", en: "Hours, minutes" } },
+      { key: { fr: "Verre", en: "Crystal" }, value: { fr: "Saphir", en: "Sapphire" } },
+      { key: { fr: "Bracelet", en: "Bracelet" }, value: { fr: "Cuir", en: "Leather" } },
+      { key: { fr: "Boucle", en: "Buckle" }, value: { fr: "Ardillon en or jaune 18 carats", en: "18-carat yellow gold pin buckle" } },
+      { key: { fr: "Étanchéité", en: "Water resistance" }, value: "30 m" },
+      { key: { fr: "Accessoires", en: "Accessories" }, value: { fr: "Boîte Vacheron Constantin", en: "Vacheron Constantin box" } },
+      { key: { fr: "Garantie", en: "Warranty" }, value: { fr: "6 mois · maison 2121", en: "6 months · 2121 maison" } },
+    ],
+  },
 ];
 
 export function getWatch(slug: string): Watch | undefined {
