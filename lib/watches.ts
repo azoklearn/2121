@@ -211,8 +211,8 @@ export const watches: Watch[] = [
     reference: "Royal Oak 56175SP",
     year: "1998",
     condition: { fr: "Excellent", en: "Excellent" },
-    price: "17 800 €",
-    reserved: true,
+    price: "Vendue",
+    sold: true,
     image: "/montre/ap/WhatsApp%20Image%202026-06-02%20at%2010.08.57.jpeg",
     images: [
       "/montre/ap/WhatsApp%20Image%202026-06-02%20at%2010.08.57.jpeg",
