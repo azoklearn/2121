@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import { LanguageProvider } from "@/contexts/LanguageContext";
-import TopBanner from "@/components/TopBanner";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import BottomNav from "@/components/BottomNav";
 
 export const metadata: Metadata = {
@@ -47,9 +47,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-ivory text-ink antialiased overflow-x-hidden font-sans">
         <LanguageProvider>
-          <TopBanner />
           <SmoothScroll>{children}</SmoothScroll>
           <BottomNav />
+          <WhatsAppButton />
         </LanguageProvider>
       </body>
     </html>

@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-ink text-ivory border-t hairline-light overflow-hidden">
-      <div className="px-6 md:px-10 pt-20 md:pt-28 pb-28 md:pb-14">
+      <div className="px-6 md:px-10 pt-20 md:pt-28 pb-40 md:pb-28">
         {/* Top row */}
         <div className="grid grid-cols-12 gap-6 md:gap-10 mb-16 md:mb-24">
           <motion.div
