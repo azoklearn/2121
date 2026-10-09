@@ -83,7 +83,8 @@ export const watches: Watch[] = [
     reference: "Santos-Dumont Ultra-Plate 1576",
     year: { fr: "Circa milieu des années 1980", en: "Circa mid-1980s" },
     condition: { fr: "Très bon", en: "Very good" },
-    price: "14 200 €",
+    price: "Vendue",
+    sold: true,
     image: "/montre/striper/1.jpeg",
     images: [
       "/montre/striper/1.jpeg",
@@ -127,7 +128,8 @@ export const watches: Watch[] = [
     reference: "Royal Oak « Owl » 25594BA",
     year: { fr: "Circa 1985", en: "Circa 1985" },
     condition: { fr: "Bon", en: "Good" },
-    price: "37 900 €",
+    price: "Vendue",
+    sold: true,
     image: "/montre/firstofthemonth/WhatsApp%20Image%202026-07-01%20at%2014.24.22.jpeg",
     images: [
       "/montre/firstofthemonth/WhatsApp%20Image%202026-07-01%20at%2014.24.22.jpeg",
@@ -1039,7 +1041,8 @@ export const watches: Watch[] = [
     reference: "Historiques 222",
     year: "2025",
     condition: { fr: "Full set", en: "Full set" },
-    price: "46 000 €",
+    price: "Vendue",
+    sold: true,
     image: "/montre/appendi/1.jpeg",
     images: [
       "/montre/appendi/1.jpeg",
