@@ -1076,6 +1076,43 @@ export const watches: Watch[] = [
       { key: { fr: "État", en: "Condition" }, value: { fr: "Full set", en: "Full set" } },
     ],
   },
+  {
+    slug: "cartier-mini-baignoire-casque-dor-2369",
+    brand: "Cartier",
+    model: "Mini Baignoire Casque d'Or",
+    reference: "Mini Baignoire Casque d'Or",
+    year: { fr: "", en: "" },
+    condition: { fr: "", en: "" },
+    price: "14 200 €",
+    image: "/montre/europa/1.jpeg",
+    images: [
+      "/montre/europa/1.jpeg",
+      "/montre/europa/2.jpeg",
+      "/montre/europa/3.jpeg",
+      "/montre/europa/4.jpeg",
+      "/montre/europa/5.jpeg",
+    ],
+    intro: {
+      fr: "Cette Cartier Mini Baignoire référence 2369 se distingue par sa réalisation intégrale en or blanc 18 carats, une configuration moins courante que les versions en or jaune. Son bracelet intégré, dit « Casque d'Or », prolonge les lignes ovales du boîtier de 18 mm et donne à cette pièce une véritable dimension joaillière.",
+      en: "This Cartier Mini Baignoire reference 2369 stands apart through its execution entirely in 18-carat white gold, a less common configuration than the yellow gold versions. Its integrated bracelet, known as \"Casque d'Or\", extends the oval lines of the 18 mm case and gives the piece a genuinely jewellery-like dimension.",
+    },
+    description: {
+      fr: "Le cadran blanc à chiffres romains est accompagné des traditionnelles aiguilles en acier bleui de Cartier. Équipée d'un mouvement à quartz, cette Mini Baignoire illustre l'approche de Cartier, où la montre se porte autant comme un bijou que comme un instrument de mesure du temps.",
+      en: "The white dial with Roman numerals is paired with Cartier's traditional blued steel hands. Fitted with a quartz movement, this Mini Baignoire illustrates Cartier's approach, where a watch is worn as much as a piece of jewellery as an instrument for measuring time.",
+    },
+    specs: [
+      { key: { fr: "Maison", en: "Maison" }, value: "Cartier" },
+      { key: { fr: "Modèle", en: "Model" }, value: "Mini Baignoire" },
+      { key: { fr: "Référence", en: "Reference" }, value: "2369" },
+      { key: { fr: "Boîtier", en: "Case" }, value: { fr: "Or blanc 18 carats", en: "18-carat white gold" } },
+      { key: { fr: "Dimensions boîtier", en: "Case dimensions" }, value: "18 × 25 mm" },
+      { key: { fr: "Mouvement", en: "Movement" }, value: { fr: "Quartz", en: "Quartz" } },
+      { key: { fr: "Cadran", en: "Dial" }, value: { fr: "Blanc, chiffres romains", en: "White, Roman numerals" } },
+      { key: { fr: "Aiguilles", en: "Hands" }, value: { fr: "Acier bleui", en: "Blued steel" } },
+      { key: { fr: "Bracelet", en: "Bracelet" }, value: { fr: "Intégré en or blanc 18 carats, dit « Casque d'Or »", en: "Integrated 18-carat white gold, known as \"Casque d'Or\"" } },
+      { key: { fr: "Fermoir", en: "Clasp" }, value: { fr: "Déployant dissimulé", en: "Concealed deployant" } },
+    ],
+  },
 ];
 
 export function getWatch(slug: string): Watch | undefined {

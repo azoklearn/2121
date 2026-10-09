@@ -273,7 +273,7 @@ export default function WatchDetailHero({ watch }: Props) {
                 <div>
                   <div className="text-[9px] md:text-[10px] tracking-widest uppercase opacity-50 mb-1.5">
                     {/* Reference label */}
-                    {lang === "fr" ? "Référence" : "Reference"} · {watchYear}
+                    {lang === "fr" ? "Référence" : "Reference"}{watchYear ? ` · ${watchYear}` : ""}
                   </div>
                   <div className="text-[15px] md:text-lg font-light tracking-tight">
                     {watchReference}
