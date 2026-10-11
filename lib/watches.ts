@@ -999,7 +999,8 @@ export const watches: Watch[] = [
     reference: "Patrimony 31039",
     year: { fr: "Circa années 1990", en: "Circa 1990s" },
     condition: { fr: "", en: "" },
-    price: "5 200 €",
+    price: "Vendue",
+    sold: true,
     image: "/montre/11sept/1.jpeg",
     images: [
       "/montre/11sept/1.jpeg",
