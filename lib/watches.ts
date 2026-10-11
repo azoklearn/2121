@@ -957,7 +957,7 @@ export const watches: Watch[] = [
     reference: "Patrimony 4100U/001G",
     year: { fr: "Contemporain", en: "Contemporary" },
     condition: { fr: "Seconde main", en: "Pre-owned" },
-    price: "15 550 €",
+    price: "14 200 €",
     image: "/montre/campanil/1.jpeg",
     images: [
       "/montre/campanil/1.jpeg",
