@@ -1204,6 +1204,48 @@ export const watches: Watch[] = [
       { key: { fr: "Certification", en: "Certification" }, value: { fr: "Chronomètre Superlatif Rolex", en: "Rolex Superlative Chronometer" } },
     ],
   },
+  {
+    slug: "rolex-submariner-124060",
+    brand: "Rolex",
+    model: "Submariner 124060",
+    reference: "Submariner 124060",
+    year: { fr: "Juin 2026", en: "June 2026" },
+    condition: { fr: "", en: "" },
+    price: "12 200 €",
+    image: "/montre/twins/1.jpeg",
+    images: [
+      "/montre/twins/1.jpeg",
+      "/montre/twins/2.jpeg",
+      "/montre/twins/3.jpeg",
+      "/montre/twins/4.jpeg",
+      "/montre/twins/5.jpeg",
+      "/montre/twins/6.jpeg",
+      "/montre/twins/7.jpeg",
+    ],
+    intro: {
+      fr: "Introduite en 2020, la Rolex Submariner 124060 représente la dernière génération de la Submariner sans date. Elle se distingue de la précédente référence 114060 par un boîtier porté à 41 mm, des cornes affinées et un bracelet Oyster aux proportions retravaillées. Elle conserve son cadran noir sans date, ses index Chromalight et sa lunette tournante en céramique Cerachrom noire.",
+      en: "Introduced in 2020, the Rolex Submariner 124060 represents the latest generation of the no-date Submariner. It differs from the previous 114060 reference with a case taken to 41 mm, slimmer lugs and an Oyster bracelet of reworked proportions. It retains its black no-date dial, Chromalight indexes and black Cerachrom ceramic rotating bezel.",
+    },
+    description: {
+      fr: "Cette génération accueille également le calibre manufacture 3230, équipé de l'échappement Chronergy, offrant une réserve de marche portée à 70 heures. Un ensemble d'évolutions techniques et esthétiques qui modernise la Submariner tout en préservant les codes historiques du modèle. Exemplaire daté de juin 2026, sous garantie internationale Rolex jusqu'en juin 2031.",
+      en: "This generation also houses the in-house calibre 3230, fitted with the Chronergy escapement, offering a power reserve extended to 70 hours. A set of technical and aesthetic evolutions that modernises the Submariner while preserving the model's historical codes. This example is dated June 2026, under Rolex international warranty until June 2031.",
+    },
+    specs: [
+      { key: { fr: "Maison", en: "Maison" }, value: "Rolex" },
+      { key: { fr: "Modèle", en: "Model" }, value: "Submariner" },
+      { key: { fr: "Référence", en: "Reference" }, value: "124060" },
+      { key: { fr: "Date", en: "Date" }, value: { fr: "Juin 2026", en: "June 2026" } },
+      { key: { fr: "Boîtier", en: "Case" }, value: { fr: "Acier Oystersteel, 41 mm", en: "Oystersteel, 41 mm" } },
+      { key: { fr: "Cadran", en: "Dial" }, value: { fr: "Noir, index Chromalight", en: "Black, Chromalight indexes" } },
+      { key: { fr: "Lunette", en: "Bezel" }, value: { fr: "Tournante unidirectionnelle, Cerachrom noire", en: "Unidirectional rotating, black Cerachrom" } },
+      { key: { fr: "Mouvement", en: "Movement" }, value: { fr: "Automatique, calibre Rolex 3230", en: "Automatic, Rolex calibre 3230" } },
+      { key: { fr: "Réserve de marche", en: "Power reserve" }, value: { fr: "70 heures", en: "70 hours" } },
+      { key: { fr: "Bracelet", en: "Bracelet" }, value: { fr: "Oyster en acier, fermoir Oysterlock avec extension Glidelock", en: "Steel Oyster, Oysterlock clasp with Glidelock extension" } },
+      { key: { fr: "Verre", en: "Crystal" }, value: { fr: "Saphir", en: "Sapphire" } },
+      { key: { fr: "Étanchéité", en: "Water resistance" }, value: "300 m" },
+      { key: { fr: "Garantie Rolex", en: "Rolex warranty" }, value: { fr: "Juin 2031", en: "June 2031" } },
+    ],
+  },
 ];
 
 export function getWatch(slug: string): Watch | undefined {
