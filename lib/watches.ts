@@ -407,8 +407,8 @@ export const watches: Watch[] = [
     reference: "Day-Date 1803",
     year: "1973",
     condition: { fr: "Excellent", en: "Excellent" },
-    price: "11 700 €",
-    contactOnly: true,
+    price: "Vendue",
+    sold: true,
     image: "/montre/roro/ds.jpeg",
     images: [
       "/montre/roro/ds.jpeg",
