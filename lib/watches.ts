@@ -1042,8 +1042,7 @@ export const watches: Watch[] = [
     reference: "Historiques 222",
     year: "2025",
     condition: { fr: "Full set", en: "Full set" },
-    price: "Vendue",
-    sold: true,
+    price: "46 000 €",
     image: "/montre/appendi/1.jpeg",
     images: [
       "/montre/appendi/1.jpeg",
