@@ -1246,6 +1246,45 @@ export const watches: Watch[] = [
       { key: { fr: "Garantie Rolex", en: "Rolex warranty" }, value: { fr: "Juin 2031", en: "June 2031" } },
     ],
   },
+  {
+    slug: "piaget-mini-cuff-15201-c626",
+    brand: "Piaget",
+    model: "Mini Cuff 15201 C626",
+    reference: "Mini Cuff 15201 C626",
+    year: { fr: "Années 1980", en: "1980s" },
+    condition: { fr: "", en: "" },
+    price: "Vendue",
+    sold: true,
+    image: "/montre/scan/1.jpeg",
+    images: [
+      "/montre/scan/1.jpeg",
+      "/montre/scan/2.jpeg",
+      "/montre/scan/3.jpeg",
+      "/montre/scan/4.jpeg",
+      "/montre/scan/5.jpeg",
+    ],
+    intro: {
+      fr: "Une création exceptionnelle, à la frontière de l'horlogerie et de la haute joaillerie. Réalisée en or jaune 18 carats et entièrement sertie de diamants, cette Piaget illustre à merveille le savoir-faire joaillier de la Maison. Son cadran délicat se fond dans un bracelet intégré, entièrement pavé de diamants, créant une pièce d'une élégance rare, pensée autant comme un bijou que comme une montre.",
+      en: "An exceptional creation, on the border between watchmaking and high jewellery. Crafted in 18-carat yellow gold and entirely set with diamonds, this Piaget perfectly illustrates the Maison's jewellery savoir-faire. Its delicate dial melts into an integrated bracelet, fully paved with diamonds, creating a piece of rare elegance, conceived as much as a jewel as a watch.",
+    },
+    description: {
+      fr: "Après plusieurs mois de recherches, 2121 a eu le privilège de sourcer cette pièce exceptionnelle pour l'un de ses clients. Une montre rare, recherchée et vendue exclusivement dans le cadre d'une transaction privée. Private Sourcing · 2121 Collection, Paris.",
+      en: "After several months of searching, 2121 had the privilege of sourcing this exceptional piece for one of its clients. A rare, sought-after watch, sold exclusively as part of a private transaction. Private Sourcing · 2121 Collection, Paris.",
+    },
+    specs: [
+      { key: { fr: "Maison", en: "Maison" }, value: "Piaget" },
+      { key: { fr: "Modèle", en: "Model" }, value: "Mini Cuff" },
+      { key: { fr: "Référence", en: "Reference" }, value: "15201 C626" },
+      { key: { fr: "Époque", en: "Period" }, value: { fr: "Années 1980", en: "1980s" } },
+      { key: { fr: "Boîtier", en: "Case" }, value: { fr: "Or jaune 18 carats", en: "18-carat yellow gold" } },
+      { key: { fr: "Dimensions boîtier", en: "Case dimensions" }, value: { fr: "Environ 14 × 18 mm", en: "Approximately 14 × 18 mm" } },
+      { key: { fr: "Mouvement", en: "Movement" }, value: { fr: "Quartz Piaget, calibre 201P", en: "Piaget quartz, calibre 201P" } },
+      { key: { fr: "Cadran", en: "Dial" }, value: { fr: "Entièrement pavé de diamants", en: "Fully paved with diamonds" } },
+      { key: { fr: "Lunette", en: "Bezel" }, value: { fr: "Sertie de diamants", en: "Diamond-set" } },
+      { key: { fr: "Bracelet", en: "Bracelet" }, value: { fr: "Or jaune 18 carats, intégré et entièrement serti de diamants", en: "18-carat yellow gold, integrated and fully diamond-set" } },
+      { key: { fr: "Fermoir", en: "Clasp" }, value: { fr: "Déployant intégré", en: "Integrated folding" } },
+    ],
+  },
 ];
 
 export function getWatch(slug: string): Watch | undefined {
