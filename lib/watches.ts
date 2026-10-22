@@ -958,6 +958,7 @@ export const watches: Watch[] = [
     year: { fr: "Contemporain", en: "Contemporary" },
     condition: { fr: "Seconde main", en: "Pre-owned" },
     price: "14 200 €",
+    reserved: true,
     image: "/montre/campanil/1.jpeg",
     images: [
       "/montre/campanil/1.jpeg",
