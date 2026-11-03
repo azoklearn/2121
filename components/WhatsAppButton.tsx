@@ -1,9 +1,14 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function WhatsAppButton() {
   const { t } = useLanguage();
+  const pathname = usePathname();
+
+  // The admin has its own chrome; the public CTA would sit on top of it.
+  if (pathname?.startsWith("/admin")) return null;
 
   return (
     <a

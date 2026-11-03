@@ -134,7 +134,7 @@ export default function WatchEditor(props: {
     <div className="max-w-4xl mx-auto px-5 py-8">
       <div className="flex items-center justify-between mb-8">
         <h2 className="font-serif text-2xl">{isNew ? "Nouvelle montre" : w.model || w.slug}</h2>
-        <button onClick={props.onCancel} className="text-[11px] tracking-widest uppercase opacity-60 hover:opacity-100">
+        <button onClick={props.onCancel} className="min-h-[40px] px-2 text-[11px] tracking-widest uppercase opacity-60 hover:opacity-100">
           Annuler
         </button>
       </div>
@@ -198,16 +198,16 @@ export default function WatchEditor(props: {
               />
               <span className="flex-1 text-[12px] truncate opacity-70">{src}</span>
               {i === 0 && <span className="text-[9px] tracking-widest uppercase opacity-50">Principale</span>}
-              <button onClick={() => moveImage(i, -1)} className="px-2 opacity-60 hover:opacity-100" aria-label="Monter">↑</button>
-              <button onClick={() => moveImage(i, 1)} className="px-2 opacity-60 hover:opacity-100" aria-label="Descendre">↓</button>
-              <button onClick={() => removeImage(i)} className="px-2 text-red-700 opacity-70 hover:opacity-100" aria-label="Retirer">✕</button>
+              <button onClick={() => moveImage(i, -1)} className="min-h-[40px] min-w-[40px] opacity-60 hover:opacity-100" aria-label="Monter">↑</button>
+              <button onClick={() => moveImage(i, 1)} className="min-h-[40px] min-w-[40px] opacity-60 hover:opacity-100" aria-label="Descendre">↓</button>
+              <button onClick={() => removeImage(i)} className="min-h-[40px] min-w-[40px] text-red-700 opacity-70 hover:opacity-100" aria-label="Retirer">✕</button>
             </div>
           ))}
           {w.video && (
             <div className="flex items-center gap-3 border hairline bg-ivory-soft p-2">
               <span className="text-[9px] tracking-widest uppercase opacity-50 w-12">Vidéo</span>
               <span className="flex-1 text-[12px] truncate opacity-70">{w.video}</span>
-              <button onClick={() => set({ video: undefined })} className="px-2 text-red-700 opacity-70 hover:opacity-100">✕</button>
+              <button onClick={() => set({ video: undefined })} className="min-h-[40px] min-w-[40px] text-red-700 opacity-70 hover:opacity-100" aria-label="Retirer la vidéo">✕</button>
             </div>
           )}
         </div>
@@ -230,7 +230,7 @@ export default function WatchEditor(props: {
         <span className={label}>Spécifications</span>
         <div className="space-y-2 mt-2">
           {w.specs.map((sp, i) => (
-            <div key={i} className="grid grid-cols-[1fr_1fr_auto] gap-2 items-start">
+            <div key={i} className="grid grid-cols-1 md:grid-cols-[1fr_1fr_auto] gap-2 items-start border-b hairline pb-2 md:border-0 md:pb-0">
               <input
                 className={input}
                 placeholder="Intitulé (ex. Boîtier)"
@@ -253,16 +253,18 @@ export default function WatchEditor(props: {
               />
               <button
                 onClick={() => set({ specs: w.specs.filter((_, k) => k !== i) })}
-                className="px-3 py-2 text-red-700 opacity-70 hover:opacity-100"
+                className="min-h-[40px] px-3 text-[10px] tracking-widest uppercase text-red-700 opacity-70 hover:opacity-100 md:text-[14px] md:tracking-normal"
+                aria-label="Retirer cette ligne"
               >
-                ✕
+                <span className="md:hidden">Retirer la ligne</span>
+                <span className="hidden md:inline">✕</span>
               </button>
             </div>
           ))}
         </div>
         <button
           onClick={() => set({ specs: [...w.specs, { key: "", value: "" }] })}
-          className="mt-3 border hairline px-4 py-2 text-[11px] tracking-widest uppercase hover:bg-ivory-soft"
+          className="mt-3 min-h-[44px] border hairline px-4 text-[11px] tracking-widest uppercase hover:bg-ivory-soft"
         >
           + Ligne
         </button>

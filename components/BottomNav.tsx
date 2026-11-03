@@ -10,6 +10,7 @@ export default function BottomNav() {
   const n = t.bottomNav;
   const pathname = usePathname();
   const isHome = pathname === "/";
+  const isAdmin = pathname?.startsWith("/admin") ?? false;
 
   const [visible, setVisible] = useState(false);
   const [active, setActive] = useState<"collection" | "maison" | "contact">(
@@ -98,7 +99,7 @@ export default function BottomNav() {
 
   return (
     <AnimatePresence>
-      {visible && (
+      {visible && !isAdmin && (
         <motion.nav
           initial={{ y: 80, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

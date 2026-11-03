@@ -143,7 +143,7 @@ export default function AdminApp() {
     <div className="max-w-4xl mx-auto px-5 py-8 pb-32">
       <header className="flex items-center justify-between mb-2">
         <h1 className="font-serif text-2xl">Catalogue</h1>
-        <button onClick={logout} className="text-[11px] tracking-widest uppercase opacity-50 hover:opacity-100">
+        <button onClick={logout} className="min-h-[40px] px-2 text-[11px] tracking-widest uppercase opacity-50 hover:opacity-100">
           Déconnexion
         </button>
       </header>
@@ -171,42 +171,45 @@ export default function AdminApp() {
                 if (dragFrom.current !== null && dragFrom.current !== i) move(dragFrom.current, i);
                 dragFrom.current = null;
               }}
-              className="border hairline bg-ivory-soft p-3 flex items-center gap-3"
+              className="border hairline bg-ivory-soft p-3"
             >
-              <div
-                className="h-14 w-14 shrink-0 bg-cover bg-center bg-bone"
-                style={{ backgroundImage: `url('${w.image}')` }}
-              />
-              <div className="flex-1 min-w-0">
-                <div className="text-[10px] tracking-widest uppercase opacity-50">{w.brand}</div>
-                <div className="font-serif text-[16px] truncate">{w.model}</div>
-                <div className="text-[12px] opacity-60">
-                  {status === "sold" ? "Vendue" : w.price}
-                  {status === "reserved" && " · Réservée"}
+              <div className="flex items-center gap-3">
+                <div
+                  className="h-14 w-14 shrink-0 bg-cover bg-center bg-bone"
+                  style={{ backgroundImage: `url('${w.image}')` }}
+                />
+                <div className="min-w-0 flex-1">
+                  <div className="text-[10px] tracking-widest uppercase opacity-50 truncate">{w.brand}</div>
+                  <div className="font-serif text-[16px] truncate">{w.model}</div>
+                  <div className="text-[12px] opacity-60">
+                    {status === "sold" ? "Vendue" : w.price}
+                    {status === "reserved" && " · Réservée"}
+                  </div>
                 </div>
               </div>
 
-              <div className="flex flex-col gap-1 shrink-0">
-                <div className="flex gap-1">
-                  {(["available", "reserved", "sold"] as Status[]).map((s) => (
-                    <button
-                      key={s}
-                      onClick={() => setStatus(i, s)}
-                      className={`px-2 py-1 text-[9px] tracking-widest uppercase border hairline ${
-                        status === s ? "bg-ink text-ivory" : "opacity-50 hover:opacity-100"
-                      }`}
-                    >
-                      {STATUS_LABEL[s]}
-                    </button>
-                  ))}
-                </div>
-                <div className="flex gap-1 justify-end">
-                  <button onClick={() => move(i, i - 1)} className="px-2 opacity-50 hover:opacity-100" aria-label="Monter">↑</button>
-                  <button onClick={() => move(i, i + 1)} className="px-2 opacity-50 hover:opacity-100" aria-label="Descendre">↓</button>
-                  <button onClick={() => move(i, 0)} className="px-2 text-[9px] tracking-widest uppercase opacity-50 hover:opacity-100">En tête</button>
-                  <button onClick={() => setEditing({ index: i })} className="px-2 text-[9px] tracking-widest uppercase opacity-70 hover:opacity-100">Éditer</button>
-                  <button onClick={() => remove(i)} className="px-2 text-red-700 opacity-60 hover:opacity-100" aria-label="Supprimer">✕</button>
-                </div>
+              {/* Statut — segmenté, pleine largeur pour rester cliquable au pouce */}
+              <div className="mt-3 grid grid-cols-3 gap-1">
+                {(["available", "reserved", "sold"] as Status[]).map((s) => (
+                  <button
+                    key={s}
+                    onClick={() => setStatus(i, s)}
+                    className={`min-h-[40px] px-1 text-[10px] tracking-widest uppercase border hairline ${
+                      status === s ? "bg-ink text-ivory" : "opacity-50 hover:opacity-100"
+                    }`}
+                  >
+                    {STATUS_LABEL[s]}
+                  </button>
+                ))}
+              </div>
+
+              <div className="mt-1 flex items-center gap-1">
+                <button onClick={() => move(i, i - 1)} className="min-h-[40px] min-w-[40px] opacity-50 hover:opacity-100" aria-label="Monter">↑</button>
+                <button onClick={() => move(i, i + 1)} className="min-h-[40px] min-w-[40px] opacity-50 hover:opacity-100" aria-label="Descendre">↓</button>
+                <button onClick={() => move(i, 0)} className="min-h-[40px] px-2 text-[10px] tracking-widest uppercase opacity-50 hover:opacity-100">En tête</button>
+                <span className="flex-1" />
+                <button onClick={() => setEditing({ index: i })} className="min-h-[40px] px-3 text-[10px] tracking-widest uppercase border hairline hover:bg-ivory">Éditer</button>
+                <button onClick={() => remove(i)} className="min-h-[40px] min-w-[40px] text-red-700 opacity-60 hover:opacity-100" aria-label="Supprimer">✕</button>
               </div>
             </li>
           );
