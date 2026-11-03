@@ -1,59 +1,45 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { type Watch, type L, fr, en, makeL, slugify, emptyWatch } from "./types";
+import { type Watch, type L, fr, slugify, emptyWatch } from "./types";
 import { prepareFile } from "./prepareImage";
 
 const label = "block text-[10px] tracking-widest uppercase opacity-50 mb-1.5";
 const input =
   "w-full border hairline bg-ivory-soft px-3 py-2 text-[14px] outline-none focus:border-ink";
 
-function Pair(props: {
+/**
+ * One field, French only. The site falls back to French when a value carries no
+ * English, so editing simply drops any previous translation rather than leaving
+ * a stale one behind.
+ */
+function Field(props: {
   title: string;
   value: L | undefined;
   onChange: (v: L) => void;
   textarea?: boolean;
+  placeholder?: string;
 }) {
-  const common = input;
-  const frVal = fr(props.value);
-  const enVal = en(props.value);
+  const value = fr(props.value);
   return (
     <div className="mb-4">
       <span className={label}>{props.title}</span>
-      <div className="grid md:grid-cols-2 gap-2">
-        {props.textarea ? (
-          <textarea
-            rows={4}
-            className={common}
-            placeholder="Français"
-            value={frVal}
-            onChange={(e) => props.onChange(makeL(e.target.value, enVal))}
-          />
-        ) : (
-          <input
-            className={common}
-            placeholder="Français"
-            value={frVal}
-            onChange={(e) => props.onChange(makeL(e.target.value, enVal))}
-          />
-        )}
-        {props.textarea ? (
-          <textarea
-            rows={4}
-            className={common}
-            placeholder="English (optionnel)"
-            value={enVal}
-            onChange={(e) => props.onChange(makeL(frVal, e.target.value))}
-          />
-        ) : (
-          <input
-            className={common}
-            placeholder="English (optionnel)"
-            value={enVal}
-            onChange={(e) => props.onChange(makeL(frVal, e.target.value))}
-          />
-        )}
-      </div>
+      {props.textarea ? (
+        <textarea
+          rows={4}
+          className={input}
+          placeholder={props.placeholder}
+          value={value}
+          onChange={(e) => props.onChange(e.target.value)}
+        />
+      ) : (
+        <input
+          className={input}
+          placeholder={props.placeholder}
+          value={value}
+          onChange={(e) => props.onChange(e.target.value)}
+        />
+      )}
     </div>
   );
 }
@@ -150,6 +136,11 @@ export default function WatchEditor(props: {
         </button>
       </div>
 
+      <p className="mb-6 border hairline bg-ivory-soft px-3 py-2 text-[11px] leading-relaxed opacity-60">
+        Saisie en français uniquement. Les visiteurs anglophones voient le texte
+        français. Modifier un champ remplace son ancienne traduction anglaise.
+      </p>
+
       <div className="grid md:grid-cols-2 gap-4 mb-4">
         <div>
           <span className={label}>Marque</span>
@@ -188,11 +179,11 @@ export default function WatchEditor(props: {
         </div>
       </div>
 
-      <Pair title="Référence" value={w.reference} onChange={(v) => set({ reference: v })} />
-      <Pair title="Année / époque" value={w.year} onChange={(v) => set({ year: v })} />
-      <Pair title="État" value={w.condition} onChange={(v) => set({ condition: v })} />
-      <Pair title="Introduction" value={w.intro} onChange={(v) => set({ intro: v })} textarea />
-      <Pair title="Description" value={w.description} onChange={(v) => set({ description: v })} textarea />
+      <Field title="Référence" value={w.reference} onChange={(v) => set({ reference: v })} />
+      <Field title="Année / époque" value={w.year} onChange={(v) => set({ year: v })} />
+      <Field title="État" value={w.condition} onChange={(v) => set({ condition: v })} />
+      <Field title="Introduction" value={w.intro} onChange={(v) => set({ intro: v })} textarea />
+      <Field title="Description" value={w.description} onChange={(v) => set({ description: v })} textarea />
 
       {/* Médias */}
       <div className="mb-6 border-t hairline pt-6">
@@ -259,7 +250,7 @@ export default function WatchEditor(props: {
                 value={fr(sp.key)}
                 onChange={(e) => {
                   const specs = [...w.specs];
-                  specs[i] = { ...sp, key: makeL(e.target.value, en(sp.key)) };
+                  specs[i] = { ...sp, value: sp.value, key: e.target.value };
                   set({ specs });
                 }}
               />
@@ -269,7 +260,7 @@ export default function WatchEditor(props: {
                 value={fr(sp.value)}
                 onChange={(e) => {
                   const specs = [...w.specs];
-                  specs[i] = { ...sp, value: makeL(e.target.value, en(sp.value)) };
+                  specs[i] = { ...sp, value: e.target.value };
                   set({ specs });
                 }}
               />

@@ -21,6 +21,16 @@ Les photos envoyées sont commitées dans `public/montre/<dossier>/`. Pour une
 montre existante, elles rejoignent son dossier actuel ; pour une nouvelle, un
 dossier est créé à partir de son identifiant.
 
+## Langue
+
+La saisie se fait **en français uniquement**. Le site affiche le texte français
+aux visiteurs anglophones lorsqu'une valeur n'a pas de version anglaise.
+
+Les fiches rédigées avant ce changement gardent leurs traductions, qui restent
+affichées en anglais. En revanche, **modifier un champ remplace son ancienne
+traduction** : sans cela, un texte français réécrit laisserait une version
+anglaise périmée visible aux anglophones.
+
 ## Mise en route (à faire une fois)
 
 Dans **Vercel → Project Settings → Environment Variables**, ajouter :
