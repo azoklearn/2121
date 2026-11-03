@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { type Watch, type L, fr, en, makeL, slugify, emptyWatch } from "./types";
+import { prepareFile } from "./prepareImage";
 
 const label = "block text-[10px] tracking-widest uppercase opacity-50 mb-1.5";
 const input =
@@ -68,6 +69,7 @@ export default function WatchEditor(props: {
   const [slugTouched, setSlugTouched] = useState(!isNew);
   const [uploading, setUploading] = useState(false);
   const [uploadError, setUploadError] = useState("");
+  const [progress, setProgress] = useState("");
   const fileRef = useRef<HTMLInputElement>(null);
 
   const set = (patch: Partial<Watch>) => setW((prev) => ({ ...prev, ...patch }));
@@ -91,7 +93,15 @@ export default function WatchEditor(props: {
     setUploadError("");
     const added: string[] = [];
     let video = "";
-    for (const file of Array.from(files)) {
+    const list = Array.from(files);
+    for (const [n, original] of list.entries()) {
+      setProgress(`${n + 1}/${list.length} · ${original.name}`);
+      let file = original;
+      try {
+        file = await prepareFile(original);
+      } catch {
+        /* keep the original; the server will reject it if unsupported */
+      }
       const body = new FormData();
       body.append("file", file);
       body.append("folder", folder);
@@ -102,7 +112,7 @@ export default function WatchEditor(props: {
         if (/\.(mp4|mov)$/i.test(json.url)) video = json.url;
         else added.push(json.url);
       } catch (e) {
-        setUploadError(`${file.name} : ${(e as Error).message}`);
+        setUploadError(`${original.name} : ${(e as Error).message}`);
       }
     }
     setW((prev) => {
@@ -110,6 +120,7 @@ export default function WatchEditor(props: {
       return { ...prev, images, image: prev.image || images[0] || "", video: video || prev.video };
     });
     setUploading(false);
+    setProgress("");
     if (fileRef.current) fileRef.current.value = "";
   }
 
@@ -213,15 +224,26 @@ export default function WatchEditor(props: {
         </div>
         <input
           ref={fileRef}
+          id="admin-upload"
           type="file"
           multiple
-          accept=".jpg,.jpeg,.png,.webp,.mp4,.mov"
+          // MIME types rather than extensions: iOS greys out the photo library otherwise.
+          accept="image/*,video/*"
           onChange={(e) => upload(e.target.files)}
-          className="text-[12px]"
+          className="sr-only"
           disabled={uploading || !w.slug}
         />
+        <label
+          htmlFor="admin-upload"
+          aria-disabled={uploading || !w.slug}
+          className={`flex min-h-[48px] items-center justify-center border hairline px-4 text-[11px] tracking-widest uppercase ${
+            uploading || !w.slug ? "pointer-events-none opacity-40" : "cursor-pointer hover:bg-ivory"
+          }`}
+        >
+          {uploading ? "Envoi en cours…" : "+ Ajouter photos ou vidéo"}
+        </label>
         {!w.slug && <p className="mt-1 text-[11px] opacity-50">Renseigne la marque et le modèle d’abord.</p>}
-        {uploading && <p className="mt-2 text-[12px] opacity-60">Envoi en cours…</p>}
+        {uploading && progress && <p className="mt-2 text-[12px] opacity-60">{progress}</p>}
         {uploadError && <p className="mt-2 text-[12px] text-red-700">{uploadError}</p>}
       </div>
 
