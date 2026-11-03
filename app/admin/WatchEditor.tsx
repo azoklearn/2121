@@ -69,12 +69,19 @@ export default function WatchEditor(props: {
   }
 
   // Keep new assets next to the ones this watch already uses, instead of
-  // scattering them into a second folder named after the slug.
-  const existingFolder = (w.image || w.images[0] || "").match(/^\/montre\/([^/]+)\//)?.[1];
-  const folder = existingFolder || w.slug || "nouveau";
+  // scattering them into a second folder named after the slug. A watch that has
+  // neither photos nor a name yet gets a throwaway folder, so photos can be
+  // added before anything is typed; the first upload freezes the choice, so the
+  // rest of the batch lands beside it even if the model is typed afterwards.
+  const chosenFolder = useRef<string | null>(
+    (props.initial?.image || props.initial?.images[0] || "").match(/^\/montre\/([^/]+)\//)?.[1] ?? null
+  );
+  const fallbackFolder = useRef(`ajout-${Date.now().toString(36)}`);
+  const folder = chosenFolder.current || w.slug || fallbackFolder.current;
 
   async function upload(files: FileList | null) {
     if (!files?.length) return;
+    chosenFolder.current = folder;
     setUploading(true);
     setUploadError("");
     const added: string[] = [];
@@ -223,10 +230,10 @@ export default function WatchEditor(props: {
           onDragOver={(e) => e.preventDefault()}
           onDrop={(e) => {
             e.preventDefault();
-            if (!uploading && w.slug) void upload(e.dataTransfer.files);
+            if (!uploading) void upload(e.dataTransfer.files);
           }}
           className={`relative flex min-h-[56px] items-center justify-center border hairline px-4 text-center text-[11px] tracking-widest uppercase ${
-            uploading || !w.slug ? "opacity-40" : "hover:bg-ivory"
+            uploading ? "opacity-40" : "hover:bg-ivory"
           }`}
         >
           <span>
@@ -242,12 +249,11 @@ export default function WatchEditor(props: {
             // MIME types rather than extensions: iOS greys out the photo library otherwise.
             accept="image/*,video/*"
             onChange={(e) => upload(e.target.files)}
-            disabled={uploading || !w.slug}
+            disabled={uploading}
             aria-label="Ajouter des photos ou une vidéo"
             className="absolute inset-0 h-full w-full cursor-pointer opacity-0 disabled:cursor-default"
           />
         </div>
-        {!w.slug && <p className="mt-1 text-[11px] opacity-50">Renseigne la marque et le modèle d’abord.</p>}
         {uploading && progress && <p className="mt-2 text-[12px] opacity-60">{progress}</p>}
         {uploadError && <p className="mt-2 text-[12px] text-red-700">{uploadError}</p>}
       </div>
