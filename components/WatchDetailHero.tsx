@@ -292,7 +292,7 @@ export default function WatchDetailHero({ watch }: Props) {
                   ) : (
                     <div className="flex items-center gap-3">
                       <span className="font-serif italic text-2xl md:text-3xl tracking-tight leading-none">
-                        {watch.price}
+                        {watch.sold ? (lang === "fr" ? "Vendue" : "Sold") : watch.price}
                       </span>
                       {watch.reserved && !watch.sold && (
                         <span className="border hairline px-2 py-1 text-[9px] md:text-[10px] tracking-widest uppercase">
