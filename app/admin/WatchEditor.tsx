@@ -213,26 +213,40 @@ export default function WatchEditor(props: {
             </div>
           )}
         </div>
-        <input
-          ref={fileRef}
-          id="admin-upload"
-          type="file"
-          multiple
-          // MIME types rather than extensions: iOS greys out the photo library otherwise.
-          accept="image/*,video/*"
-          onChange={(e) => upload(e.target.files)}
-          className="sr-only"
-          disabled={uploading || !w.slug}
-        />
-        <label
-          htmlFor="admin-upload"
-          aria-disabled={uploading || !w.slug}
-          className={`flex min-h-[48px] items-center justify-center border hairline px-4 text-[11px] tracking-widest uppercase ${
-            uploading || !w.slug ? "pointer-events-none opacity-40" : "cursor-pointer hover:bg-ivory"
+        {/*
+          The input is the button: it sits transparent over the label text and
+          fills it. Hiding it and clicking through a <label> looks tidier but
+          Safari — on the Mac and on the iPhone — often refuses to open the
+          picker for an input it cannot hit-test.
+        */}
+        <div
+          onDragOver={(e) => e.preventDefault()}
+          onDrop={(e) => {
+            e.preventDefault();
+            if (!uploading && w.slug) void upload(e.dataTransfer.files);
+          }}
+          className={`relative flex min-h-[56px] items-center justify-center border hairline px-4 text-center text-[11px] tracking-widest uppercase ${
+            uploading || !w.slug ? "opacity-40" : "hover:bg-ivory"
           }`}
         >
-          {uploading ? "Envoi en cours…" : "+ Ajouter photos ou vidéo"}
-        </label>
+          <span>
+            {uploading ? "Envoi en cours…" : "+ Ajouter photos ou vidéo"}
+            {!uploading && (
+              <span className="hidden md:inline opacity-50"> · ou glisser-déposer</span>
+            )}
+          </span>
+          <input
+            ref={fileRef}
+            type="file"
+            multiple
+            // MIME types rather than extensions: iOS greys out the photo library otherwise.
+            accept="image/*,video/*"
+            onChange={(e) => upload(e.target.files)}
+            disabled={uploading || !w.slug}
+            aria-label="Ajouter des photos ou une vidéo"
+            className="absolute inset-0 h-full w-full cursor-pointer opacity-0 disabled:cursor-default"
+          />
+        </div>
         {!w.slug && <p className="mt-1 text-[11px] opacity-50">Renseigne la marque et le modèle d’abord.</p>}
         {uploading && progress && <p className="mt-2 text-[12px] opacity-60">{progress}</p>}
         {uploadError && <p className="mt-2 text-[12px] text-red-700">{uploadError}</p>}
