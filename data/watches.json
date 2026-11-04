@@ -1,32 +1,507 @@
 [
   {
-    "slug": "vacheron-constantin-patrimony-36-or-rose-4100u",
-    "brand": "Vacheron Constantin",
-    "model": "Patrimony 4100U",
-    "reference": "Patrimony 4100U/000R-B180",
+    "slug": "piaget-mini-polo-861-c701",
+    "brand": "Piaget",
+    "model": "Mini Polo 861 C701",
+    "reference": "Mini Polo 861 C701",
     "year": {
-      "fr": "Juin 2024",
-      "en": "June 2024"
+      "fr": "Circa 1980",
+      "en": "Circa 1980"
     },
     "condition": {
-      "fr": "Seconde main",
-      "en": "Pre-owned"
+      "fr": "",
+      "en": ""
     },
-    "price": "Vendue",
-    "sold": true,
-    "image": "/montre/27jui/1.jpeg",
+    "price": "18 800 €",
+    "image": "/montre/minipolo/1.jpeg",
     "images": [
-      "/montre/27jui/1.jpeg",
-      "/montre/27jui/2.jpeg"
+      "/montre/minipolo/1.jpeg",
+      "/montre/minipolo/2.jpeg",
+      "/montre/minipolo/3.jpeg"
     ],
-    "video": "/montre/27jui/3.mp4",
+    "video": "/montre/minipolo/4.mp4",
     "intro": {
-      "fr": "La Patrimony incarne l'approche la plus épurée de Vacheron Constantin, avec des lignes directement inspirées des créations de la Maison des années 1950. Cette référence 4100U/000R-B180 associe un boîtier particulièrement fin de 36 mm en or rose 18 carats à un cadran argenté opalin légèrement bombé. Les index appliqués et les aiguilles en or rose sont complétés par une minuterie perlée, une seconde centrale ainsi qu'un guichet de date placé à 6 heures.",
-      "en": "The Patrimony embodies Vacheron Constantin's most pared-back approach, with lines drawn directly from the Maison's 1950s creations. This 4100U/000R-B180 reference pairs a particularly slim 36 mm 18-carat rose gold case with a slightly domed opaline silvered dial. Applied indexes and rose gold hands are complemented by a pearled minute track, central seconds and a date window at 6 o'clock."
+      "fr": "Issue de la collection Polo lancée en 1979, cette Mini Polo des années 1980 reprend les codes caractéristiques de Piaget dans un format de 24 mm environ. Entièrement réalisée en or jaune 18 carats, elle se distingue par son bracelet intégré, l'alternance de finitions satinées et polies et son cadran à godrons dans le prolongement du boîtier.",
+      "en": "From the Polo collection launched in 1979, this 1980s Mini Polo takes up Piaget's characteristic codes in a format of approximately 24 mm. Crafted entirely in 18-carat yellow gold, it stands out through its integrated bracelet, the alternation of satin and polished finishes, and its gadrooned dial extending the lines of the case."
     },
     "description": {
-      "fr": "Avec seulement 8,1 mm d'épaisseur, cette Patrimony présente des proportions sobres et équilibrées. Son fond transparent en verre saphir permet d'observer le calibre manufacture automatique 2450 Q6, notamment sa masse oscillante ajourée en or 22 carats inspirée de la croix de Malte. Composé de 196 pièces et certifié par le Poinçon de Genève, ce mouvement fonctionne à une fréquence de 28 800 alternances par heure et offre environ 40 heures de réserve de marche. Cet exemplaire est daté de juin 2024 et livré full set, accompagné de sa boîte et de ses papiers d'origine.",
-      "en": "At just 8.1 mm thick, this Patrimony offers sober, balanced proportions. Its transparent sapphire caseback reveals the in-house automatic calibre 2450 Q6, notably its openworked 22-carat gold oscillating weight inspired by the Maltese cross. Composed of 196 parts and certified with the Hallmark of Geneva, this movement runs at 28,800 vibrations per hour and offers approximately 40 hours of power reserve. This example is dated June 2024 and delivered full set, with its original box and papers."
+      "fr": "Animée par un mouvement à quartz Piaget, cette version conserve les proportions particulièrement fines des premières générations de Polo.",
+      "en": "Driven by a Piaget quartz movement, this version retains the particularly slim proportions of the first generations of the Polo."
+    },
+    "specs": [
+      {
+        "key": {
+          "fr": "Marque",
+          "en": "Brand"
+        },
+        "value": "Piaget"
+      },
+      {
+        "key": {
+          "fr": "Modèle",
+          "en": "Model"
+        },
+        "value": "Mini Polo"
+      },
+      {
+        "key": {
+          "fr": "Référence",
+          "en": "Reference"
+        },
+        "value": "861 C701"
+      },
+      {
+        "key": {
+          "fr": "Année",
+          "en": "Year"
+        },
+        "value": {
+          "fr": "Circa 1980",
+          "en": "Circa 1980"
+        }
+      },
+      {
+        "key": {
+          "fr": "Boîtier",
+          "en": "Case"
+        },
+        "value": {
+          "fr": "Or jaune 18 carats",
+          "en": "18-carat yellow gold"
+        }
+      },
+      {
+        "key": {
+          "fr": "Diamètre",
+          "en": "Diameter"
+        },
+        "value": {
+          "fr": "Environ 24 mm",
+          "en": "Approximately 24 mm"
+        }
+      },
+      {
+        "key": {
+          "fr": "Épaisseur",
+          "en": "Thickness"
+        },
+        "value": {
+          "fr": "Environ 5 mm",
+          "en": "Approximately 5 mm"
+        }
+      },
+      {
+        "key": {
+          "fr": "Cadran",
+          "en": "Dial"
+        },
+        "value": {
+          "fr": "Doré à godrons",
+          "en": "Gilt, gadrooned"
+        }
+      },
+      {
+        "key": {
+          "fr": "Mouvement",
+          "en": "Movement"
+        },
+        "value": {
+          "fr": "Quartz Piaget",
+          "en": "Piaget quartz"
+        }
+      },
+      {
+        "key": {
+          "fr": "Bracelet",
+          "en": "Bracelet"
+        },
+        "value": {
+          "fr": "Intégré en or jaune 18 carats",
+          "en": "Integrated 18-carat yellow gold"
+        }
+      },
+      {
+        "key": {
+          "fr": "Boucle",
+          "en": "Buckle"
+        },
+        "value": {
+          "fr": "Déployante signée Piaget",
+          "en": "Piaget signed folding clasp"
+        }
+      },
+      {
+        "key": {
+          "fr": "Fond",
+          "en": "Caseback"
+        },
+        "value": {
+          "fr": "Vissé, avec gravure",
+          "en": "Screw-down, engraved"
+        }
+      }
+    ],
+    "reserved": true
+  },
+  {
+    "slug": "rolex-day-date-1803",
+    "brand": "Rolex",
+    "model": "Day-Date 1803",
+    "reference": "Day-Date 1803",
+    "year": "1973",
+    "condition": {
+      "fr": "Excellent",
+      "en": "Excellent"
+    },
+    "price": "Vendue",
+    "image": "/montre/roro/ds.jpeg",
+    "images": [
+      "/montre/roro/ds.jpeg",
+      "/montre/roro/WhatsApp%20Image%202026-06-02%20at%2010.29.36.jpeg"
+    ],
+    "video": "/montre/roro/videororo.mp4",
+    "intro": {
+      "fr": "Produite en 1973, cette Rolex Day-Date référence 1803 est réalisée en or blanc 18 carats. Elle présente un cadran argenté d'origine avec aiguilles assorties. Son boîtier a conservé des proportions particulièrement généreuses et sa lunette cannelée d'origine reste bien définie. L'ensemble est présenté en excellente condition.",
+      "en": "Produced in 1973, this Rolex Day-Date reference 1803 is crafted in 18-carat white gold. It features an original silvered dial with matching hands. The case has retained particularly generous proportions and its original fluted bezel remains well-defined. The whole is presented in excellent condition."
+    },
+    "description": {
+      "fr": "La montre est montée sur un bracelet neuf en crocodile bleu marine et équipée d'une boucle ardillon Rolex en acier.",
+      "en": "The watch is fitted with a new navy blue crocodile strap and a Rolex steel pin buckle."
+    },
+    "specs": [
+      {
+        "key": {
+          "fr": "Marque",
+          "en": "Brand"
+        },
+        "value": "Rolex"
+      },
+      {
+        "key": {
+          "fr": "Modèle",
+          "en": "Model"
+        },
+        "value": "Day-Date"
+      },
+      {
+        "key": {
+          "fr": "Référence",
+          "en": "Reference"
+        },
+        "value": "1803"
+      },
+      {
+        "key": {
+          "fr": "Numéro de série",
+          "en": "Serial"
+        },
+        "value": "363XXXX"
+      },
+      {
+        "key": {
+          "fr": "Année",
+          "en": "Year"
+        },
+        "value": "1973"
+      },
+      {
+        "key": {
+          "fr": "Boîtier",
+          "en": "Case"
+        },
+        "value": {
+          "fr": "Or blanc 18k",
+          "en": "18k white gold"
+        }
+      },
+      {
+        "key": {
+          "fr": "Diamètre",
+          "en": "Diameter"
+        },
+        "value": "36 mm"
+      },
+      {
+        "key": {
+          "fr": "Lunette",
+          "en": "Bezel"
+        },
+        "value": {
+          "fr": "Cannelée en or blanc",
+          "en": "Fluted white gold"
+        }
+      },
+      {
+        "key": {
+          "fr": "Cadran",
+          "en": "Dial"
+        },
+        "value": {
+          "fr": "Argenté d'origine",
+          "en": "Original silvered"
+        }
+      },
+      {
+        "key": {
+          "fr": "Aiguilles",
+          "en": "Hands"
+        },
+        "value": {
+          "fr": "Assorties au cadran",
+          "en": "Matching dial"
+        }
+      },
+      {
+        "key": {
+          "fr": "Mouvement",
+          "en": "Movement"
+        },
+        "value": {
+          "fr": "Automatique",
+          "en": "Automatic"
+        }
+      },
+      {
+        "key": {
+          "fr": "Bracelet",
+          "en": "Bracelet"
+        },
+        "value": {
+          "fr": "Crocodile bleu marine (neuf)",
+          "en": "Navy blue crocodile (new)"
+        }
+      },
+      {
+        "key": {
+          "fr": "Boucle",
+          "en": "Buckle"
+        },
+        "value": {
+          "fr": "Ardillon Rolex en acier",
+          "en": "Rolex steel pin buckle"
+        }
+      },
+      {
+        "key": {
+          "fr": "Accessoires",
+          "en": "Accessories"
+        },
+        "value": {
+          "fr": "Aucun",
+          "en": "None"
+        }
+      },
+      {
+        "key": {
+          "fr": "État",
+          "en": "Condition"
+        },
+        "value": {
+          "fr": "Excellent",
+          "en": "Excellent"
+        }
+      },
+      {
+        "key": {
+          "fr": "Garantie",
+          "en": "Warranty"
+        },
+        "value": {
+          "fr": "6 mois · maison 2121",
+          "en": "6 months · 2121 maison"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "breguet-marine-3400ba",
+    "brand": "Breguet",
+    "model": "Marine 3400BA",
+    "reference": "Marine 3400BA",
+    "year": {
+      "fr": "Circa 2000",
+      "en": "Circa 2000"
+    },
+    "condition": {
+      "fr": "Excellent",
+      "en": "Excellent"
+    },
+    "price": "8 200 €",
+    "image": "/montre/breguet/first.jpeg",
+    "images": [
+      "/montre/breguet/first.jpeg",
+      "/montre/breguet/de.jpeg",
+      "/montre/breguet/dezs.jpeg",
+      "/montre/breguet/ze.jpeg",
+      "/montre/breguet/WhatsApp%20Image%202026-06-02%20at%2010.54.01.jpeg"
+    ],
+    "intro": {
+      "fr": "Issue de la première génération de la collection Marine, la référence 3400BA associe les codes traditionnels de Breguet à un boîtier sport-chic de 36 mm en or jaune. Son cadran argenté guilloché à la main, ses aiguilles Breguet bleuies et son calibre automatique Breguet 517GG, dérivé du Jaeger-LeCoultre 889/2, en font l'une des références emblématiques de cette période de production.",
+      "en": "From the first generation of the Marine collection, the 3400BA reference combines Breguet's traditional codes with a sport-chic 36 mm yellow gold case. Its hand-guilloché silvered dial, blued Breguet hands and Breguet 517GG automatic calibre — derived from the Jaeger-LeCoultre 889/2 — make it one of the emblematic references of this production period."
+    },
+    "description": {
+      "fr": "Présentée en excellente condition, cette montre est accompagnée d'un bracelet neuf en crocodile Breguet et de sa boucle déployante Breguet en or jaune.",
+      "en": "Presented in excellent condition, this watch comes with a new Breguet crocodile strap and its Breguet yellow gold deployant clasp."
+    },
+    "specs": [
+      {
+        "key": {
+          "fr": "Marque",
+          "en": "Brand"
+        },
+        "value": "Breguet"
+      },
+      {
+        "key": {
+          "fr": "Modèle",
+          "en": "Model"
+        },
+        "value": "Marine"
+      },
+      {
+        "key": {
+          "fr": "Référence",
+          "en": "Reference"
+        },
+        "value": "3400BA"
+      },
+      {
+        "key": {
+          "fr": "Circa",
+          "en": "Circa"
+        },
+        "value": "2000"
+      },
+      {
+        "key": {
+          "fr": "Boîtier",
+          "en": "Case"
+        },
+        "value": {
+          "fr": "Or jaune 18k",
+          "en": "18k yellow gold"
+        }
+      },
+      {
+        "key": {
+          "fr": "Diamètre",
+          "en": "Diameter"
+        },
+        "value": "36 mm"
+      },
+      {
+        "key": {
+          "fr": "Cadran",
+          "en": "Dial"
+        },
+        "value": {
+          "fr": "Argenté guilloché à la main",
+          "en": "Hand-guilloché silvered"
+        }
+      },
+      {
+        "key": {
+          "fr": "Fonctions",
+          "en": "Functions"
+        },
+        "value": {
+          "fr": "Heures, minutes, secondes, date",
+          "en": "Hours, minutes, seconds, date"
+        }
+      },
+      {
+        "key": {
+          "fr": "Calibre",
+          "en": "Calibre"
+        },
+        "value": "Breguet 517GG"
+      },
+      {
+        "key": {
+          "fr": "Mouvement",
+          "en": "Movement"
+        },
+        "value": {
+          "fr": "Automatique",
+          "en": "Automatic"
+        }
+      },
+      {
+        "key": {
+          "fr": "Bracelet",
+          "en": "Bracelet"
+        },
+        "value": {
+          "fr": "Crocodile Breguet (neuf)",
+          "en": "Breguet crocodile (new)"
+        }
+      },
+      {
+        "key": {
+          "fr": "Boucle",
+          "en": "Clasp"
+        },
+        "value": {
+          "fr": "Déployante Breguet en or jaune",
+          "en": "Breguet yellow gold deployant"
+        }
+      },
+      {
+        "key": {
+          "fr": "Accessoires",
+          "en": "Accessories"
+        },
+        "value": {
+          "fr": "Aucun",
+          "en": "None"
+        }
+      },
+      {
+        "key": {
+          "fr": "État",
+          "en": "Condition"
+        },
+        "value": {
+          "fr": "Excellent",
+          "en": "Excellent"
+        }
+      },
+      {
+        "key": {
+          "fr": "Garantie",
+          "en": "Warranty"
+        },
+        "value": {
+          "fr": "6 mois · maison 2121",
+          "en": "6 months · 2121 maison"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "vacheron-constantin-historiques-222-4200h",
+    "brand": "Vacheron Constantin",
+    "model": "Historiques 222",
+    "reference": "Historiques 222",
+    "year": "2025",
+    "condition": {
+      "fr": "Full set",
+      "en": "Full set"
+    },
+    "price": "46 000 €",
+    "image": "/montre/appendi/1.jpeg",
+    "images": [
+      "/montre/appendi/1.jpeg",
+      "/montre/appendi/2.jpeg",
+      "/montre/appendi/3.jpeg"
+    ],
+    "intro": {
+      "fr": "Présentée en 2025, cette Historiques 222 marque le retour en acier de l'un des modèles les plus emblématiques de Vacheron Constantin. La 222 originale naît en 1977, dessinée par Jörg Hysek pour célébrer les 222 ans de la Maison. Cette nouvelle version reprend fidèlement ses lignes : boîtier tonneau de 37 mm, bracelet intégré, lunette cannelée et petite croix de Malte positionnée à 5 heures.",
+      "en": "Unveiled in 2025, this Historiques 222 marks the return in steel of one of Vacheron Constantin's most emblematic models. The original 222 was born in 1977, designed by Jörg Hysek to celebrate the Maison's 222nd anniversary. This new version faithfully takes up its lines: a 37 mm tonneau case, integrated bracelet, fluted bezel and small Maltese cross positioned at 5 o'clock."
+    },
+    "description": {
+      "fr": "Le cadran bleu mat reste volontairement sobre, avec index bâtons, date à 3 heures et aiguilles en or blanc. Avec seulement 7,95 mm d'épaisseur, la montre conserve les proportions fines et élégantes qui ont fait le succès du modèle original. Elle est animée par le calibre automatique Vacheron Constantin 2455/2, visible à travers le fond saphir, offrant environ 40 heures de réserve de marche et certifié par le Poinçon de Genève. Une des rééditions modernes les plus réussies de ces dernières années, fidèle à l'esprit de la 222 de 1977.",
+      "en": "The matte blue dial is deliberately sober, with baton indexes, a date at 3 o'clock and white gold hands. At just 7.95 mm thick, the watch retains the slim, elegant proportions that made the original a success. It is driven by the Vacheron Constantin 2455/2 automatic calibre, visible through the sapphire caseback, offering approximately 40 hours of power reserve and certified with the Hallmark of Geneva. One of the most accomplished modern re-editions of recent years, true to the spirit of the 1977 222."
     },
     "specs": [
       {
@@ -41,44 +516,28 @@
           "fr": "Collection",
           "en": "Collection"
         },
-        "value": "Patrimony"
+        "value": "Historiques"
+      },
+      {
+        "key": {
+          "fr": "Modèle",
+          "en": "Model"
+        },
+        "value": "222"
       },
       {
         "key": {
           "fr": "Référence",
           "en": "Reference"
         },
-        "value": "4100U/000R-B180"
+        "value": "4200H/222A-B934"
       },
       {
         "key": {
-          "fr": "Date",
-          "en": "Date"
+          "fr": "Année",
+          "en": "Year"
         },
-        "value": {
-          "fr": "Juin 2024",
-          "en": "June 2024"
-        }
-      },
-      {
-        "key": {
-          "fr": "État",
-          "en": "Condition"
-        },
-        "value": {
-          "fr": "Seconde main",
-          "en": "Pre-owned"
-        }
-      },
-      {
-        "key": {
-          "fr": "Set",
-          "en": "Set"
-        },
-        "value": {
-          "fr": "Full set",
-          "en": "Full set"
-        }
+        "value": "2025"
       },
       {
         "key": {
@@ -86,8 +545,8 @@
           "en": "Case"
         },
         "value": {
-          "fr": "Or rose 18 carats",
-          "en": "18-carat rose gold"
+          "fr": "Acier inoxydable",
+          "en": "Stainless steel"
         }
       },
       {
@@ -95,41 +554,14 @@
           "fr": "Diamètre",
           "en": "Diameter"
         },
-        "value": "36 mm"
+        "value": "37 mm"
       },
       {
         "key": {
           "fr": "Épaisseur",
           "en": "Thickness"
         },
-        "value": "8,1 mm"
-      },
-      {
-        "key": {
-          "fr": "Fond",
-          "en": "Caseback"
-        },
-        "value": {
-          "fr": "Verre saphir transparent",
-          "en": "Transparent sapphire"
-        }
-      },
-      {
-        "key": {
-          "fr": "Verre",
-          "en": "Crystal"
-        },
-        "value": {
-          "fr": "Saphir",
-          "en": "Sapphire"
-        }
-      },
-      {
-        "key": {
-          "fr": "Étanchéité",
-          "en": "Water resistance"
-        },
-        "value": "30 m"
+        "value": "7,95 mm"
       },
       {
         "key": {
@@ -137,28 +569,8 @@
           "en": "Dial"
         },
         "value": {
-          "fr": "Argenté opalin",
-          "en": "Opaline silvered"
-        }
-      },
-      {
-        "key": {
-          "fr": "Index",
-          "en": "Indexes"
-        },
-        "value": {
-          "fr": "Appliqués en or rose",
-          "en": "Applied rose gold"
-        }
-      },
-      {
-        "key": {
-          "fr": "Fonctions",
-          "en": "Functions"
-        },
-        "value": {
-          "fr": "Heures, minutes, seconde centrale, date à 6 heures",
-          "en": "Hours, minutes, central seconds, date at 6 o'clock"
+          "fr": "Bleu mat",
+          "en": "Matte blue"
         }
       },
       {
@@ -167,18 +579,8 @@
           "en": "Movement"
         },
         "value": {
-          "fr": "Mécanique à remontage automatique",
-          "en": "Self-winding mechanical"
-        }
-      },
-      {
-        "key": {
-          "fr": "Calibre",
-          "en": "Calibre"
-        },
-        "value": {
-          "fr": "Vacheron Constantin manufacture 2450 Q6",
-          "en": "Vacheron Constantin in-house 2450 Q6"
+          "fr": "Automatique, calibre 2455/2",
+          "en": "Automatic, calibre 2455/2"
         }
       },
       {
@@ -187,8 +589,8 @@
           "en": "Frequency"
         },
         "value": {
-          "fr": "28 800 alt/h — 4 Hz",
-          "en": "28,800 vph — 4 Hz"
+          "fr": "28 800 alternances/heure · 4 Hz",
+          "en": "28,800 vph · 4 Hz"
         }
       },
       {
@@ -203,17 +605,50 @@
       },
       {
         "key": {
-          "fr": "Nombre de composants",
-          "en": "Components"
+          "fr": "Fonctions",
+          "en": "Functions"
         },
-        "value": "196"
+        "value": {
+          "fr": "Heures, minutes, date",
+          "en": "Hours, minutes, date"
+        }
       },
       {
         "key": {
-          "fr": "Nombre de rubis",
-          "en": "Jewels"
+          "fr": "Fond",
+          "en": "Caseback"
         },
-        "value": "27"
+        "value": {
+          "fr": "Saphir transparent",
+          "en": "Transparent sapphire"
+        }
+      },
+      {
+        "key": {
+          "fr": "Étanchéité",
+          "en": "Water resistance"
+        },
+        "value": "50 m"
+      },
+      {
+        "key": {
+          "fr": "Bracelet",
+          "en": "Bracelet"
+        },
+        "value": {
+          "fr": "Acier intégré",
+          "en": "Integrated steel"
+        }
+      },
+      {
+        "key": {
+          "fr": "Fermoir",
+          "en": "Clasp"
+        },
+        "value": {
+          "fr": "Boucle déployante trois lames",
+          "en": "Triple-blade folding clasp"
+        }
       },
       {
         "key": {
@@ -227,22 +662,133 @@
       },
       {
         "key": {
-          "fr": "Bracelet",
-          "en": "Bracelet"
+          "fr": "État",
+          "en": "Condition"
         },
         "value": {
-          "fr": "Alligator brun",
-          "en": "Brown alligator"
+          "fr": "Full set",
+          "en": "Full set"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "cartier-mini-baignoire-casque-dor-2369",
+    "brand": "Cartier",
+    "model": "Mini Baignoire Casque d'Or",
+    "reference": "Mini Baignoire Casque d'Or",
+    "year": {
+      "fr": "",
+      "en": ""
+    },
+    "condition": {
+      "fr": "",
+      "en": ""
+    },
+    "price": "14 200 €",
+    "image": "/montre/europa/1.jpeg",
+    "images": [
+      "/montre/europa/1.jpeg",
+      "/montre/europa/2.jpeg",
+      "/montre/europa/3.jpeg",
+      "/montre/europa/4.jpeg",
+      "/montre/europa/5.jpeg"
+    ],
+    "intro": {
+      "fr": "Cette Cartier Mini Baignoire référence 2369 se distingue par sa réalisation intégrale en or blanc 18 carats, une configuration moins courante que les versions en or jaune. Son bracelet intégré, dit « Casque d'Or », prolonge les lignes ovales du boîtier de 18 mm et donne à cette pièce une véritable dimension joaillière.",
+      "en": "This Cartier Mini Baignoire reference 2369 stands apart through its execution entirely in 18-carat white gold, a less common configuration than the yellow gold versions. Its integrated bracelet, known as \"Casque d'Or\", extends the oval lines of the 18 mm case and gives the piece a genuinely jewellery-like dimension."
+    },
+    "description": {
+      "fr": "Le cadran blanc à chiffres romains est accompagné des traditionnelles aiguilles en acier bleui de Cartier. Équipée d'un mouvement à quartz, cette Mini Baignoire illustre l'approche de Cartier, où la montre se porte autant comme un bijou que comme un instrument de mesure du temps.",
+      "en": "The white dial with Roman numerals is paired with Cartier's traditional blued steel hands. Fitted with a quartz movement, this Mini Baignoire illustrates Cartier's approach, where a watch is worn as much as a piece of jewellery as an instrument for measuring time."
+    },
+    "specs": [
+      {
+        "key": {
+          "fr": "Maison",
+          "en": "Maison"
+        },
+        "value": "Cartier"
+      },
+      {
+        "key": {
+          "fr": "Modèle",
+          "en": "Model"
+        },
+        "value": "Mini Baignoire"
+      },
+      {
+        "key": {
+          "fr": "Référence",
+          "en": "Reference"
+        },
+        "value": "2369"
+      },
+      {
+        "key": {
+          "fr": "Boîtier",
+          "en": "Case"
+        },
+        "value": {
+          "fr": "Or blanc 18 carats",
+          "en": "18-carat white gold"
         }
       },
       {
         "key": {
-          "fr": "Boucle",
-          "en": "Buckle"
+          "fr": "Dimensions boîtier",
+          "en": "Case dimensions"
+        },
+        "value": "18 × 25 mm"
+      },
+      {
+        "key": {
+          "fr": "Mouvement",
+          "en": "Movement"
         },
         "value": {
-          "fr": "Ardillon en or rose 18 carats",
-          "en": "18-carat rose gold pin buckle"
+          "fr": "Quartz",
+          "en": "Quartz"
+        }
+      },
+      {
+        "key": {
+          "fr": "Cadran",
+          "en": "Dial"
+        },
+        "value": {
+          "fr": "Blanc, chiffres romains",
+          "en": "White, Roman numerals"
+        }
+      },
+      {
+        "key": {
+          "fr": "Aiguilles",
+          "en": "Hands"
+        },
+        "value": {
+          "fr": "Acier bleui",
+          "en": "Blued steel"
+        }
+      },
+      {
+        "key": {
+          "fr": "Bracelet",
+          "en": "Bracelet"
+        },
+        "value": {
+          "fr": "Intégré en or blanc 18 carats, dit « Casque d'Or »",
+          "en": "Integrated 18-carat white gold, known as \"Casque d'Or\""
+        }
+      },
+      {
+        "key": {
+          "fr": "Fermoir",
+          "en": "Clasp"
+        },
+        "value": {
+          "fr": "Déployant dissimulé",
+          "en": "Concealed deployant"
         }
       }
     ]
@@ -600,6 +1146,368 @@
         "value": {
           "fr": "Montre seule (Watch Only)",
           "en": "Watch Only"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "patek-philippe-calatrava",
+    "brand": "Patek Philippe",
+    "model": "5140R-011",
+    "reference": "5140R-011",
+    "year": "2017",
+    "condition": {
+      "fr": "Excellent",
+      "en": "Excellent"
+    },
+    "price": "Vendue",
+    "sold": true,
+    "image": "/montre/patek/1.jpg",
+    "images": [
+      "/montre/patek/1.jpg",
+      "/montre/patek/2.jpg",
+      "/montre/patek/3.jpg"
+    ],
+    "intro": {
+      "fr": "Aujourd'hui arrêtée, la référence 5140R compte parmi les quantièmes perpétuels les plus élégants de Patek Philippe. Son boîtier extra-plat de 37,2 mm en or rose abrite le calibre manufacture 240 Q à micro-rotor, reconnu pour sa finesse et son architecture raffinée.",
+      "en": "Now discontinued, the 5140R reference ranks among the most elegant perpetual calendars from Patek Philippe. Its extra-slim 37.2 mm rose gold case houses the in-house calibre 240 Q with micro-rotor, renowned for its refinement and sophisticated architecture."
+    },
+    "description": {
+      "fr": "Cette montre est accompagnée de sa boîte remontoir Patek Philippe, de son bracelet crocodile Patek Philippe et de sa boucle déployante en or rose.",
+      "en": "This watch comes with its Patek Philippe winding box, its Patek Philippe crocodile strap and its rose gold deployant clasp."
+    },
+    "specs": [
+      {
+        "key": {
+          "fr": "Marque",
+          "en": "Brand"
+        },
+        "value": "Patek Philippe"
+      },
+      {
+        "key": {
+          "fr": "Année",
+          "en": "Year"
+        },
+        "value": "2017"
+      },
+      {
+        "key": {
+          "fr": "Référence",
+          "en": "Reference"
+        },
+        "value": "5140R-001"
+      },
+      {
+        "key": {
+          "fr": "Boîtier",
+          "en": "Case"
+        },
+        "value": {
+          "fr": "Or rose 18k",
+          "en": "18k rose gold"
+        }
+      },
+      {
+        "key": {
+          "fr": "Mouvement",
+          "en": "Movement"
+        },
+        "value": {
+          "fr": "Automatique manufacture — Calibre 240 Q",
+          "en": "In-house automatic — Calibre 240 Q"
+        }
+      },
+      {
+        "key": {
+          "fr": "Bracelet",
+          "en": "Bracelet"
+        },
+        "value": {
+          "fr": "Crocodile brun Patek Philippe, boucle déployante or rose",
+          "en": "Brown Patek Philippe crocodile, rose gold deployant clasp"
+        }
+      },
+      {
+        "key": {
+          "fr": "Dimensions boîtier",
+          "en": "Case dimensions"
+        },
+        "value": "37,2 mm / 20 mm"
+      },
+      {
+        "key": {
+          "fr": "Étanchéité",
+          "en": "Water resistance"
+        },
+        "value": "30 m"
+      },
+      {
+        "key": {
+          "fr": "Accessoires",
+          "en": "Accessories"
+        },
+        "value": {
+          "fr": "Boîte remontoir Patek Philippe",
+          "en": "Patek Philippe winding box"
+        }
+      },
+      {
+        "key": {
+          "fr": "Garantie",
+          "en": "Warranty"
+        },
+        "value": {
+          "fr": "6 mois · maison 2121",
+          "en": "6 months · 2121 maison"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "vacheron-constantin-patrimony-36-or-rose-4100u",
+    "brand": "Vacheron Constantin",
+    "model": "Patrimony 4100U",
+    "reference": "Patrimony 4100U/000R-B180",
+    "year": {
+      "fr": "Juin 2024",
+      "en": "June 2024"
+    },
+    "condition": {
+      "fr": "Seconde main",
+      "en": "Pre-owned"
+    },
+    "price": "Vendue",
+    "sold": true,
+    "image": "/montre/27jui/1.jpeg",
+    "images": [
+      "/montre/27jui/1.jpeg",
+      "/montre/27jui/2.jpeg"
+    ],
+    "video": "/montre/27jui/3.mp4",
+    "intro": {
+      "fr": "La Patrimony incarne l'approche la plus épurée de Vacheron Constantin, avec des lignes directement inspirées des créations de la Maison des années 1950. Cette référence 4100U/000R-B180 associe un boîtier particulièrement fin de 36 mm en or rose 18 carats à un cadran argenté opalin légèrement bombé. Les index appliqués et les aiguilles en or rose sont complétés par une minuterie perlée, une seconde centrale ainsi qu'un guichet de date placé à 6 heures.",
+      "en": "The Patrimony embodies Vacheron Constantin's most pared-back approach, with lines drawn directly from the Maison's 1950s creations. This 4100U/000R-B180 reference pairs a particularly slim 36 mm 18-carat rose gold case with a slightly domed opaline silvered dial. Applied indexes and rose gold hands are complemented by a pearled minute track, central seconds and a date window at 6 o'clock."
+    },
+    "description": {
+      "fr": "Avec seulement 8,1 mm d'épaisseur, cette Patrimony présente des proportions sobres et équilibrées. Son fond transparent en verre saphir permet d'observer le calibre manufacture automatique 2450 Q6, notamment sa masse oscillante ajourée en or 22 carats inspirée de la croix de Malte. Composé de 196 pièces et certifié par le Poinçon de Genève, ce mouvement fonctionne à une fréquence de 28 800 alternances par heure et offre environ 40 heures de réserve de marche. Cet exemplaire est daté de juin 2024 et livré full set, accompagné de sa boîte et de ses papiers d'origine.",
+      "en": "At just 8.1 mm thick, this Patrimony offers sober, balanced proportions. Its transparent sapphire caseback reveals the in-house automatic calibre 2450 Q6, notably its openworked 22-carat gold oscillating weight inspired by the Maltese cross. Composed of 196 parts and certified with the Hallmark of Geneva, this movement runs at 28,800 vibrations per hour and offers approximately 40 hours of power reserve. This example is dated June 2024 and delivered full set, with its original box and papers."
+    },
+    "specs": [
+      {
+        "key": {
+          "fr": "Maison",
+          "en": "Maison"
+        },
+        "value": "Vacheron Constantin"
+      },
+      {
+        "key": {
+          "fr": "Collection",
+          "en": "Collection"
+        },
+        "value": "Patrimony"
+      },
+      {
+        "key": {
+          "fr": "Référence",
+          "en": "Reference"
+        },
+        "value": "4100U/000R-B180"
+      },
+      {
+        "key": {
+          "fr": "Date",
+          "en": "Date"
+        },
+        "value": {
+          "fr": "Juin 2024",
+          "en": "June 2024"
+        }
+      },
+      {
+        "key": {
+          "fr": "État",
+          "en": "Condition"
+        },
+        "value": {
+          "fr": "Seconde main",
+          "en": "Pre-owned"
+        }
+      },
+      {
+        "key": {
+          "fr": "Set",
+          "en": "Set"
+        },
+        "value": {
+          "fr": "Full set",
+          "en": "Full set"
+        }
+      },
+      {
+        "key": {
+          "fr": "Boîtier",
+          "en": "Case"
+        },
+        "value": {
+          "fr": "Or rose 18 carats",
+          "en": "18-carat rose gold"
+        }
+      },
+      {
+        "key": {
+          "fr": "Diamètre",
+          "en": "Diameter"
+        },
+        "value": "36 mm"
+      },
+      {
+        "key": {
+          "fr": "Épaisseur",
+          "en": "Thickness"
+        },
+        "value": "8,1 mm"
+      },
+      {
+        "key": {
+          "fr": "Fond",
+          "en": "Caseback"
+        },
+        "value": {
+          "fr": "Verre saphir transparent",
+          "en": "Transparent sapphire"
+        }
+      },
+      {
+        "key": {
+          "fr": "Verre",
+          "en": "Crystal"
+        },
+        "value": {
+          "fr": "Saphir",
+          "en": "Sapphire"
+        }
+      },
+      {
+        "key": {
+          "fr": "Étanchéité",
+          "en": "Water resistance"
+        },
+        "value": "30 m"
+      },
+      {
+        "key": {
+          "fr": "Cadran",
+          "en": "Dial"
+        },
+        "value": {
+          "fr": "Argenté opalin",
+          "en": "Opaline silvered"
+        }
+      },
+      {
+        "key": {
+          "fr": "Index",
+          "en": "Indexes"
+        },
+        "value": {
+          "fr": "Appliqués en or rose",
+          "en": "Applied rose gold"
+        }
+      },
+      {
+        "key": {
+          "fr": "Fonctions",
+          "en": "Functions"
+        },
+        "value": {
+          "fr": "Heures, minutes, seconde centrale, date à 6 heures",
+          "en": "Hours, minutes, central seconds, date at 6 o'clock"
+        }
+      },
+      {
+        "key": {
+          "fr": "Mouvement",
+          "en": "Movement"
+        },
+        "value": {
+          "fr": "Mécanique à remontage automatique",
+          "en": "Self-winding mechanical"
+        }
+      },
+      {
+        "key": {
+          "fr": "Calibre",
+          "en": "Calibre"
+        },
+        "value": {
+          "fr": "Vacheron Constantin manufacture 2450 Q6",
+          "en": "Vacheron Constantin in-house 2450 Q6"
+        }
+      },
+      {
+        "key": {
+          "fr": "Fréquence",
+          "en": "Frequency"
+        },
+        "value": {
+          "fr": "28 800 alt/h — 4 Hz",
+          "en": "28,800 vph — 4 Hz"
+        }
+      },
+      {
+        "key": {
+          "fr": "Réserve de marche",
+          "en": "Power reserve"
+        },
+        "value": {
+          "fr": "Environ 40 heures",
+          "en": "Approximately 40 hours"
+        }
+      },
+      {
+        "key": {
+          "fr": "Nombre de composants",
+          "en": "Components"
+        },
+        "value": "196"
+      },
+      {
+        "key": {
+          "fr": "Nombre de rubis",
+          "en": "Jewels"
+        },
+        "value": "27"
+      },
+      {
+        "key": {
+          "fr": "Certification",
+          "en": "Certification"
+        },
+        "value": {
+          "fr": "Poinçon de Genève",
+          "en": "Hallmark of Geneva"
+        }
+      },
+      {
+        "key": {
+          "fr": "Bracelet",
+          "en": "Bracelet"
+        },
+        "value": {
+          "fr": "Alligator brun",
+          "en": "Brown alligator"
+        }
+      },
+      {
+        "key": {
+          "fr": "Boucle",
+          "en": "Buckle"
+        },
+        "value": {
+          "fr": "Ardillon en or rose 18 carats",
+          "en": "18-carat rose gold pin buckle"
         }
       }
     ]
@@ -969,285 +1877,6 @@
     ]
   },
   {
-    "slug": "breguet-marine-3400ba",
-    "brand": "Breguet",
-    "model": "Marine 3400BA",
-    "reference": "Marine 3400BA",
-    "year": {
-      "fr": "Circa 2000",
-      "en": "Circa 2000"
-    },
-    "condition": {
-      "fr": "Excellent",
-      "en": "Excellent"
-    },
-    "price": "8 200 €",
-    "image": "/montre/breguet/first.jpeg",
-    "images": [
-      "/montre/breguet/first.jpeg",
-      "/montre/breguet/de.jpeg",
-      "/montre/breguet/dezs.jpeg",
-      "/montre/breguet/ze.jpeg",
-      "/montre/breguet/WhatsApp%20Image%202026-06-02%20at%2010.54.01.jpeg"
-    ],
-    "intro": {
-      "fr": "Issue de la première génération de la collection Marine, la référence 3400BA associe les codes traditionnels de Breguet à un boîtier sport-chic de 36 mm en or jaune. Son cadran argenté guilloché à la main, ses aiguilles Breguet bleuies et son calibre automatique Breguet 517GG, dérivé du Jaeger-LeCoultre 889/2, en font l'une des références emblématiques de cette période de production.",
-      "en": "From the first generation of the Marine collection, the 3400BA reference combines Breguet's traditional codes with a sport-chic 36 mm yellow gold case. Its hand-guilloché silvered dial, blued Breguet hands and Breguet 517GG automatic calibre — derived from the Jaeger-LeCoultre 889/2 — make it one of the emblematic references of this production period."
-    },
-    "description": {
-      "fr": "Présentée en excellente condition, cette montre est accompagnée d'un bracelet neuf en crocodile Breguet et de sa boucle déployante Breguet en or jaune.",
-      "en": "Presented in excellent condition, this watch comes with a new Breguet crocodile strap and its Breguet yellow gold deployant clasp."
-    },
-    "specs": [
-      {
-        "key": {
-          "fr": "Marque",
-          "en": "Brand"
-        },
-        "value": "Breguet"
-      },
-      {
-        "key": {
-          "fr": "Modèle",
-          "en": "Model"
-        },
-        "value": "Marine"
-      },
-      {
-        "key": {
-          "fr": "Référence",
-          "en": "Reference"
-        },
-        "value": "3400BA"
-      },
-      {
-        "key": {
-          "fr": "Circa",
-          "en": "Circa"
-        },
-        "value": "2000"
-      },
-      {
-        "key": {
-          "fr": "Boîtier",
-          "en": "Case"
-        },
-        "value": {
-          "fr": "Or jaune 18k",
-          "en": "18k yellow gold"
-        }
-      },
-      {
-        "key": {
-          "fr": "Diamètre",
-          "en": "Diameter"
-        },
-        "value": "36 mm"
-      },
-      {
-        "key": {
-          "fr": "Cadran",
-          "en": "Dial"
-        },
-        "value": {
-          "fr": "Argenté guilloché à la main",
-          "en": "Hand-guilloché silvered"
-        }
-      },
-      {
-        "key": {
-          "fr": "Fonctions",
-          "en": "Functions"
-        },
-        "value": {
-          "fr": "Heures, minutes, secondes, date",
-          "en": "Hours, minutes, seconds, date"
-        }
-      },
-      {
-        "key": {
-          "fr": "Calibre",
-          "en": "Calibre"
-        },
-        "value": "Breguet 517GG"
-      },
-      {
-        "key": {
-          "fr": "Mouvement",
-          "en": "Movement"
-        },
-        "value": {
-          "fr": "Automatique",
-          "en": "Automatic"
-        }
-      },
-      {
-        "key": {
-          "fr": "Bracelet",
-          "en": "Bracelet"
-        },
-        "value": {
-          "fr": "Crocodile Breguet (neuf)",
-          "en": "Breguet crocodile (new)"
-        }
-      },
-      {
-        "key": {
-          "fr": "Boucle",
-          "en": "Clasp"
-        },
-        "value": {
-          "fr": "Déployante Breguet en or jaune",
-          "en": "Breguet yellow gold deployant"
-        }
-      },
-      {
-        "key": {
-          "fr": "Accessoires",
-          "en": "Accessories"
-        },
-        "value": {
-          "fr": "Aucun",
-          "en": "None"
-        }
-      },
-      {
-        "key": {
-          "fr": "État",
-          "en": "Condition"
-        },
-        "value": {
-          "fr": "Excellent",
-          "en": "Excellent"
-        }
-      },
-      {
-        "key": {
-          "fr": "Garantie",
-          "en": "Warranty"
-        },
-        "value": {
-          "fr": "6 mois · maison 2121",
-          "en": "6 months · 2121 maison"
-        }
-      }
-    ]
-  },
-  {
-    "slug": "patek-philippe-calatrava",
-    "brand": "Patek Philippe",
-    "model": "5140R-011",
-    "reference": "5140R-011",
-    "year": "2017",
-    "condition": {
-      "fr": "Excellent",
-      "en": "Excellent"
-    },
-    "price": "Vendue",
-    "sold": true,
-    "image": "/montre/patek/1.jpg",
-    "images": [
-      "/montre/patek/1.jpg",
-      "/montre/patek/2.jpg",
-      "/montre/patek/3.jpg"
-    ],
-    "intro": {
-      "fr": "Aujourd'hui arrêtée, la référence 5140R compte parmi les quantièmes perpétuels les plus élégants de Patek Philippe. Son boîtier extra-plat de 37,2 mm en or rose abrite le calibre manufacture 240 Q à micro-rotor, reconnu pour sa finesse et son architecture raffinée.",
-      "en": "Now discontinued, the 5140R reference ranks among the most elegant perpetual calendars from Patek Philippe. Its extra-slim 37.2 mm rose gold case houses the in-house calibre 240 Q with micro-rotor, renowned for its refinement and sophisticated architecture."
-    },
-    "description": {
-      "fr": "Cette montre est accompagnée de sa boîte remontoir Patek Philippe, de son bracelet crocodile Patek Philippe et de sa boucle déployante en or rose.",
-      "en": "This watch comes with its Patek Philippe winding box, its Patek Philippe crocodile strap and its rose gold deployant clasp."
-    },
-    "specs": [
-      {
-        "key": {
-          "fr": "Marque",
-          "en": "Brand"
-        },
-        "value": "Patek Philippe"
-      },
-      {
-        "key": {
-          "fr": "Année",
-          "en": "Year"
-        },
-        "value": "2017"
-      },
-      {
-        "key": {
-          "fr": "Référence",
-          "en": "Reference"
-        },
-        "value": "5140R-001"
-      },
-      {
-        "key": {
-          "fr": "Boîtier",
-          "en": "Case"
-        },
-        "value": {
-          "fr": "Or rose 18k",
-          "en": "18k rose gold"
-        }
-      },
-      {
-        "key": {
-          "fr": "Mouvement",
-          "en": "Movement"
-        },
-        "value": {
-          "fr": "Automatique manufacture — Calibre 240 Q",
-          "en": "In-house automatic — Calibre 240 Q"
-        }
-      },
-      {
-        "key": {
-          "fr": "Bracelet",
-          "en": "Bracelet"
-        },
-        "value": {
-          "fr": "Crocodile brun Patek Philippe, boucle déployante or rose",
-          "en": "Brown Patek Philippe crocodile, rose gold deployant clasp"
-        }
-      },
-      {
-        "key": {
-          "fr": "Dimensions boîtier",
-          "en": "Case dimensions"
-        },
-        "value": "37,2 mm / 20 mm"
-      },
-      {
-        "key": {
-          "fr": "Étanchéité",
-          "en": "Water resistance"
-        },
-        "value": "30 m"
-      },
-      {
-        "key": {
-          "fr": "Accessoires",
-          "en": "Accessories"
-        },
-        "value": {
-          "fr": "Boîte remontoir Patek Philippe",
-          "en": "Patek Philippe winding box"
-        }
-      },
-      {
-        "key": {
-          "fr": "Garantie",
-          "en": "Warranty"
-        },
-        "value": {
-          "fr": "6 mois · maison 2121",
-          "en": "6 months · 2121 maison"
-        }
-      }
-    ]
-  },
-  {
     "slug": "vacheron-constantin-malachite-1970s",
     "brand": "Vacheron Constantin",
     "model": "Malachite",
@@ -1469,177 +2098,6 @@
         "value": {
           "fr": "Boucle ardillon Cartier or jaune 18 carats",
           "en": "Cartier 18-carat yellow gold pin buckle"
-        }
-      },
-      {
-        "key": {
-          "fr": "Garantie",
-          "en": "Warranty"
-        },
-        "value": {
-          "fr": "6 mois · maison 2121",
-          "en": "6 months · 2121 maison"
-        }
-      }
-    ]
-  },
-  {
-    "slug": "rolex-day-date-1803",
-    "brand": "Rolex",
-    "model": "Day-Date 1803",
-    "reference": "Day-Date 1803",
-    "year": "1973",
-    "condition": {
-      "fr": "Excellent",
-      "en": "Excellent"
-    },
-    "price": "Vendue",
-    "sold": true,
-    "image": "/montre/roro/ds.jpeg",
-    "images": [
-      "/montre/roro/ds.jpeg",
-      "/montre/roro/WhatsApp%20Image%202026-06-02%20at%2010.29.36.jpeg"
-    ],
-    "video": "/montre/roro/videororo.mp4",
-    "intro": {
-      "fr": "Produite en 1973, cette Rolex Day-Date référence 1803 est réalisée en or blanc 18 carats. Elle présente un cadran argenté d'origine avec aiguilles assorties. Son boîtier a conservé des proportions particulièrement généreuses et sa lunette cannelée d'origine reste bien définie. L'ensemble est présenté en excellente condition.",
-      "en": "Produced in 1973, this Rolex Day-Date reference 1803 is crafted in 18-carat white gold. It features an original silvered dial with matching hands. The case has retained particularly generous proportions and its original fluted bezel remains well-defined. The whole is presented in excellent condition."
-    },
-    "description": {
-      "fr": "La montre est montée sur un bracelet neuf en crocodile bleu marine et équipée d'une boucle ardillon Rolex en acier.",
-      "en": "The watch is fitted with a new navy blue crocodile strap and a Rolex steel pin buckle."
-    },
-    "specs": [
-      {
-        "key": {
-          "fr": "Marque",
-          "en": "Brand"
-        },
-        "value": "Rolex"
-      },
-      {
-        "key": {
-          "fr": "Modèle",
-          "en": "Model"
-        },
-        "value": "Day-Date"
-      },
-      {
-        "key": {
-          "fr": "Référence",
-          "en": "Reference"
-        },
-        "value": "1803"
-      },
-      {
-        "key": {
-          "fr": "Numéro de série",
-          "en": "Serial"
-        },
-        "value": "363XXXX"
-      },
-      {
-        "key": {
-          "fr": "Année",
-          "en": "Year"
-        },
-        "value": "1973"
-      },
-      {
-        "key": {
-          "fr": "Boîtier",
-          "en": "Case"
-        },
-        "value": {
-          "fr": "Or blanc 18k",
-          "en": "18k white gold"
-        }
-      },
-      {
-        "key": {
-          "fr": "Diamètre",
-          "en": "Diameter"
-        },
-        "value": "36 mm"
-      },
-      {
-        "key": {
-          "fr": "Lunette",
-          "en": "Bezel"
-        },
-        "value": {
-          "fr": "Cannelée en or blanc",
-          "en": "Fluted white gold"
-        }
-      },
-      {
-        "key": {
-          "fr": "Cadran",
-          "en": "Dial"
-        },
-        "value": {
-          "fr": "Argenté d'origine",
-          "en": "Original silvered"
-        }
-      },
-      {
-        "key": {
-          "fr": "Aiguilles",
-          "en": "Hands"
-        },
-        "value": {
-          "fr": "Assorties au cadran",
-          "en": "Matching dial"
-        }
-      },
-      {
-        "key": {
-          "fr": "Mouvement",
-          "en": "Movement"
-        },
-        "value": {
-          "fr": "Automatique",
-          "en": "Automatic"
-        }
-      },
-      {
-        "key": {
-          "fr": "Bracelet",
-          "en": "Bracelet"
-        },
-        "value": {
-          "fr": "Crocodile bleu marine (neuf)",
-          "en": "Navy blue crocodile (new)"
-        }
-      },
-      {
-        "key": {
-          "fr": "Boucle",
-          "en": "Buckle"
-        },
-        "value": {
-          "fr": "Ardillon Rolex en acier",
-          "en": "Rolex steel pin buckle"
-        }
-      },
-      {
-        "key": {
-          "fr": "Accessoires",
-          "en": "Accessories"
-        },
-        "value": {
-          "fr": "Aucun",
-          "en": "None"
-        }
-      },
-      {
-        "key": {
-          "fr": "État",
-          "en": "Condition"
-        },
-        "value": {
-          "fr": "Excellent",
-          "en": "Excellent"
         }
       },
       {
@@ -3992,321 +4450,6 @@
     ]
   },
   {
-    "slug": "vacheron-constantin-historiques-222-4200h",
-    "brand": "Vacheron Constantin",
-    "model": "Historiques 222",
-    "reference": "Historiques 222",
-    "year": "2025",
-    "condition": {
-      "fr": "Full set",
-      "en": "Full set"
-    },
-    "price": "46 000 €",
-    "image": "/montre/appendi/1.jpeg",
-    "images": [
-      "/montre/appendi/1.jpeg",
-      "/montre/appendi/2.jpeg",
-      "/montre/appendi/3.jpeg"
-    ],
-    "intro": {
-      "fr": "Présentée en 2025, cette Historiques 222 marque le retour en acier de l'un des modèles les plus emblématiques de Vacheron Constantin. La 222 originale naît en 1977, dessinée par Jörg Hysek pour célébrer les 222 ans de la Maison. Cette nouvelle version reprend fidèlement ses lignes : boîtier tonneau de 37 mm, bracelet intégré, lunette cannelée et petite croix de Malte positionnée à 5 heures.",
-      "en": "Unveiled in 2025, this Historiques 222 marks the return in steel of one of Vacheron Constantin's most emblematic models. The original 222 was born in 1977, designed by Jörg Hysek to celebrate the Maison's 222nd anniversary. This new version faithfully takes up its lines: a 37 mm tonneau case, integrated bracelet, fluted bezel and small Maltese cross positioned at 5 o'clock."
-    },
-    "description": {
-      "fr": "Le cadran bleu mat reste volontairement sobre, avec index bâtons, date à 3 heures et aiguilles en or blanc. Avec seulement 7,95 mm d'épaisseur, la montre conserve les proportions fines et élégantes qui ont fait le succès du modèle original. Elle est animée par le calibre automatique Vacheron Constantin 2455/2, visible à travers le fond saphir, offrant environ 40 heures de réserve de marche et certifié par le Poinçon de Genève. Une des rééditions modernes les plus réussies de ces dernières années, fidèle à l'esprit de la 222 de 1977.",
-      "en": "The matte blue dial is deliberately sober, with baton indexes, a date at 3 o'clock and white gold hands. At just 7.95 mm thick, the watch retains the slim, elegant proportions that made the original a success. It is driven by the Vacheron Constantin 2455/2 automatic calibre, visible through the sapphire caseback, offering approximately 40 hours of power reserve and certified with the Hallmark of Geneva. One of the most accomplished modern re-editions of recent years, true to the spirit of the 1977 222."
-    },
-    "specs": [
-      {
-        "key": {
-          "fr": "Maison",
-          "en": "Maison"
-        },
-        "value": "Vacheron Constantin"
-      },
-      {
-        "key": {
-          "fr": "Collection",
-          "en": "Collection"
-        },
-        "value": "Historiques"
-      },
-      {
-        "key": {
-          "fr": "Modèle",
-          "en": "Model"
-        },
-        "value": "222"
-      },
-      {
-        "key": {
-          "fr": "Référence",
-          "en": "Reference"
-        },
-        "value": "4200H/222A-B934"
-      },
-      {
-        "key": {
-          "fr": "Année",
-          "en": "Year"
-        },
-        "value": "2025"
-      },
-      {
-        "key": {
-          "fr": "Boîtier",
-          "en": "Case"
-        },
-        "value": {
-          "fr": "Acier inoxydable",
-          "en": "Stainless steel"
-        }
-      },
-      {
-        "key": {
-          "fr": "Diamètre",
-          "en": "Diameter"
-        },
-        "value": "37 mm"
-      },
-      {
-        "key": {
-          "fr": "Épaisseur",
-          "en": "Thickness"
-        },
-        "value": "7,95 mm"
-      },
-      {
-        "key": {
-          "fr": "Cadran",
-          "en": "Dial"
-        },
-        "value": {
-          "fr": "Bleu mat",
-          "en": "Matte blue"
-        }
-      },
-      {
-        "key": {
-          "fr": "Mouvement",
-          "en": "Movement"
-        },
-        "value": {
-          "fr": "Automatique, calibre 2455/2",
-          "en": "Automatic, calibre 2455/2"
-        }
-      },
-      {
-        "key": {
-          "fr": "Fréquence",
-          "en": "Frequency"
-        },
-        "value": {
-          "fr": "28 800 alternances/heure · 4 Hz",
-          "en": "28,800 vph · 4 Hz"
-        }
-      },
-      {
-        "key": {
-          "fr": "Réserve de marche",
-          "en": "Power reserve"
-        },
-        "value": {
-          "fr": "Environ 40 heures",
-          "en": "Approximately 40 hours"
-        }
-      },
-      {
-        "key": {
-          "fr": "Fonctions",
-          "en": "Functions"
-        },
-        "value": {
-          "fr": "Heures, minutes, date",
-          "en": "Hours, minutes, date"
-        }
-      },
-      {
-        "key": {
-          "fr": "Fond",
-          "en": "Caseback"
-        },
-        "value": {
-          "fr": "Saphir transparent",
-          "en": "Transparent sapphire"
-        }
-      },
-      {
-        "key": {
-          "fr": "Étanchéité",
-          "en": "Water resistance"
-        },
-        "value": "50 m"
-      },
-      {
-        "key": {
-          "fr": "Bracelet",
-          "en": "Bracelet"
-        },
-        "value": {
-          "fr": "Acier intégré",
-          "en": "Integrated steel"
-        }
-      },
-      {
-        "key": {
-          "fr": "Fermoir",
-          "en": "Clasp"
-        },
-        "value": {
-          "fr": "Boucle déployante trois lames",
-          "en": "Triple-blade folding clasp"
-        }
-      },
-      {
-        "key": {
-          "fr": "Certification",
-          "en": "Certification"
-        },
-        "value": {
-          "fr": "Poinçon de Genève",
-          "en": "Hallmark of Geneva"
-        }
-      },
-      {
-        "key": {
-          "fr": "État",
-          "en": "Condition"
-        },
-        "value": {
-          "fr": "Full set",
-          "en": "Full set"
-        }
-      }
-    ]
-  },
-  {
-    "slug": "cartier-mini-baignoire-casque-dor-2369",
-    "brand": "Cartier",
-    "model": "Mini Baignoire Casque d'Or",
-    "reference": "Mini Baignoire Casque d'Or",
-    "year": {
-      "fr": "",
-      "en": ""
-    },
-    "condition": {
-      "fr": "",
-      "en": ""
-    },
-    "price": "14 200 €",
-    "image": "/montre/europa/1.jpeg",
-    "images": [
-      "/montre/europa/1.jpeg",
-      "/montre/europa/2.jpeg",
-      "/montre/europa/3.jpeg",
-      "/montre/europa/4.jpeg",
-      "/montre/europa/5.jpeg"
-    ],
-    "intro": {
-      "fr": "Cette Cartier Mini Baignoire référence 2369 se distingue par sa réalisation intégrale en or blanc 18 carats, une configuration moins courante que les versions en or jaune. Son bracelet intégré, dit « Casque d'Or », prolonge les lignes ovales du boîtier de 18 mm et donne à cette pièce une véritable dimension joaillière.",
-      "en": "This Cartier Mini Baignoire reference 2369 stands apart through its execution entirely in 18-carat white gold, a less common configuration than the yellow gold versions. Its integrated bracelet, known as \"Casque d'Or\", extends the oval lines of the 18 mm case and gives the piece a genuinely jewellery-like dimension."
-    },
-    "description": {
-      "fr": "Le cadran blanc à chiffres romains est accompagné des traditionnelles aiguilles en acier bleui de Cartier. Équipée d'un mouvement à quartz, cette Mini Baignoire illustre l'approche de Cartier, où la montre se porte autant comme un bijou que comme un instrument de mesure du temps.",
-      "en": "The white dial with Roman numerals is paired with Cartier's traditional blued steel hands. Fitted with a quartz movement, this Mini Baignoire illustrates Cartier's approach, where a watch is worn as much as a piece of jewellery as an instrument for measuring time."
-    },
-    "specs": [
-      {
-        "key": {
-          "fr": "Maison",
-          "en": "Maison"
-        },
-        "value": "Cartier"
-      },
-      {
-        "key": {
-          "fr": "Modèle",
-          "en": "Model"
-        },
-        "value": "Mini Baignoire"
-      },
-      {
-        "key": {
-          "fr": "Référence",
-          "en": "Reference"
-        },
-        "value": "2369"
-      },
-      {
-        "key": {
-          "fr": "Boîtier",
-          "en": "Case"
-        },
-        "value": {
-          "fr": "Or blanc 18 carats",
-          "en": "18-carat white gold"
-        }
-      },
-      {
-        "key": {
-          "fr": "Dimensions boîtier",
-          "en": "Case dimensions"
-        },
-        "value": "18 × 25 mm"
-      },
-      {
-        "key": {
-          "fr": "Mouvement",
-          "en": "Movement"
-        },
-        "value": {
-          "fr": "Quartz",
-          "en": "Quartz"
-        }
-      },
-      {
-        "key": {
-          "fr": "Cadran",
-          "en": "Dial"
-        },
-        "value": {
-          "fr": "Blanc, chiffres romains",
-          "en": "White, Roman numerals"
-        }
-      },
-      {
-        "key": {
-          "fr": "Aiguilles",
-          "en": "Hands"
-        },
-        "value": {
-          "fr": "Acier bleui",
-          "en": "Blued steel"
-        }
-      },
-      {
-        "key": {
-          "fr": "Bracelet",
-          "en": "Bracelet"
-        },
-        "value": {
-          "fr": "Intégré en or blanc 18 carats, dit « Casque d'Or »",
-          "en": "Integrated 18-carat white gold, known as \"Casque d'Or\""
-        }
-      },
-      {
-        "key": {
-          "fr": "Fermoir",
-          "en": "Clasp"
-        },
-        "value": {
-          "fr": "Déployant dissimulé",
-          "en": "Concealed deployant"
-        }
-      }
-    ]
-  },
-  {
     "slug": "rolex-lady-datejust-69173",
     "brand": "Rolex",
     "model": "Lady-Datejust 69173",
@@ -4933,149 +5076,6 @@
         "value": {
           "fr": "Déployant intégré",
           "en": "Integrated folding"
-        }
-      }
-    ]
-  },
-  {
-    "slug": "piaget-mini-polo-861-c701",
-    "brand": "Piaget",
-    "model": "Mini Polo 861 C701",
-    "reference": "Mini Polo 861 C701",
-    "year": {
-      "fr": "Circa 1980",
-      "en": "Circa 1980"
-    },
-    "condition": {
-      "fr": "",
-      "en": ""
-    },
-    "price": "18 800 €",
-    "image": "/montre/minipolo/1.jpeg",
-    "images": [
-      "/montre/minipolo/1.jpeg",
-      "/montre/minipolo/2.jpeg",
-      "/montre/minipolo/3.jpeg"
-    ],
-    "video": "/montre/minipolo/4.mp4",
-    "intro": {
-      "fr": "Issue de la collection Polo lancée en 1979, cette Mini Polo des années 1980 reprend les codes caractéristiques de Piaget dans un format de 24 mm environ. Entièrement réalisée en or jaune 18 carats, elle se distingue par son bracelet intégré, l'alternance de finitions satinées et polies et son cadran à godrons dans le prolongement du boîtier.",
-      "en": "From the Polo collection launched in 1979, this 1980s Mini Polo takes up Piaget's characteristic codes in a format of approximately 24 mm. Crafted entirely in 18-carat yellow gold, it stands out through its integrated bracelet, the alternation of satin and polished finishes, and its gadrooned dial extending the lines of the case."
-    },
-    "description": {
-      "fr": "Animée par un mouvement à quartz Piaget, cette version conserve les proportions particulièrement fines des premières générations de Polo.",
-      "en": "Driven by a Piaget quartz movement, this version retains the particularly slim proportions of the first generations of the Polo."
-    },
-    "specs": [
-      {
-        "key": {
-          "fr": "Marque",
-          "en": "Brand"
-        },
-        "value": "Piaget"
-      },
-      {
-        "key": {
-          "fr": "Modèle",
-          "en": "Model"
-        },
-        "value": "Mini Polo"
-      },
-      {
-        "key": {
-          "fr": "Référence",
-          "en": "Reference"
-        },
-        "value": "861 C701"
-      },
-      {
-        "key": {
-          "fr": "Année",
-          "en": "Year"
-        },
-        "value": {
-          "fr": "Circa 1980",
-          "en": "Circa 1980"
-        }
-      },
-      {
-        "key": {
-          "fr": "Boîtier",
-          "en": "Case"
-        },
-        "value": {
-          "fr": "Or jaune 18 carats",
-          "en": "18-carat yellow gold"
-        }
-      },
-      {
-        "key": {
-          "fr": "Diamètre",
-          "en": "Diameter"
-        },
-        "value": {
-          "fr": "Environ 24 mm",
-          "en": "Approximately 24 mm"
-        }
-      },
-      {
-        "key": {
-          "fr": "Épaisseur",
-          "en": "Thickness"
-        },
-        "value": {
-          "fr": "Environ 5 mm",
-          "en": "Approximately 5 mm"
-        }
-      },
-      {
-        "key": {
-          "fr": "Cadran",
-          "en": "Dial"
-        },
-        "value": {
-          "fr": "Doré à godrons",
-          "en": "Gilt, gadrooned"
-        }
-      },
-      {
-        "key": {
-          "fr": "Mouvement",
-          "en": "Movement"
-        },
-        "value": {
-          "fr": "Quartz Piaget",
-          "en": "Piaget quartz"
-        }
-      },
-      {
-        "key": {
-          "fr": "Bracelet",
-          "en": "Bracelet"
-        },
-        "value": {
-          "fr": "Intégré en or jaune 18 carats",
-          "en": "Integrated 18-carat yellow gold"
-        }
-      },
-      {
-        "key": {
-          "fr": "Boucle",
-          "en": "Buckle"
-        },
-        "value": {
-          "fr": "Déployante signée Piaget",
-          "en": "Piaget signed folding clasp"
-        }
-      },
-      {
-        "key": {
-          "fr": "Fond",
-          "en": "Caseback"
-        },
-        "value": {
-          "fr": "Vissé, avec gravure",
-          "en": "Screw-down, engraved"
         }
       }
     ]
