@@ -153,7 +153,7 @@
       "fr": "Excellent",
       "en": "Excellent"
     },
-    "price": "Vendue",
+    "price": "12500",
     "image": "/montre/roro/ds.jpeg",
     "images": [
       "/montre/roro/ds.jpeg",
@@ -296,10 +296,7 @@
           "fr": "État",
           "en": "Condition"
         },
-        "value": {
-          "fr": "Excellent",
-          "en": "Excellent"
-        }
+        "value": "Très bon"
       },
       {
         "key": {
